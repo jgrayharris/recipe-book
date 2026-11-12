@@ -1,0 +1,6 @@
+# Unpinned on purpose: yt-dlp has to be the newest release to keep up with TikTok and
+# Instagram, and the chef uses recent Claude API features.
+anthropic
+faster-whisper
+requests
+yt-dlp

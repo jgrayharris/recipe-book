@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Recipes">
+<meta name="theme-color" content="#fbf6ee" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1a1512" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" href="icon-180.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&family=Fraunces:opsz,wght@9..144,500..800&display=swap">
+<link rel="stylesheet" href="styles.css">
+<title>Harris House Recipes</title>
+<!--
+  Harris House Recipes: the household recipe book.
+  index.html is the shell, styles.css the look, app.js everything else (its sections are
+  listed at the top of the file). Recipes come from data/recipes.json, which the Kitchen
+  workflow builds. Open with ?test to run the self-checks.
+-->
+</head>
+<body>
+<main id="view" class="view" aria-live="polite"></main>
+
+<nav class="tabs" id="tabs" aria-label="Sections">
+  <a href="#/" data-tab="book"><span class="ico" aria-hidden="true">📖</span><span>Book</span></a>
+  <a href="#/fridge" data-tab="fridge"><span class="ico" aria-hidden="true">🧺</span><span>What we have</span></a>
+  <a href="#/list" data-tab="list"><span class="ico" aria-hidden="true">🛒</span><span>List</span><b class="badge" id="listBadge" hidden></b></a>
+  <a href="#/add" data-tab="add"><span class="ico" aria-hidden="true">＋</span><span>Add</span></a>
+</nav>
+
+<div id="sheet" class="sheet-wrap" hidden></div>
+<div id="toast" class="toast" role="status" hidden></div>
+
+<script src="app.js"></script>
+</body>
+</html>

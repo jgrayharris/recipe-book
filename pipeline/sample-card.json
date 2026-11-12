@@ -1,0 +1,40 @@
+{
+  "is_recipe": true,
+  "title": "Sticky Gochujang Chicken Thighs",
+  "summary": "Sweet-spicy glazed chicken that caramelizes in the oven; weeknight-easy and great over rice.",
+  "servings": 4,
+  "total_minutes": 40,
+  "active_minutes": 15,
+  "difficulty": "Easy",
+  "difficulty_reason": "One bowl for the sauce and one sheet pan; nothing fussy.",
+  "meal": ["dinner"],
+  "cuisine": "Korean",
+  "protein": "chicken",
+  "cravings": ["spicy", "saucy", "comfort"],
+  "ingredients": [
+    { "item": "chicken thighs", "line": "2 lb boneless, skinless chicken thighs", "group": "", "aisle": "meat & seafood", "staple": false, "estimated": false },
+    { "item": "gochujang", "line": "3 tbsp gochujang", "group": "Glaze", "aisle": "international", "staple": false, "estimated": false },
+    { "item": "honey", "line": "2 tbsp honey", "group": "Glaze", "aisle": "pantry", "staple": false, "estimated": false },
+    { "item": "soy sauce", "line": "2 tbsp soy sauce", "group": "Glaze", "aisle": "international", "staple": false, "estimated": true },
+    { "item": "garlic", "line": "4 cloves garlic, grated", "group": "Glaze", "aisle": "produce", "staple": false, "estimated": false },
+    { "item": "sesame oil", "line": "1 tsp toasted sesame oil", "group": "Glaze", "aisle": "international", "staple": false, "estimated": true },
+    { "item": "salt", "line": "1/2 tsp salt", "group": "", "aisle": "spices", "staple": true, "estimated": true },
+    { "item": "scallions", "line": "2 scallions, thinly sliced", "group": "To serve", "aisle": "produce", "staple": false, "estimated": false },
+    { "item": "sesame seeds", "line": "1 tsp sesame seeds", "group": "To serve", "aisle": "spices", "staple": false, "estimated": false },
+    { "item": "rice", "line": "Cooked rice, for serving", "group": "To serve", "aisle": "pantry", "staple": false, "estimated": false }
+  ],
+  "steps": [
+    "Heat the oven to 425°F and line a sheet pan with foil.",
+    "Whisk the gochujang, honey, soy sauce, garlic and sesame oil in a large bowl.",
+    "Pat the chicken dry, season with salt, and toss it in two-thirds of the glaze.",
+    "Spread the chicken on the pan and roast for 20 minutes.",
+    "Brush with the rest of the glaze and roast 5 to 8 minutes more, until sticky and charred at the edges.",
+    "Rest 5 minutes, then top with scallions and sesame seeds and serve over rice."
+  ],
+  "equipment": [],
+  "tips": ["Use thighs, not breasts: they stay juicy under the high heat."],
+  "photo": "frame-7",
+  "completeness": "partial",
+  "missing": "The video didn't give amounts for the soy sauce or sesame oil.",
+  "source_notes": "Ingredients from on-screen text, method from the voiceover."
+}

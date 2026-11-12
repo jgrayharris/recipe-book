@@ -1,0 +1,48 @@
+# Publishes the recipe book website to GitHub Pages.
+#
+# Runs on every push to main (app changes, favorites saved from the app) and is called by
+# the Kitchen workflow after it saves recipes. (GitHub doesn't start workflows from the
+# Kitchen's own pushes, so the Kitchen calls this one directly.)
+name: Website
+
+on:
+  push:
+    branches: [main]
+    # The Kitchen handles recipes and calls this itself. The app reads favorites and notes
+    # straight from GitHub, so saving one doesn't need a new website either.
+    paths-ignore: ["recipes/**", "queue/**", "data/household.json"]
+  workflow_call:
+  workflow_dispatch:
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main   # the newest commit, including recipes the Kitchen just saved
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Assemble the website
+        run: python pipeline/kitchen.py site _site
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - id: deploy
+        uses: actions/deploy-pages@v4

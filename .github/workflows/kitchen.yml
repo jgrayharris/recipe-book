@@ -1,0 +1,96 @@
+# The kitchen: turns "Add recipe" issues into recipe cards, then updates the website.
+#
+# Runs when an issue is opened (the phone Shortcut, the app's Add page and the email
+# script all open one), when the scheduled chef pushes finished cards, once a day
+# to retry anything that failed, and by hand from the Actions tab.
+name: Kitchen
+
+on:
+  issues:
+    types: [opened, reopened]
+  push:
+    branches: [main]
+    paths: ["recipes/**", "queue/**"]
+  schedule:
+    - cron: "17 12 * * *"   # daily, 7:17am US Eastern
+  workflow_dispatch:
+
+# One kitchen run at a time. A run started while another is going waits, and every run
+# cooks all waiting issues, so nothing is missed when several links arrive at once.
+concurrency:
+  group: kitchen
+  cancel-in-progress: false
+
+jobs:
+  cook:
+    # The repo is public: skip issues opened by anyone outside the household.
+    if: >-
+      github.event_name != 'issues' ||
+      contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association)
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    permissions:
+      contents: write
+      issues: write
+    outputs:
+      changed: ${{ steps.save.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pipeline/requirements.txt
+
+      - name: Install ffmpeg (if the runner lacks it)
+        run: command -v ffmpeg || (sudo apt-get update && sudo apt-get install -y ffmpeg)
+
+      - name: Install the kitchen's Python packages
+        run: pip install -r pipeline/requirements.txt
+
+      - name: Keep the speech-to-text model between runs
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: whisper-${{ vars.WHISPER_MODEL || 'small' }}
+
+      - name: Cook
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CHEF_MODEL: ${{ vars.CHEF_MODEL }}
+          # Optional: a Reddit "script" app, for Reddit posts Reddit won't share otherwise.
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          WHISPER_MODEL: ${{ vars.WHISPER_MODEL || 'small' }}
+        run: python pipeline/kitchen.py process ${{ github.event_name == 'schedule' && '--retry-failed' || '' }}
+
+      - name: Save new recipes to the repo
+        id: save
+        run: |
+          git config user.name "recipe-book-kitchen"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A recipes images queue
+          if git diff --cached --quiet; then
+            echo "Nothing new to save."
+            # A push from the scheduled chef still needs the website rebuilt.
+            echo "changed=${{ github.event_name == 'push' }}" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit -m "Kitchen: new and updated recipes"
+          # The app may have saved favorites meanwhile; recipes live in other files, so a rebase is safe.
+          for attempt in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin HEAD:main && break
+            sleep $((attempt * 5))
+          done
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+  website:
+    needs: cook
+    if: needs.cook.outputs.changed == 'true'
+    uses: ./.github/workflows/pages.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write

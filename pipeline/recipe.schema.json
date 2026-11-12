@@ -1,0 +1,66 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "is_recipe", "title", "summary", "servings", "total_minutes", "active_minutes",
+    "difficulty", "difficulty_reason", "meal", "cuisine", "protein", "cravings",
+    "ingredients", "steps", "equipment", "tips", "photo", "completeness", "missing",
+    "source_notes"
+  ],
+  "properties": {
+    "is_recipe": { "type": "boolean" },
+    "title": { "type": "string" },
+    "summary": { "type": "string" },
+    "servings": { "type": "integer" },
+    "total_minutes": { "type": "integer" },
+    "active_minutes": { "type": "integer" },
+    "difficulty": { "type": "string", "enum": ["Easy", "Moderate", "Professional"] },
+    "difficulty_reason": { "type": "string" },
+    "meal": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["breakfast", "lunch", "dinner", "snack", "dessert", "side", "drink", "sauce"]
+      }
+    },
+    "cuisine": { "type": "string" },
+    "protein": {
+      "type": "string",
+      "enum": ["chicken", "beef", "pork", "lamb", "turkey", "seafood", "eggs", "vegetarian", "none"]
+    },
+    "cravings": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["comfort", "spicy", "fresh", "cheesy", "crispy", "sweet", "light", "hearty", "saucy", "zesty"]
+      }
+    },
+    "ingredients": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["item", "line", "group", "aisle", "staple", "estimated"],
+        "properties": {
+          "item": { "type": "string" },
+          "line": { "type": "string" },
+          "group": { "type": "string" },
+          "aisle": {
+            "type": "string",
+            "enum": ["produce", "meat & seafood", "dairy & eggs", "bakery", "pantry",
+                     "spices", "international", "frozen", "drinks", "other"]
+          },
+          "staple": { "type": "boolean" },
+          "estimated": { "type": "boolean" }
+        }
+      }
+    },
+    "steps": { "type": "array", "items": { "type": "string" } },
+    "equipment": { "type": "array", "items": { "type": "string" } },
+    "tips": { "type": "array", "items": { "type": "string" } },
+    "photo": { "type": "string" },
+    "completeness": { "type": "string", "enum": ["complete", "partial", "thin"] },
+    "missing": { "type": "string" },
+    "source_notes": { "type": "string" }
+  }
+}

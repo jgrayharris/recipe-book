@@ -1,0 +1,9 @@
+# Built by `python pipeline/kitchen.py site` or `preview`; never committed.
+_site/
+data/recipes.json
+
+# Python leftovers
+__pycache__/
+*.pyc
+.venv/
+
