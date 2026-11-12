@@ -64,7 +64,8 @@ jobs:
           REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
           REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
           WHISPER_MODEL: ${{ vars.WHISPER_MODEL || 'small' }}
-        run: python pipeline/kitchen.py process ${{ github.event_name == 'schedule' && '--retry-failed' || '' }}
+        # The daily run and a manual "Run workflow" also retry links that failed before.
+        run: python pipeline/kitchen.py process ${{ (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && '--retry-failed' || '' }}
 
       - name: Save new recipes to the repo
         id: save

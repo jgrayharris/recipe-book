@@ -9,6 +9,7 @@ from __future__ import annotations
 import os
 import shutil
 import subprocess
+import wave
 from pathlib import Path
 
 FRAME_WIDTH = 540      # stills sent to the chef
@@ -71,15 +72,23 @@ def transcribe(video: Path, workdir: Path) -> str:
         return ""
     audio = workdir / "audio.wav"
     out = _run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(video), "-vn", "-ac", "1",
-                "-ar", "16000", "-t", str(MAX_TRANSCRIBE_SECONDS), str(audio)])
+                "-ar", "16000", "-c:a", "pcm_s16le", "-t", str(MAX_TRANSCRIBE_SECONDS), str(audio)])
     if out.returncode != 0 or not audio.exists():
         return ""
     try:
+        import numpy as np
         from faster_whisper import WhisperModel
     except ImportError:
         return ""
+    # Hand faster-whisper the raw samples instead of the file: its own file reader depends on
+    # PyAV, whose updates have broken it before ("unexpected keyword argument 'metadata_errors'").
+    with wave.open(str(audio), "rb") as w:
+        pcm = w.readframes(w.getnframes())
+    samples = np.frombuffer(pcm, dtype=np.int16).astype(np.float32) / 32768.0
+    if not samples.size:
+        return ""
     model = WhisperModel(os.environ.get("WHISPER_MODEL", "small"), device="cpu", compute_type="int8")
-    segments, _info = model.transcribe(str(audio), vad_filter=True, beam_size=1)
+    segments, _info = model.transcribe(samples, vad_filter=True, beam_size=1)
     return " ".join(s.text.strip() for s in segments).strip()
 
 
@@ -100,7 +109,10 @@ def prepare_media(src: dict, workdir: Path) -> list[tuple[str, Path]]:
             labelled.append((f"image-{i}", p))
     video = Path(src["video"]) if src.get("video") else None
     if video and have_ffmpeg():
-        src["transcript"] = transcribe(video, workdir)
+        try:
+            src["transcript"] = transcribe(video, workdir)
+        except Exception as e:  # a transcript helps but isn't essential; carry on with the stills
+            src["notes"].append(f"transcript failed: {str(e)[:120]}")
         words = len(src["transcript"].split())
         count = 8 if words >= 40 else 14   # little talking: the recipe is probably on screen
         for f in extract_frames(video, workdir / "frames", count):
