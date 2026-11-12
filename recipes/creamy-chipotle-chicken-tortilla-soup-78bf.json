@@ -1,0 +1,277 @@
+{
+  "id": "creamy-chipotle-chicken-tortilla-soup-78bf",
+  "title": "Creamy Chipotle Chicken Tortilla Soup",
+  "summary": "Smoky, creamy chipotle soup with shredded chicken, corn and beans, piled with toppings.",
+  "servings": 6,
+  "total_minutes": 70,
+  "active_minutes": 40,
+  "difficulty": "Moderate",
+  "difficulty_reason": "Searing, charring, blending in batches and a cream cheese and cheese finish to manage.",
+  "meal": [
+    "dinner"
+  ],
+  "cuisine": "Mexican",
+  "protein": "chicken",
+  "cravings": [
+    "comfort",
+    "spicy",
+    "hearty",
+    "saucy"
+  ],
+  "ingredients": [
+    {
+      "item": "chicken thighs",
+      "line": "2 lb boneless, skinless chicken thighs",
+      "group": "",
+      "aisle": "meat & seafood",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "vegetable oil",
+      "line": "3 tbsp oil",
+      "group": "",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "salt",
+      "line": "Salt",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "black pepper",
+      "line": "Black pepper",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "garlic powder",
+      "line": "2 tsp garlic powder",
+      "group": "Spices",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "onion powder",
+      "line": "2 tsp onion powder",
+      "group": "Spices",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "cumin",
+      "line": "2 tsp ground cumin",
+      "group": "Spices",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "chipotle chili powder",
+      "line": "2 tsp chipotle chili powder",
+      "group": "Spices",
+      "aisle": "spices",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "dried oregano",
+      "line": "1 tsp dried oregano",
+      "group": "Spices",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "corn",
+      "line": "1 1/2 cups corn kernels",
+      "group": "",
+      "aisle": "frozen",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "red onion",
+      "line": "1 red onion, diced",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "red bell pepper",
+      "line": "1 red bell pepper, diced",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "jalapeno",
+      "line": "1 jalapeno, diced, plus slices to serve",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "garlic",
+      "line": "4 cloves garlic, minced",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "tomato paste",
+      "line": "3 tbsp tomato paste",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "chicken stock",
+      "line": "6 cups chicken stock",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "corn tortillas",
+      "line": "4 corn tortillas",
+      "group": "",
+      "aisle": "bakery",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "chipotle peppers in adobo",
+      "line": "2 chipotle peppers in adobo, plus 1 tbsp sauce",
+      "group": "",
+      "aisle": "international",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "diced tomatoes",
+      "line": "1 can (14 oz) petite diced tomatoes",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "tomato sauce",
+      "line": "1 can (8 oz) tomato sauce",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "cream cheese",
+      "line": "4 oz cream cheese",
+      "group": "",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "monterey jack",
+      "line": "2 cups shredded Monterey Jack",
+      "group": "",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "black beans",
+      "line": "1 can (15 oz) black beans, drained",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "lime",
+      "line": "1 lime, juiced",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "cilantro",
+      "line": "1/4 cup chopped cilantro",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "avocado",
+      "line": "1 avocado, diced",
+      "group": "To serve",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "tortilla strips",
+      "line": "Crispy tortilla strips",
+      "group": "To serve",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    }
+  ],
+  "steps": [
+    "Toss the chicken with oil, salt, pepper, garlic powder, onion powder, cumin, chipotle chili powder and oregano.",
+    "Sear the chicken in oil in a Dutch oven, about 5 minutes per side, then remove it.",
+    "Add the corn and let it char undisturbed, then remove it and set aside.",
+    "Saute the onion, bell pepper and jalapeno until soft, then toast the spices for 30 seconds.",
+    "Add the garlic until fragrant, then the tomato paste, and cook until brick red.",
+    "Pour in the stock, add the corn tortillas to soften in the hot broth, then blend it with the chipotles and adobo until smooth.",
+    "Return the blended mixture to the pot with the diced tomatoes, tomato sauce and chicken, bring to a boil, then simmer 25 minutes.",
+    "Blend the cream cheese with a little hot broth, stir it into the pot, then stir in the Jack cheese a handful at a time until melted.",
+    "Stir in the corn and black beans, shred the chicken and return it to the pot, and simmer a few minutes.",
+    "Finish with lime juice and cilantro, and serve topped with jalapeno, avocado, red onion and crispy tortilla strips."
+  ],
+  "equipment": [
+    "Dutch oven",
+    "blender"
+  ],
+  "tips": [
+    "Blend hot liquid in batches with the lid vented to avoid pressure.",
+    "Add the cheese gradually, off a hard boil, so it melts smoothly."
+  ],
+  "completeness": "partial",
+  "missing": "The video gave no amounts; the full recipe is linked from the creator's bio.",
+  "source_notes": "Method from the voiceover and video; ingredient amounts estimated.",
+  "needs_details": false,
+  "photo": true,
+  "source": {
+    "url": "https://www.tiktok.com/t/ZPLWrvYMm/",
+    "canonical_url": "https://tiktok.com/@cookingwithmrcooper/video/7698883905457311007",
+    "platform": "tiktok",
+    "author": "@cookingwithmrcooper",
+    "title": ""
+  },
+  "added_by": "Jordan",
+  "added_at": "2026-11-12T20:10:25Z",
+  "updated_at": "2026-11-12T20:10:25Z",
+  "issues": [
+    1
+  ]
+}

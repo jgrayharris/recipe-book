@@ -1,0 +1,221 @@
+{
+  "id": "creamy-sausage-tortellini-soup-48c4",
+  "title": "Creamy Sausage Tortellini Soup",
+  "summary": "Rich, tomatoey cream soup with two sausages, cheese tortellini and spinach; a hug in a bowl.",
+  "servings": 6,
+  "total_minutes": 60,
+  "active_minutes": 40,
+  "difficulty": "Moderate",
+  "difficulty_reason": "Several browning and layering steps in one pot, plus a flour roux and a cream finish.",
+  "meal": [
+    "dinner"
+  ],
+  "cuisine": "Italian",
+  "protein": "pork",
+  "cravings": [
+    "comfort",
+    "hearty",
+    "saucy",
+    "cheesy"
+  ],
+  "ingredients": [
+    {
+      "item": "olive oil",
+      "line": "2 tbsp olive oil",
+      "group": "",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "andouille sausage",
+      "line": "8 oz andouille sausage, sliced",
+      "group": "",
+      "aisle": "meat & seafood",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "hot italian sausage",
+      "line": "1 lb hot Italian sausage, casings removed",
+      "group": "",
+      "aisle": "meat & seafood",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "onion",
+      "line": "1 large yellow onion, diced",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "salt",
+      "line": "Salt",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "black pepper",
+      "line": "Black pepper",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "garlic",
+      "line": "5 cloves garlic, minced",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "sun-dried tomatoes",
+      "line": "1/3 cup sun-dried tomatoes, chopped",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "tomato paste",
+      "line": "3 tbsp tomato paste",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "dried basil",
+      "line": "1 tsp dried basil",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "dried oregano",
+      "line": "1 tsp dried oregano",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "red pepper flakes",
+      "line": "1/2 tsp red pepper flakes",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "italian herb bouillon paste",
+      "line": "1 tbsp Italian herb bouillon paste (Better Than Bouillon)",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "flour",
+      "line": "1/4 cup all-purpose flour",
+      "group": "",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "chicken broth",
+      "line": "6 cups low-sodium chicken broth",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "heavy cream",
+      "line": "1 cup heavy cream",
+      "group": "",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "parmesan",
+      "line": "1 cup grated parmesan, plus more to serve",
+      "group": "",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "cheese tortellini",
+      "line": "20 oz refrigerated cheese tortellini",
+      "group": "",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "spinach",
+      "line": "5 oz baby spinach, chopped",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "butter",
+      "line": "2 tbsp cold butter, cubed",
+      "group": "",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    }
+  ],
+  "steps": [
+    "Heat the oil in a Dutch oven over medium-high heat and sear the sliced andouille until nicely browned. Remove to a plate.",
+    "Add the hot Italian sausage, let it develop a crust, then break it up and cook through. Remove it to the plate.",
+    "Add the onion with salt and pepper and saute a few minutes, scraping up the browned bits from the bottom.",
+    "Stir in the garlic and sun-dried tomatoes and cook until just fragrant.",
+    "Add the tomato paste and cook until deep red, then stir in the basil, oregano, red pepper flakes and bouillon paste and toast for 30 seconds.",
+    "Sprinkle in the flour and cook for about 2 minutes, stirring.",
+    "Pour in the chicken broth, return both sausages to the pot, and simmer for 10 minutes.",
+    "Lower the heat and stir in the cream and parmesan.",
+    "Add the tortellini and cook according to the package directions.",
+    "Fold in the spinach until just wilted, then taste and adjust the salt.",
+    "Stir in the cold butter cubes and serve topped with more parmesan and crisped sausage or tortellini."
+  ],
+  "equipment": [
+    "Dutch oven"
+  ],
+  "tips": [
+    "Brown the two sausages separately so each gets a good crust.",
+    "Add the tortellini last so it doesn't overcook."
+  ],
+  "completeness": "partial",
+  "missing": "The video gave no amounts; the full recipe is linked from the creator's bio.",
+  "source_notes": "Method from the voiceover; ingredients from the voiceover and video, with amounts estimated.",
+  "needs_details": false,
+  "photo": true,
+  "source": {
+    "url": "https://www.tiktok.com/t/ZPLWh6UaY/",
+    "canonical_url": "https://tiktok.com/@cookingwithmrcooper/video/7694050981419420958",
+    "platform": "tiktok",
+    "author": "@cookingwithmrcooper",
+    "title": ""
+  },
+  "added_by": "Jordan",
+  "added_at": "2026-11-12T20:10:24Z",
+  "updated_at": "2026-11-12T20:10:24Z",
+  "issues": [
+    2
+  ]
+}
