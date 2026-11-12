@@ -190,9 +190,22 @@ def finish(qid: str, chef_file: str | None = None) -> int:
         return 1
     files = {p.stem: p for p in folder.glob("*.jpg")}
     recipe = finalize(fields, item, pick_photo(fields["photo"], files))
-    print(f"Added {recipe['title']} ({recipe['id']})" if recipe else "Not a recipe; nothing added")
+    if recipe:
+        print(f"Added {recipe['title']} ({recipe['id']})")
+    else:
+        print("Not a recipe; nothing added")
+        mark_not_recipe(item)
     shutil.rmtree(folder)
     return 0
+
+
+DONE = QUEUE / "_done"   # notes from the chef that a queued link wasn't a recipe
+
+
+def mark_not_recipe(item: dict) -> None:
+    """Leave proof for reconcile(), so the issue is closed with the right message."""
+    if item.get("issue"):
+        save_json(DONE / f"{item['qid']}.json", {"issue": item["issue"], "url": item["url"]})
 
 
 def cook_queue_with_api() -> None:
@@ -208,7 +221,8 @@ def cook_queue_with_api() -> None:
             print(f"  queue item {item['qid']} still waiting: {e}")
             continue
         print(f"  chef ({item['qid']}): {usage}")
-        finalize(fields, item, pick_photo(fields["photo"], dict(labelled)))
+        if not finalize(fields, item, pick_photo(fields["photo"], dict(labelled))):
+            mark_not_recipe(item)
         shutil.rmtree(folder)
 
 
@@ -327,19 +341,29 @@ def handle_issue(gh: GitHub, issue: dict) -> None:
 
 
 def reconcile(gh: GitHub, issues: list[dict]) -> None:
-    """Close "needs-chef" issues once the scheduled chef has filed their cards."""
+    """Close "needs-chef" issues once the scheduled chef has handled all their links.
+
+    Closes only on proof: a recipe that names the issue, or the chef's not-a-recipe note.
+    A missing queue item alone proves nothing, so the issue stays open.
+    """
     waiting = {i["issue"] for i in queue_items()}
     recipes = all_recipes()
+    notes = {p: load_json(p) for p in DONE.glob("*.json")}
     for issue in issues:
         n = issue["number"]
         if "needs-chef" not in {l["name"] for l in issue["labels"]} or n in waiting:
             continue
         done = [r for r in recipes if n in r.get("issues", [])]
-        body = "\n\n".join(describe("added", r, r["source"]["url"]) for r in done) or \
-            "🤔 The chef didn't find a recipe in that post, so nothing was added."
-        gh.comment(n, body)
+        not_recipes = [p for p, note in notes.items() if note and note.get("issue") == n]
+        if not done and not not_recipes:
+            continue
+        lines = [describe("added", r, r["source"]["url"]) for r in done]
+        lines += [describe("not-recipe", None, notes[p]["url"]) for p in not_recipes]
+        gh.comment(n, "\n\n".join(lines))
         gh.label(n, remove=["needs-chef"])
         gh.close(n, completed=bool(done))
+        for p in not_recipes:
+            p.unlink()
 
 
 def process(retry_failed: bool = False) -> None:

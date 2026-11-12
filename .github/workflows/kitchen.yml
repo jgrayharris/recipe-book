@@ -35,7 +35,11 @@ jobs:
     outputs:
       changed: ${{ steps.save.outputs.changed }}
     steps:
+      # The newest main, not the commit from when the event fired: an earlier run in the
+      # queue may have saved prepped links since, and this run has to see them.
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - uses: actions/setup-python@v5
         with:
