@@ -13,6 +13,10 @@
 const APP_VERSION = '1.0';
 const DEFAULT_REPO = 'jgrayharris/recipe-book';
 const HOUSEHOLD = ['Jordan', 'Lauren'];
+// When the scheduled chef writes the cards. Set to '' if the repo gets an Anthropic API key
+// (cards are then written within minutes).
+const CHEF_SCHEDULE = 'Mondays and Thursdays at noon';
+const readyWhen = () => CHEF_SCHEDULE ? `after the chef's next run (${CHEF_SCHEDULE})` : 'a few minutes later';
 const NEW_DAYS = 10;
 const DAY = 86400000;
 
@@ -361,7 +365,7 @@ function renderBookBody() {
       <button class="btn" data-act="reload">Try again</button></div>`;
   } else if (!state.recipes.length) {
     body = `<div class="empty"><div class="big">🍳</div><h2>The book is empty, for now</h2>
-      <p>Share a TikTok, Instagram or Reddit post to the <b>Recipe Book</b> shortcut, or paste links on the Add page. Each one shows up here a few minutes later.</p>
+      <p>Share a TikTok, Instagram or Reddit post to the <b>Recipe Book</b> shortcut, or paste links on the Add page. Each one shows up here ${readyWhen()}.</p>
       <a class="btn primary" href="#/add">Add a recipe</a></div>`;
   } else if (!list.length) {
     body = `<div class="empty"><div class="big">🤷</div><h2>Nothing matches</h2><p>Try fewer filters.</p>
@@ -615,7 +619,7 @@ function renderAdd() {
     return '<span class="state">In line</span>';
   };
   $view.innerHTML = `<div class="narrow">
-    <div class="page-head"><h1>Add recipes</h1><p>Paste one link or a whole list: TikTok, Instagram, Reddit, YouTube or any recipe site. Each one is ready a few minutes later. To include the recipe text (handy for Reddit and Instagram), paste it under a single link.</p></div>
+    <div class="page-head"><h1>Add recipes</h1><p>Paste one link or a whole list: TikTok, Instagram, Reddit, YouTube or any recipe site. Each one is ready ${readyWhen()}. To include the recipe text (handy for Reddit and Instagram), paste it under a single link.</p></div>
     ${ready ? '' : `<div class="banner"><h3>Set up this phone first</h3><p>Adding recipes needs the setup code once.</p><a class="btn primary" href="#/settings">Open settings</a></div>`}
     <textarea id="links" placeholder="https://www.tiktok.com/@…">${esc(state.draftLinks || '')}</textarea>
     <div class="bar"><span id="linkCount">${findLinks(state.draftLinks).length} links found</span></div>
@@ -703,7 +707,7 @@ async function sendLinks(button) {
   if (sent) {
     state.draftLinks = '';
     state.queue = null;
-    toast(`Sent ${sent} ${sent === 1 ? 'link' : 'links'}. They'll be in the book in a few minutes.`);
+    toast(`Sent ${sent} ${sent === 1 ? 'link' : 'links'}. They'll be in the book ${readyWhen()}.`);
   }
   renderAdd();
 }
@@ -749,7 +753,7 @@ const actions = {
     if (!text) { toast('Paste the recipe text first.'); return; }
     if (!token()) { location.hash = '#/settings'; toast('Set up this phone first.'); return; }
     el.disabled = true;
-    try { await gh.addDetails(v, text); toast('Sent. The chef will redo this card in a few minutes.'); document.getElementById('details').value = ''; }
+    try { await gh.addDetails(v, text); toast(`Sent. The chef will redo this card ${readyWhen()}.`); document.getElementById('details').value = ''; }
     catch (e) { toast(`Couldn't send: ${e.message}`); }
     el.disabled = false;
   },

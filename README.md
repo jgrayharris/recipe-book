@@ -1,6 +1,6 @@
 # Harris House Recipes
 
-A shared recipe book for Jordan and Lauren that fills itself. Share a TikTok, Instagram, Reddit or YouTube post (or any recipe site) to the **Recipe Book** Shortcut. A few minutes later it's a clean recipe card in the app: photo, shopping list, steps, time, and an Easy / Moderate / Professional label.
+A shared recipe book for Jordan and Lauren that fills itself. Share a TikTok, Instagram, Reddit or YouTube post (or any recipe site) to the **Recipe Book** Shortcut. After the chef's next run (Mondays and Thursdays at noon Pacific) it's a clean recipe card in the app: photo, shopping list, steps, time, and an Easy / Moderate / Professional label.
 
 **First time? Start with [SETUP.md](SETUP.md).**
 

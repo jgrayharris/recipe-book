@@ -1,6 +1,6 @@
 # The "Recipe Book" Shortcut
 
-Puts **Recipe Book** in the iPhone share menu. In TikTok, Instagram, Reddit, YouTube or Safari: tap **Share**, then **Recipe Book**. (In TikTok and Instagram it may sit under **More** or **Share to…** the first time.) You'll get a "Saved" notification, and the recipe shows up in the book a few minutes later.
+Puts **Recipe Book** in the iPhone share menu. In TikTok, Instagram, Reddit, YouTube or Safari: tap **Share**, then **Recipe Book**. (In TikTok and Instagram it may sit under **More** or **Share to…** the first time.) You'll get a "Saved" notification. The link is prepped right away, and the recipe shows up in the book after the chef's next run (Mondays and Thursdays at noon).
 
 You need the **setup code** (the GitHub key from SETUP.md, step 2). Build it once on your phone, then AirDrop it to the other phone.
 
@@ -28,7 +28,7 @@ You need the **setup code** (the GitHub key from SETUP.md, step 2). Build it onc
 
 ## Test it
 
-Open any TikTok, tap **Share**, then **Recipe Book**. You should see the notification. On GitHub, the repo's **Issues** tab gets an "Add recipe" issue, and a few minutes later the issue closes with a comment linking the new card. The app's **Add** page shows the same thing under "In the kitchen".
+Open any TikTok, tap **Share**, then **Recipe Book**. You should see the notification. On GitHub, the repo's **Issues** tab gets an "Add recipe" issue. A few minutes later the Kitchen comments that the link is prepped and labels it `needs-chef`. After the chef's next run, the issue closes with a link to the new card. The app's **Add** page shows the same progress under "In the kitchen".
 
 ## Give it to the other phone
 
