@@ -365,7 +365,7 @@ function renderBookBody() {
       <button class="btn" data-act="reload">Try again</button></div>`;
   } else if (!state.recipes.length) {
     body = `<div class="empty"><div class="big">🍳</div><h2>The book is empty, for now</h2>
-      <p>Share a TikTok, Instagram or Reddit post to the <b>Recipe Book</b> shortcut, or paste links on the Add page. Each one shows up here ${readyWhen()}.</p>
+      <p>Copy a TikTok, Instagram or Reddit link, then tap <b>Paste link and add</b> on the Add page. Each one shows up here ${readyWhen()}.</p>
       <a class="btn primary" href="#/add">Add a recipe</a></div>`;
   } else if (!list.length) {
     body = `<div class="empty"><div class="big">🤷</div><h2>Nothing matches</h2><p>Try fewer filters.</p>
@@ -619,12 +619,15 @@ function renderAdd() {
     return '<span class="state">In line</span>';
   };
   $view.innerHTML = `<div class="narrow">
-    <div class="page-head"><h1>Add recipes</h1><p>Paste one link or a whole list: TikTok, Instagram, Reddit, YouTube or any recipe site. Each one is ready ${readyWhen()}. To include the recipe text (handy for Reddit and Instagram), paste it under a single link.</p></div>
+    <div class="page-head"><h1>Add recipes</h1><p>TikTok, Instagram, Reddit, YouTube or any recipe site. Each one is ready ${readyWhen()}.</p></div>
     ${ready ? '' : `<div class="banner"><h3>Set up this phone first</h3><p>Adding recipes needs the setup code once.</p><a class="btn primary" href="#/settings">Open settings</a></div>`}
-    <textarea id="links" placeholder="https://www.tiktok.com/@…">${esc(state.draftLinks || '')}</textarea>
+    <button class="btn primary block paste" data-act="paste-links"${ready ? '' : ' disabled'}>📋 Paste link and add</button>
+    <p class="muted small center">In TikTok, Instagram or Reddit, tap <b>Share → Copy link</b>, then come back and tap this.</p>
+    <div class="or"><span>or paste a list</span></div>
+    <textarea id="links" placeholder="One link or many. To include the recipe text (handy for Reddit and Instagram), paste it under a single link.">${esc(state.draftLinks || '')}</textarea>
     <div class="bar"><span id="linkCount">${findLinks(state.draftLinks).length} links found</span></div>
-    <button class="btn primary block" data-act="send-links"${ready ? '' : ' disabled'}>Add to the book</button>
-    <p class="muted small">Fastest from your phone: in TikTok, Instagram or Reddit, tap Share, then <b>Recipe Book</b>. You can also email links to the house Gmail.</p>
+    <button class="btn block" data-act="send-links"${ready ? '' : ' disabled'}>Add these to the book</button>
+    <p class="muted small">You can also email links to the house Gmail.</p>
     ${ready ? `<section class="section"><h2>In the kitchen <small><button class="link-btn" data-act="refresh-queue">refresh</button></small></h2>
       ${q === null ? '<p class="muted">Checking…</p>' : !q.length ? '<p class="muted">Nothing waiting. Everything you sent is in the book.</p>' :
         q.map(i => `<div class="queue-row"><div style="min-width:0"><div class="u">${esc(findLinks(i.body)[0] || i.title)}</div>
@@ -691,25 +694,47 @@ function surprise() {
 
 function toggleIn(arr, v) { const i = arr.indexOf(v); if (i >= 0) arr.splice(i, 1); else arr.push(v); }
 
-async function sendLinks(button) {
-  const raw = document.getElementById('links').value;
-  const links = findLinks(raw);
-  if (!links.length) { toast('Paste at least one link.'); return; }
-  // One link with the recipe pasted under it: send the text too, for posts a site won't share.
-  const withText = links.length === 1 && raw.replace(links[0], '').trim().length > 20 ? raw.trim() : '';
+/** Opens one "Add recipe" issue per link. `withText` goes along when one link has the recipe pasted under it. */
+async function sendLinks(button, links, withText = '', fromBox = false) {
   button.disabled = true;
   let sent = 0;
   for (const url of links) {
     try { await gh.addRecipe(url, withText); sent++; button.textContent = `Sending ${sent} of ${links.length}…`; }
     catch (e) { toast(`Stopped at ${url}: ${e.message}`); break; }
-    await new Promise(r => setTimeout(r, 800));   // GitHub dislikes bursts
+    if (links.length > 1) await new Promise(r => setTimeout(r, 800));   // GitHub dislikes bursts
   }
   if (sent) {
-    state.draftLinks = '';
+    if (fromBox) state.draftLinks = '';
     state.queue = null;
-    toast(`Sent ${sent} ${sent === 1 ? 'link' : 'links'}. They'll be in the book ${readyWhen()}.`);
+    const site = Object.entries(PLATFORMS).find(([k]) => hostOf(links[0]).includes(k))?.[1] || hostOf(links[0]);
+    const what = links.length === 1 ? `Added your ${site} link` : `Sent ${sent} links`;
+    toast(`${what} 🍳 It'll be in the book ${readyWhen()}.`);
   }
   renderAdd();
+}
+
+function sendFromBox(button) {
+  const raw = document.getElementById('links').value;
+  const links = findLinks(raw);
+  if (!links.length) { toast('Paste at least one link.'); return; }
+  // One link with the recipe pasted under it: send the text too, for posts a site won't share.
+  const withText = links.length === 1 && raw.replace(links[0], '').trim().length > 20 ? raw.trim() : '';
+  sendLinks(button, links, withText, true);
+}
+
+/** Reads the clipboard (the phone shows a small "Paste" bubble to allow it) and adds the link(s) on it. */
+async function pasteAndSend(button) {
+  let text = '';
+  try {
+    text = await navigator.clipboard.readText();
+  } catch {
+    toast("Couldn't read the clipboard. Tap the box below and choose Paste instead.");
+    document.getElementById('links').focus();
+    return;
+  }
+  const links = findLinks(text);
+  if (!links.length) { toast('No link on the clipboard. In TikTok, tap Share → Copy link, then try again.'); return; }
+  sendLinks(button, links);   // only the links: share text like "Check out this video!" isn't the recipe
 }
 
 const actions = {
@@ -782,7 +807,8 @@ const actions = {
     try { await navigator.clipboard.writeText(text); toast('Copied. Paste it into Notes or a text.'); }
     catch { toast("Couldn't copy on this browser."); }
   },
-  'send-links': (v, el) => sendLinks(el),
+  'send-links': (v, el) => sendFromBox(el),
+  'paste-links': (v, el) => pasteAndSend(el),
   'refresh-queue': () => { state.queue = null; renderAdd(); },
   retry: async v => { try { await gh.retry(Number(v)); toast('Sent back to the kitchen.'); } catch (e) { toast(`Couldn't retry: ${e.message}`); } state.queue = null; renderAdd(); },
   me: v => { store.set('me', v); renderSettings(); toast(`Hi, ${v}!`); },

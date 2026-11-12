@@ -231,6 +231,10 @@ textarea:focus, .field:focus { border-color: var(--accent); }
 .state { font-size: 12px; font-weight: 800; padding: 3px 8px; border-radius: 9px; white-space: nowrap; background: var(--surface-2); }
 .state.failed { background: var(--accent-soft); color: var(--accent); }
 .state.cooking { background: var(--moderate-soft); color: var(--moderate); }
+.btn.paste { min-height: 64px; font-size: 19px; border-radius: 18px; margin-top: 6px; }
+.center { text-align: center; }
+.or { display: flex; align-items: center; gap: 12px; margin: 22px 0 12px; color: var(--muted); font-size: 13px; font-weight: 600; }
+.or::before, .or::after { content: ""; flex: 1; height: 1px; background: var(--line); }
 .card-box { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 16px; margin: 14px 0; }
 .card-box h2 { font-size: 20px; margin-bottom: 6px; }
 .muted { color: var(--muted); }
