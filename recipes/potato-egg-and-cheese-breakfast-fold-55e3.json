@@ -1,0 +1,143 @@
+{
+  "id": "potato-egg-and-cheese-breakfast-fold-55e3",
+  "title": "Potato Egg and Cheese Breakfast Fold",
+  "summary": "Paper-thin potato crisped in a pan, topped with egg and melty cheese, served with avocado.",
+  "servings": 1,
+  "total_minutes": 20,
+  "active_minutes": 15,
+  "difficulty": "Easy",
+  "difficulty_reason": "One small skillet and a simple flip-and-fold; just peel the potato thin.",
+  "meal": [
+    "breakfast"
+  ],
+  "cuisine": "American",
+  "protein": "eggs",
+  "cravings": [
+    "cheesy",
+    "crispy",
+    "comfort"
+  ],
+  "ingredients": [
+    {
+      "item": "potato",
+      "line": "1 medium potato, peeled into thin ribbons directly into the pan",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "cooking oil",
+      "line": "1 tbsp neutral oil or butter",
+      "group": "",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "salt",
+      "line": "Salt, to taste",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "eggs",
+      "line": "1 to 2 eggs",
+      "group": "",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "cheddar cheese",
+      "line": "2 slices cheddar cheese",
+      "group": "",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "avocado",
+      "line": "1/2 avocado, sliced",
+      "group": "To serve",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "sesame oil",
+      "line": "A drizzle of toasted sesame oil",
+      "group": "To serve",
+      "aisle": "international",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "black pepper",
+      "line": "Black pepper, to taste",
+      "group": "To serve",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "hot sauce",
+      "line": "Your favorite sauce, for drizzling",
+      "group": "To serve",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "scallions",
+      "line": "1 scallion, sliced",
+      "group": "To serve",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "pickle",
+      "line": "1 dill pickle spear",
+      "group": "To serve",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    }
+  ],
+  "steps": [
+    "Heat a small nonstick skillet over medium heat with a little oil.",
+    "Peel the potato directly into the pan in thin ribbons to form an even layer. Salt it and let it brown.",
+    "Flip the potato layer once the underside is golden.",
+    "Pour or crack the egg over the top, scrambling it right on the potato, and cook until mostly set.",
+    "Lay the cheese slices on top, fold the potato over and let the cheese melt.",
+    "Slide onto a plate and top with sauce and scallions.",
+    "Serve with sliced avocado dressed with sesame oil, salt and pepper, plus a pickle."
+  ],
+  "equipment": [
+    "nonstick skillet"
+  ],
+  "tips": [
+    "Peel the potato as thin as you can so it crisps up and folds easily."
+  ],
+  "completeness": "thin",
+  "missing": "The video gave no amounts or exact timings, and the original creator's recipe isn't in the post; paste in the caption or notes if you have them.",
+  "source_notes": "Reconstructed from a reaction video's voiceover and frames; all amounts and times are estimated.",
+  "needs_details": true,
+  "photo": true,
+  "source": {
+    "url": "https://www.tiktok.com/t/ZPL7Fesg5/",
+    "canonical_url": "https://tiktok.com/@kelitarosita/video/7626931837994159390",
+    "platform": "tiktok",
+    "author": "@kelitarosita",
+    "title": ""
+  },
+  "added_by": "Jordan",
+  "added_at": "2026-11-12T22:02:44Z",
+  "updated_at": "2026-11-12T22:02:44Z",
+  "issues": [
+    20
+  ]
+}

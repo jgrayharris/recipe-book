@@ -1,24 +1,158 @@
 {
   "id": "saved-from-r-soup-b7e9",
-  "title": "Saved from r/soup",
-  "summary": "",
-  "servings": 0,
-  "total_minutes": 0,
-  "active_minutes": 0,
+  "title": "Pumpkin and Goat Cheese Soup",
+  "summary": "Creamy pumpkin soup with sweet vegetables, a touch of cinnamon and tangy goat cheese.",
+  "servings": 6,
+  "total_minutes": 60,
+  "active_minutes": 35,
   "difficulty": "Easy",
-  "difficulty_reason": "",
-  "meal": [],
-  "cuisine": "",
-  "protein": "none",
-  "cravings": [],
-  "ingredients": [],
-  "steps": [],
-  "equipment": [],
-  "tips": [],
-  "completeness": "thin",
-  "missing": "Reddit wouldn't share this post, so there's no recipe yet.",
-  "source_notes": "Reddit wouldn't share the post, so only the link was saved.",
-  "needs_details": true,
+  "difficulty_reason": "One pot plus a blender; simple simmering and stirring.",
+  "meal": [
+    "dinner",
+    "lunch"
+  ],
+  "cuisine": "American",
+  "protein": "vegetarian",
+  "cravings": [
+    "comfort",
+    "hearty",
+    "sweet"
+  ],
+  "ingredients": [
+    {
+      "item": "butter",
+      "line": "2 tbsp butter",
+      "group": "",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "onion",
+      "line": "1 medium onion, diced",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "carrots",
+      "line": "1 cup diced carrots",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "celery",
+      "line": "1 cup diced celery",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "garlic",
+      "line": "2 cloves garlic, minced",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "vegetable broth",
+      "line": "1 qt vegetable broth",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "pumpkin puree",
+      "line": "1 (29 oz) can pumpkin puree",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "cinnamon",
+      "line": "1/4 tsp cinnamon",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "evaporated milk",
+      "line": "1 (12 oz) can evaporated milk",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "half and half",
+      "line": "1/2 cup half and half",
+      "group": "",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "goat cheese",
+      "line": "4 oz fresh goat cheese, crumbled, plus extra to garnish",
+      "group": "",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "brown sugar",
+      "line": "2 tbsp brown sugar",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "salt",
+      "line": "1/2 tsp salt",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "black pepper",
+      "line": "Freshly ground black pepper, to taste",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    }
+  ],
+  "steps": [
+    "Melt the butter in a large Dutch oven over medium heat. Add the onion, carrots and celery and saute for 5 minutes.",
+    "Add the garlic and saute for 5 more minutes.",
+    "Add the vegetable broth and bring to a boil, stirring occasionally.",
+    "Reduce the heat to low and simmer for 10 minutes, stirring occasionally.",
+    "Stir in the pumpkin and cinnamon and simmer for 15 minutes.",
+    "Blend the soup in batches in a blender or food processor until smooth, then return it to the pot.",
+    "With the heat on low, stir in the evaporated milk, half and half, goat cheese and brown sugar until the cheese is blended, the sugar has melted and the soup is hot.",
+    "Season with salt and pepper, ladle into bowls and garnish with extra goat cheese."
+  ],
+  "equipment": [
+    "Dutch oven",
+    "blender"
+  ],
+  "tips": [
+    "Blend hot soup in small batches and vent the lid to avoid splatters."
+  ],
+  "completeness": "complete",
+  "missing": "",
+  "source_notes": "Ingredients and method from the pasted post text.",
+  "needs_details": false,
   "photo": false,
   "source": {
     "url": "https://www.reddit.com/r/soup/s/s9M8i8gWV6",
@@ -29,8 +163,10 @@
   },
   "added_by": "Jordan",
   "added_at": "2026-11-12T21:43:51Z",
-  "updated_at": "2026-11-12T21:43:51Z",
+  "updated_at": "2026-11-12T22:02:49Z",
   "issues": [
-    7
+    7,
+    26,
+    27
   ]
 }

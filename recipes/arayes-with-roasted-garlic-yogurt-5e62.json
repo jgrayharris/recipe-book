@@ -1,0 +1,201 @@
+{
+  "id": "arayes-with-roasted-garlic-yogurt-5e62",
+  "title": "Arayes with Roasted Garlic Yogurt",
+  "summary": "Cheese and spiced lamb stuffed into pitas, seared crisp, with a sweet roasted-shallot garlic sauce.",
+  "servings": 4,
+  "total_minutes": 55,
+  "active_minutes": 35,
+  "difficulty": "Moderate",
+  "difficulty_reason": "Stuffing and searing pitas, finishing in the oven, plus a separate slow-cooked sauce.",
+  "meal": [
+    "dinner"
+  ],
+  "cuisine": "Middle Eastern",
+  "protein": "lamb",
+  "cravings": [
+    "cheesy",
+    "crispy",
+    "hearty"
+  ],
+  "ingredients": [
+    {
+      "item": "ground lamb",
+      "line": "1 lb ground lamb",
+      "group": "Filling",
+      "aisle": "meat & seafood",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "parsley",
+      "line": "1/2 cup chopped fresh parsley",
+      "group": "Filling",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "tomato paste",
+      "line": "1 tbsp tomato paste",
+      "group": "Filling",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "cumin",
+      "line": "1 tsp ground cumin",
+      "group": "Filling",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "paprika",
+      "line": "1 tsp paprika",
+      "group": "Filling",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "salt",
+      "line": "1 tsp salt",
+      "group": "Filling",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "black pepper",
+      "line": "1/2 tsp black pepper",
+      "group": "Filling",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "yellow onion",
+      "line": "1 small onion, grated",
+      "group": "Filling",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "garlic",
+      "line": "2 cloves garlic, grated",
+      "group": "Filling",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "pita",
+      "line": "4 pitas, halved",
+      "group": "Filling",
+      "aisle": "bakery",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "cheese",
+      "line": "1 1/2 cups shredded melting cheese",
+      "group": "Filling",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "olive oil",
+      "line": "2 tbsp olive oil, for brushing and searing",
+      "group": "Filling",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "shallots",
+      "line": "2 shallots, peeled",
+      "group": "Garlic sauce",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "garlic",
+      "line": "1 head garlic, cloves peeled",
+      "group": "Garlic sauce",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "sesame seeds",
+      "line": "1 tbsp sesame seeds",
+      "group": "Garlic sauce",
+      "aisle": "spices",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "olive oil",
+      "line": "1/2 cup olive oil",
+      "group": "Garlic sauce",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "greek yogurt",
+      "line": "1 cup Greek yogurt",
+      "group": "Garlic sauce",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "parsley",
+      "line": "2 tbsp chopped fresh parsley",
+      "group": "Garlic sauce",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    }
+  ],
+  "steps": [
+    "For the sauce, gently cook the shallots, garlic cloves and sesame seeds in the olive oil in a small pot over low heat for 20 to 25 minutes, until soft and golden.",
+    "Heat the oven to 400°F.",
+    "In a bowl, mix the lamb, parsley, tomato paste, cumin, paprika, salt and pepper. Grate in the onion and garlic and knead gently until combined.",
+    "Stuff each pita half with a layer of shredded cheese and a thick layer of the lamb mixture, pressing it in evenly.",
+    "Brush the outsides with olive oil and sear in a hot skillet on all sides until browned.",
+    "Move the arayes to a baking sheet and bake for 8 to 10 minutes, until the lamb is cooked through and the cheese is melted.",
+    "Spread the yogurt on a plate. Squeeze the soft shallots and garlic out of their skins onto the yogurt, add the parsley and a spoonful of the infused oil, and mash it all together.",
+    "Serve the arayes hot with the garlic yogurt for dipping."
+  ],
+  "equipment": [
+    "skillet"
+  ],
+  "tips": [
+    "Press the filling right to the edges of the pita so it cooks evenly and holds together.",
+    "Keep the sauce oil on low heat so the garlic goes sweet and soft, not browned."
+  ],
+  "completeness": "thin",
+  "missing": "The video gave no amounts, spice list, cheese type or oven temperature; paste in the creator's recipe if you have it.",
+  "source_notes": "Method and ingredient list from the voiceover and video frames; all amounts, temperatures and times are estimated.",
+  "needs_details": true,
+  "photo": true,
+  "source": {
+    "url": "https://www.tiktok.com/t/ZPL7Nceq5/",
+    "canonical_url": "https://tiktok.com/@papabwoi/video/7612376269447056660",
+    "platform": "tiktok",
+    "author": "@papabwoi",
+    "title": ""
+  },
+  "added_by": "Jordan",
+  "added_at": "2026-11-12T22:03:12Z",
+  "updated_at": "2026-11-12T22:03:12Z",
+  "issues": [
+    23
+  ]
+}

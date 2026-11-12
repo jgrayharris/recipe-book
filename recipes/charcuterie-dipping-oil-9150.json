@@ -1,0 +1,134 @@
+{
+  "id": "charcuterie-dipping-oil-9150",
+  "title": "Charcuterie Dipping Oil",
+  "summary": "Chunky olive oil and balsamic loaded with salami, olives, cheese and herbs; a charcuterie board for bread.",
+  "servings": 6,
+  "total_minutes": 20,
+  "active_minutes": 20,
+  "difficulty": "Easy",
+  "difficulty_reason": "Just chop and stir everything in one bowl; no cooking.",
+  "meal": [
+    "snack",
+    "side"
+  ],
+  "cuisine": "Italian",
+  "protein": "pork",
+  "cravings": [
+    "zesty",
+    "fresh",
+    "hearty"
+  ],
+  "ingredients": [
+    {
+      "item": "extra virgin olive oil",
+      "line": "1 cup extra virgin olive oil",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "balsamic vinegar",
+      "line": "1/4 cup balsamic vinegar",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "salami",
+      "line": "4 oz salami, finely chopped",
+      "group": "",
+      "aisle": "meat & seafood",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "olives",
+      "line": "1/2 cup pitted olives, chopped",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "gherkins",
+      "line": "1/4 cup cornichons or gherkins, chopped",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "hard cheese",
+      "line": "2 oz hard aged cheese, grated",
+      "group": "",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "feta",
+      "line": "1/4 cup crumbled soft white cheese such as feta",
+      "group": "",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "basil",
+      "line": "1/4 cup chopped fresh basil",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "parsley",
+      "line": "1/4 cup chopped fresh parsley",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "bread",
+      "line": "1 crusty loaf, torn or sliced, for dipping",
+      "group": "To serve",
+      "aisle": "bakery",
+      "staple": false,
+      "estimated": false
+    }
+  ],
+  "steps": [
+    "Pour the olive oil into a wide shallow bowl, then pour the balsamic vinegar into the middle.",
+    "Finely chop the salami, olives and gherkins on a cutting board.",
+    "Grate the hard cheese and crumble the soft cheese.",
+    "Roughly chop the basil and parsley.",
+    "Add everything to the bowl and stir until the oil is full of chunky bits.",
+    "Serve right away with crusty bread for dipping, spooning plenty of the chunky bits onto each piece."
+  ],
+  "equipment": [],
+  "tips": [
+    "Chop everything small so each scoop of bread picks up some of every ingredient.",
+    "Use a good, fruity olive oil since it is the base of the whole dip."
+  ],
+  "completeness": "partial",
+  "missing": "No amounts or exact cheeses and salami were given; the quantities here are estimates, so paste in the creator's amounts if you find them.",
+  "source_notes": "Ingredient list from the caption, method from the video frames; amounts estimated.",
+  "needs_details": false,
+  "photo": true,
+  "source": {
+    "url": "https://www.tiktok.com/t/ZPL7F1syA/",
+    "canonical_url": "https://tiktok.com/@chef_wills_/video/7635246645935869206",
+    "platform": "tiktok",
+    "author": "@chef_wills_",
+    "title": ""
+  },
+  "added_by": "Jordan",
+  "added_at": "2026-11-12T22:02:53Z",
+  "updated_at": "2026-11-12T22:02:53Z",
+  "issues": [
+    18
+  ]
+}

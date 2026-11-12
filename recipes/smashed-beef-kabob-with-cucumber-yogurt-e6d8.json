@@ -1,0 +1,168 @@
+{
+  "id": "smashed-beef-kabob-with-cucumber-yogurt-e6d8",
+  "title": "Smashed Beef Kabob with Cucumber Yogurt",
+  "summary": "Crispy, charred spiced beef with walnuts over cool cucumber-mint yogurt; great with pita or rice.",
+  "servings": 4,
+  "total_minutes": 35,
+  "active_minutes": 25,
+  "difficulty": "Easy",
+  "difficulty_reason": "Mix two bowls and sear in one skillet; no tricky technique.",
+  "meal": [
+    "dinner"
+  ],
+  "cuisine": "Middle Eastern",
+  "protein": "beef",
+  "cravings": [
+    "crispy",
+    "fresh",
+    "hearty"
+  ],
+  "ingredients": [
+    {
+      "item": "greek yogurt",
+      "line": "2 cups Greek yogurt",
+      "group": "Cucumber yogurt",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "mini cucumbers",
+      "line": "2 mini cucumbers, grated",
+      "group": "Cucumber yogurt",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "mint",
+      "line": "3 tbsp chopped fresh mint, plus leaves to serve",
+      "group": "Cucumber yogurt",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "garlic",
+      "line": "1 large garlic clove, grated",
+      "group": "Cucumber yogurt",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "salt",
+      "line": "1 tsp salt, to season the yogurt",
+      "group": "Cucumber yogurt",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "ground beef",
+      "line": "1 lb ground beef (80/20)",
+      "group": "Beef",
+      "aisle": "meat & seafood",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "yellow onion",
+      "line": "1 small yellow onion, grated",
+      "group": "Beef",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "turmeric",
+      "line": "1/2 tsp ground turmeric",
+      "group": "Beef",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "salt",
+      "line": "1 tsp salt",
+      "group": "Beef",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "black pepper",
+      "line": "Plenty of black pepper",
+      "group": "Beef",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "walnuts",
+      "line": "1/4 cup walnut halves",
+      "group": "Beef",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "dried cranberries",
+      "line": "2 tbsp dried cranberries",
+      "group": "Beef",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "pomegranate molasses",
+      "line": "Pomegranate molasses, optional, for serving",
+      "group": "To serve",
+      "aisle": "international",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "pita",
+      "line": "Warmed pita or cooked white rice, for serving",
+      "group": "To serve",
+      "aisle": "bakery",
+      "staple": false,
+      "estimated": false
+    }
+  ],
+  "steps": [
+    "Stir together the yogurt, grated cucumbers, chopped mint and grated garlic in a medium bowl. Chill until ready to serve.",
+    "In a separate bowl, mix the beef, grated onion, turmeric, 1 teaspoon salt and plenty of black pepper until well combined.",
+    "Heat a large, well-seasoned cast-iron skillet over medium-high until very hot.",
+    "Drop the beef into the pan in large, irregular chunks and cook undisturbed 6 to 8 minutes, until charred and crisp on the bottom.",
+    "Toss the meat with a wooden spoon, breaking up any extra-large pieces.",
+    "Stir in the walnuts and cranberries and cook 2 to 3 minutes more, until the meat is cooked through and the walnuts are toasted.",
+    "Season the chilled yogurt with the remaining 1 teaspoon salt and spread it across the bottom of a serving platter.",
+    "Pile the crispy meat on top and finish with pomegranate molasses and fresh mint. Serve with warm pita or rice."
+  ],
+  "equipment": [
+    "cast-iron skillet"
+  ],
+  "tips": [
+    "Let the beef sit undisturbed until it releases naturally from the pan; that is where the crisp crust comes from."
+  ],
+  "completeness": "complete",
+  "missing": "",
+  "source_notes": "Ingredients and method from the caption (NYT Cooking recipe by Zaynab Issa); the caption says raisins in the method but cranberries in the list and voiceover, so cranberries used.",
+  "needs_details": false,
+  "photo": true,
+  "source": {
+    "url": "https://www.tiktok.com/t/ZPL7NcvAH/",
+    "canonical_url": "https://tiktok.com/@foodiligence/video/7659061333387791630",
+    "platform": "tiktok",
+    "author": "@foodiligence",
+    "title": ""
+  },
+  "added_by": "Jordan",
+  "added_at": "2026-11-12T22:02:31Z",
+  "updated_at": "2026-11-12T22:02:31Z",
+  "issues": [
+    15
+  ]
+}

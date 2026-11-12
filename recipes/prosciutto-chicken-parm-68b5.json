@@ -1,0 +1,139 @@
+{
+  "id": "prosciutto-chicken-parm-68b5",
+  "title": "Prosciutto Chicken Parm",
+  "summary": "Crispy cutlets with a hidden layer of prosciutto, topped with sauce and melted mozzarella.",
+  "servings": 4,
+  "total_minutes": 50,
+  "active_minutes": 40,
+  "difficulty": "Moderate",
+  "difficulty_reason": "Three-step breading and shallow frying in batches, then broiling with cheese.",
+  "meal": [
+    "dinner"
+  ],
+  "cuisine": "Italian",
+  "protein": "chicken",
+  "cravings": [
+    "cheesy",
+    "crispy",
+    "comfort",
+    "saucy"
+  ],
+  "ingredients": [
+    {
+      "item": "chicken breasts",
+      "line": "2 large chicken breasts, sliced into 4 to 6 cutlets",
+      "group": "",
+      "aisle": "meat & seafood",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "prosciutto",
+      "line": "6 thin slices prosciutto di Parma",
+      "group": "",
+      "aisle": "meat & seafood",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "flour",
+      "line": "1 cup all-purpose flour, seasoned with salt, pepper and dried herbs",
+      "group": "Breading",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "eggs",
+      "line": "3 eggs, beaten with a little chopped parsley",
+      "group": "Breading",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "breadcrumbs",
+      "line": "1 1/2 cups panko or Italian breadcrumbs",
+      "group": "Breading",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "vegetable oil",
+      "line": "Vegetable oil, for frying",
+      "group": "",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "salt",
+      "line": "Flaky salt, to finish",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "marinara sauce",
+      "line": "1 cup marinara sauce",
+      "group": "To top",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "mozzarella",
+      "line": "8 oz fresh mozzarella, sliced",
+      "group": "To top",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "parmesan",
+      "line": "1/4 cup grated parmesan",
+      "group": "To top",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    }
+  ],
+  "steps": [
+    "Slice the chicken breasts into cutlets and pound them with a mallet or tortilla press to an even thickness.",
+    "Lay a slice of prosciutto over each cutlet and press it in so it sticks.",
+    "Set up three dishes: seasoned flour, beaten egg with parsley, and breadcrumbs.",
+    "Dredge each cutlet in flour, dip in the egg, then press firmly into the breadcrumbs, keeping the prosciutto layer covered.",
+    "Heat about 1/2 inch of oil in a large skillet over medium-high heat and fry the cutlets in batches for 3 to 4 minutes per side, until deep golden.",
+    "Drain the cutlets on a wire rack and sprinkle with flaky salt while still hot.",
+    "Heat the broiler or oven to 425°F. Top each cutlet with a spoonful of marinara, a little parmesan and slices of mozzarella.",
+    "Bake or broil for 5 to 8 minutes, until the mozzarella is melted and spotty brown."
+  ],
+  "equipment": [
+    "wire rack",
+    "tortilla press"
+  ],
+  "tips": [
+    "Pound the chicken to an even thickness so it cooks through as the crust browns.",
+    "Salt the cutlets right out of the oil, while the surface is still hot."
+  ],
+  "completeness": "thin",
+  "missing": "No amounts or exact method were given; the quantities and the sauce and cheese step are reconstructed from the video, so paste in the creator's details if they have them.",
+  "source_notes": "Technique from the voiceover; ingredients and the parm topping from the video frames; all amounts estimated.",
+  "needs_details": true,
+  "photo": true,
+  "source": {
+    "url": "https://www.tiktok.com/t/ZPL7NTWaa/",
+    "canonical_url": "https://tiktok.com/@4grills4girls/video/7631315465800797471",
+    "platform": "tiktok",
+    "author": "@4grills4girls",
+    "title": ""
+  },
+  "added_by": "Jordan",
+  "added_at": "2026-11-12T22:02:49Z",
+  "updated_at": "2026-11-12T22:02:49Z",
+  "issues": [
+    17
+  ]
+}

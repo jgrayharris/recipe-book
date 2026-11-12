@@ -1,0 +1,102 @@
+{
+  "id": "doctored-yellow-cake-with-chocolate-fros-2a6c",
+  "title": "Doctored Yellow Cake with Chocolate Frosting",
+  "summary": "A boxed yellow cake made extra moist and buttery, poured with glossy chocolate frosting.",
+  "servings": 12,
+  "total_minutes": 130,
+  "active_minutes": 15,
+  "difficulty": "Easy",
+  "difficulty_reason": "Box mix with a few swaps; whisk, bake, pour frosting.",
+  "meal": [
+    "dessert"
+  ],
+  "cuisine": "American",
+  "protein": "none",
+  "cravings": [
+    "sweet",
+    "comfort"
+  ],
+  "ingredients": [
+    {
+      "item": "yellow cake mix",
+      "line": "1 box yellow or butter recipe cake mix",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "eggs",
+      "line": "4 eggs",
+      "group": "",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "butter",
+      "line": "1 stick (1/2 cup) butter, melted",
+      "group": "",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "milk",
+      "line": "1 cup milk",
+      "group": "",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "vanilla extract",
+      "line": "1 tsp vanilla extract",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "chocolate frosting",
+      "line": "1 tub (about 16 oz) chocolate frosting",
+      "group": "Topping",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    }
+  ],
+  "steps": [
+    "Heat the oven to 315°F, not the 350°F on the box.",
+    "Whisk the cake mix, eggs, melted butter, milk and vanilla in a large bowl until smooth.",
+    "Pour the batter into a greased baking dish.",
+    "Bake about 36 to 37 minutes in the smaller square pan, or 27 to 29 minutes in a 9x13 pan, until a toothpick comes out clean.",
+    "Let the cake cool completely.",
+    "Microwave the frosting 15 to 20 seconds and stir until pourable but not hot.",
+    "Pour the frosting over the cooled cake and spread to the corners with a knife.",
+    "Let the frosting set, then cut into squares."
+  ],
+  "equipment": [],
+  "tips": [
+    "Frost only when the cake is fully cool, and keep the frosting just pourable: too hot and it tears the top.",
+    "The lower 315°F oven keeps the crumb tender."
+  ],
+  "completeness": "partial",
+  "missing": "The pan size was unclear in the audio (it sounded like 9x11, the dish looks square) and the vanilla and frosting amounts weren't stated.",
+  "source_notes": "Ingredients and method from the voiceover; the caption has no recipe.",
+  "needs_details": false,
+  "photo": true,
+  "source": {
+    "url": "https://www.tiktok.com/t/ZPL7NhnJR/",
+    "canonical_url": "https://tiktok.com/@kimmykups8/video/7660655147965582622",
+    "platform": "tiktok",
+    "author": "@kimmykups8",
+    "title": ""
+  },
+  "added_by": "Jordan",
+  "added_at": "2026-11-12T22:02:56Z",
+  "updated_at": "2026-11-12T22:02:56Z",
+  "issues": [
+    14
+  ]
+}

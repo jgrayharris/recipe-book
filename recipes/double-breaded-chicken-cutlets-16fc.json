@@ -1,0 +1,138 @@
+{
+  "id": "double-breaded-chicken-cutlets-16fc",
+  "title": "Double-Breaded Chicken Cutlets",
+  "summary": "Brined, evenly pounded cutlets with a two-layer crust that stays crunchy even when reheated.",
+  "servings": 4,
+  "total_minutes": 840,
+  "active_minutes": 45,
+  "difficulty": "Moderate",
+  "difficulty_reason": "Overnight brine, two-stage breading and deep frying in batches at a steady temperature.",
+  "meal": [
+    "dinner"
+  ],
+  "cuisine": "Italian",
+  "protein": "chicken",
+  "cravings": [
+    "crispy",
+    "comfort",
+    "hearty"
+  ],
+  "ingredients": [
+    {
+      "item": "water",
+      "line": "1 quart water",
+      "group": "Brine",
+      "aisle": "other",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "salt",
+      "line": "1/4 cup salt",
+      "group": "Brine",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "sugar",
+      "line": "1/4 cup sugar",
+      "group": "Brine",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "msg",
+      "line": "1 tbsp MSG",
+      "group": "Brine",
+      "aisle": "spices",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "chicken breasts",
+      "line": "2 large chicken breasts, sliced into cutlets",
+      "group": "",
+      "aisle": "meat & seafood",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "flour",
+      "line": "1 cup all-purpose flour, seasoned with salt and pepper",
+      "group": "Breading",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "eggs",
+      "line": "3 eggs, beaten",
+      "group": "Breading",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "italian breadcrumbs",
+      "line": "1 cup Italian-style breadcrumbs",
+      "group": "Breading",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "panko",
+      "line": "1 1/2 cups panko breadcrumbs",
+      "group": "Breading",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "vegetable oil",
+      "line": "About 2 inches of vegetable oil, for frying",
+      "group": "",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": true
+    }
+  ],
+  "steps": [
+    "Stir the water, salt, sugar and MSG together until dissolved, add the chicken and refrigerate overnight.",
+    "Remove the chicken from the brine and pat it dry. Slice the breasts into cutlets.",
+    "Pound the cutlets just until they are an even thickness throughout, not paper thin.",
+    "Dredge each cutlet in seasoned flour, dip it in egg, then coat it in the Italian breadcrumbs.",
+    "Dip the cutlet back in the egg, then coat it in panko.",
+    "Heat 1 to 2 inches of oil in a Dutch oven to 350°F.",
+    "Fry the cutlets one at a time for 3 to 4 minutes each, keeping the oil at 350°F, until golden and cooked through.",
+    "Drain on a rack and serve hot."
+  ],
+  "equipment": [
+    "Dutch oven",
+    "meat mallet"
+  ],
+  "tips": [
+    "Aim for even thickness, not thinness, so the chicken cooks at the same pace as the crust.",
+    "Use plenty of oil so the temperature holds when the cutlets go in and the breading doesn't turn greasy."
+  ],
+  "completeness": "partial",
+  "missing": "Amounts for the flour, egg, breadcrumbs, seasoning and oil weren't given and are estimated.",
+  "source_notes": "Brine amounts and method from the voiceover; breading and oil amounts estimated.",
+  "needs_details": false,
+  "photo": true,
+  "source": {
+    "url": "https://www.tiktok.com/t/ZPL7Nkgyx/",
+    "canonical_url": "https://tiktok.com/@aaronruinsfood/video/7681860274047028511",
+    "platform": "tiktok",
+    "author": "@aaronruinsfood",
+    "title": ""
+  },
+  "added_by": "Jordan",
+  "added_at": "2026-11-12T22:02:49Z",
+  "updated_at": "2026-11-12T22:02:49Z",
+  "issues": [
+    13
+  ]
+}

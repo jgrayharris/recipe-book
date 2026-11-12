@@ -1,0 +1,159 @@
+{
+  "id": "green-goddess-cabbage-salad-1416",
+  "title": "Green Goddess Cabbage Salad",
+  "summary": "Crunchy chopped cabbage and cucumber tossed in a vegan, herby cashew-spinach dressing.",
+  "servings": 4,
+  "total_minutes": 25,
+  "active_minutes": 25,
+  "difficulty": "Easy",
+  "difficulty_reason": "Chop vegetables, blend a dressing, toss; no cooking.",
+  "meal": [
+    "lunch",
+    "side"
+  ],
+  "cuisine": "American",
+  "protein": "vegetarian",
+  "cravings": [
+    "fresh",
+    "light",
+    "zesty"
+  ],
+  "ingredients": [
+    {
+      "item": "green cabbage",
+      "line": "1/2 small head green cabbage, finely chopped",
+      "group": "Salad",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "cucumber",
+      "line": "1 large cucumber, finely diced",
+      "group": "Salad",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "chives",
+      "line": "1 bunch chives, finely chopped",
+      "group": "Salad",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "garlic",
+      "line": "2 cloves garlic",
+      "group": "Dressing",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "shallot",
+      "line": "1 small shallot",
+      "group": "Dressing",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "lemons",
+      "line": "Juice of 2 lemons",
+      "group": "Dressing",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "chives",
+      "line": "1 handful chives",
+      "group": "Dressing",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "olive oil",
+      "line": "1/4 cup olive oil",
+      "group": "Dressing",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "cashews",
+      "line": "2 tbsp raw cashews",
+      "group": "Dressing",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "basil",
+      "line": "1/2 cup fresh basil leaves",
+      "group": "Dressing",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "spinach",
+      "line": "2 big handfuls fresh spinach",
+      "group": "Dressing",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "nutritional yeast",
+      "line": "1/4 cup nutritional yeast",
+      "group": "Dressing",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "salt",
+      "line": "Salt, to taste",
+      "group": "Dressing",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": true
+    }
+  ],
+  "steps": [
+    "Finely chop the cabbage, then the cucumber, and add both to a large bowl.",
+    "Finely chop the chives and add them to the bowl.",
+    "In a blender, add the garlic, shallot, a handful of chives, lemon juice and olive oil.",
+    "Add the cashews, basil, spinach and nutritional yeast, then blend until completely smooth and bright green.",
+    "Taste the dressing and add salt as needed.",
+    "Pour the dressing over the chopped vegetables and toss until everything is well coated."
+  ],
+  "equipment": [
+    "blender"
+  ],
+  "tips": [
+    "Chop everything small so each bite gets cabbage, cucumber and dressing."
+  ],
+  "completeness": "partial",
+  "missing": "The video gave no amounts for the vegetables, spinach, basil, nutritional yeast or the cashew/raisin; the caption on TikTok may have them.",
+  "source_notes": "Dressing ingredients from the garbled voiceover and frames; salad vegetables and method from the video frames; some quantities estimated.",
+  "needs_details": false,
+  "photo": true,
+  "source": {
+    "url": "https://www.tiktok.com/t/ZPL7NGGPq/",
+    "canonical_url": "https://tiktok.com/@bakedbymelissa/video/7012382672488090886",
+    "platform": "tiktok",
+    "author": "@bakedbymelissa",
+    "title": ""
+  },
+  "added_by": "Jordan",
+  "added_at": "2026-11-12T22:03:02Z",
+  "updated_at": "2026-11-12T22:03:02Z",
+  "issues": [
+    16
+  ]
+}

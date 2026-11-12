@@ -1,0 +1,196 @@
+{
+  "id": "homemade-quesarito-b879",
+  "title": "Homemade Quesarito",
+  "summary": "Taco Bell-style burrito of cheese, rice, taco meat and creamy chipotle sauce, toasted golden.",
+  "servings": 4,
+  "total_minutes": 35,
+  "active_minutes": 25,
+  "difficulty": "Easy",
+  "difficulty_reason": "Assemble store-bought parts, wrap and toast in a skillet.",
+  "meal": [
+    "dinner",
+    "lunch"
+  ],
+  "cuisine": "Mexican",
+  "protein": "beef",
+  "cravings": [
+    "cheesy",
+    "saucy",
+    "comfort",
+    "spicy"
+  ],
+  "ingredients": [
+    {
+      "item": "mayonnaise",
+      "line": "1 cup mayonnaise",
+      "group": "Chipotle sauce",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "chipotle peppers in adobo",
+      "line": "2 whole chipotle peppers in adobo",
+      "group": "Chipotle sauce",
+      "aisle": "international",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "adobo sauce",
+      "line": "1/2 tsp adobo sauce from the can",
+      "group": "Chipotle sauce",
+      "aisle": "international",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "chili powder",
+      "line": "1/2 tsp chili powder",
+      "group": "Chipotle sauce",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "sugar",
+      "line": "1/2 tsp sugar",
+      "group": "Chipotle sauce",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "salt",
+      "line": "1/2 tsp salt",
+      "group": "Chipotle sauce",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "garlic powder",
+      "line": "1/4 tsp garlic powder",
+      "group": "Chipotle sauce",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "onion powder",
+      "line": "1/4 tsp onion powder",
+      "group": "Chipotle sauce",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "smoked paprika",
+      "line": "1/4 tsp smoked paprika",
+      "group": "Chipotle sauce",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "burrito-size tortillas",
+      "line": "4 burrito-size flour tortillas",
+      "group": "Quesaritos",
+      "aisle": "bakery",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "taco-size tortillas",
+      "line": "4 taco-size flour tortillas",
+      "group": "Quesaritos",
+      "aisle": "bakery",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "nacho cheese",
+      "line": "1 can (9 oz) nacho cheese dip, such as Fritos jalapeño cheddar",
+      "group": "Quesaritos",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "cheddar",
+      "line": "1 cup shredded cheddar",
+      "group": "Quesaritos",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "spanish rice",
+      "line": "1 pouch precooked seasoned Spanish rice",
+      "group": "Quesaritos",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "ground beef",
+      "line": "1 lb ground beef with taco seasoning",
+      "group": "Quesaritos",
+      "aisle": "meat & seafood",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "taco seasoning",
+      "line": "1 packet taco seasoning",
+      "group": "Quesaritos",
+      "aisle": "spices",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "sour cream",
+      "line": "1/2 cup sour cream",
+      "group": "Quesaritos",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    }
+  ],
+  "steps": [
+    "Blend the mayonnaise, chipotles, adobo sauce, chili powder, sugar, salt, garlic powder, onion powder and paprika until smooth; use now or chill to develop flavor.",
+    "Simmer the ground beef in water with the taco seasoning, without browning first, until tender and the liquid has mostly cooked off.",
+    "Warm the rice according to the package.",
+    "Warm a burrito-size tortilla, then spread a spoonful of nacho cheese in the middle and sprinkle on shredded cheddar.",
+    "Lay a taco-size tortilla on top of the cheese.",
+    "Add a scoop of rice, a scoop of taco meat, some chipotle sauce and a dollop of sour cream.",
+    "Fold in the sides and roll up tightly like a burrito.",
+    "Toast seam-side down in a dry skillet over medium heat until lightly browned, then flip and brown the other side."
+  ],
+  "equipment": [
+    "blender",
+    "skillet"
+  ],
+  "tips": [
+    "Simmering the meat in water and seasoning, without browning, gives a softer fast-food texture.",
+    "The chipotle sauce keeps in the fridge and gets better as it rests."
+  ],
+  "completeness": "partial",
+  "missing": "Amounts for the tortillas, nacho cheese, rice, taco meat, cheddar and sour cream weren't given, so those are estimated.",
+  "source_notes": "Sauce amounts and method from the caption; filling amounts estimated from the caption, voiceover and frames.",
+  "needs_details": false,
+  "photo": true,
+  "source": {
+    "url": "https://www.tiktok.com/t/ZPL7N7Gpe/",
+    "canonical_url": "https://tiktok.com/@dollartreedinners/video/7620522687705697549",
+    "platform": "tiktok",
+    "author": "@dollartreedinners",
+    "title": ""
+  },
+  "added_by": "Jordan",
+  "added_at": "2026-11-12T22:02:44Z",
+  "updated_at": "2026-11-12T22:02:44Z",
+  "issues": [
+    22
+  ]
+}

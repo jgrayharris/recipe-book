@@ -1,0 +1,146 @@
+{
+  "id": "animal-style-rosti-551f",
+  "title": "Animal Style Rosti",
+  "summary": "Crisp Swiss potato pancake topped with caramelized onions and In-N-Out style spread.",
+  "servings": 2,
+  "total_minutes": 75,
+  "active_minutes": 45,
+  "difficulty": "Moderate",
+  "difficulty_reason": "Caramelizing onions and flipping a large potato pancake takes timing and care.",
+  "meal": [
+    "dinner",
+    "side"
+  ],
+  "cuisine": "Fusion",
+  "protein": "vegetarian",
+  "cravings": [
+    "crispy",
+    "comfort",
+    "saucy"
+  ],
+  "ingredients": [
+    {
+      "item": "russet potatoes",
+      "line": "1 1/2 lb russet potatoes, peeled and shredded into thin strands",
+      "group": "Rosti",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "butter",
+      "line": "3 tbsp butter or neutral oil, for frying",
+      "group": "Rosti",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "salt",
+      "line": "1 tsp salt",
+      "group": "Rosti",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "onions",
+      "line": "2 large yellow onions, thinly sliced",
+      "group": "Caramelized onions",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "vegetable oil",
+      "line": "2 tbsp oil",
+      "group": "Caramelized onions",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "mayonnaise",
+      "line": "1/2 cup mayonnaise",
+      "group": "Spread",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "ketchup",
+      "line": "2 tbsp ketchup",
+      "group": "Spread",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "sweet pickle relish",
+      "line": "2 tbsp sweet pickle relish",
+      "group": "Spread",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "white vinegar",
+      "line": "1 tsp white vinegar",
+      "group": "Spread",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "sugar",
+      "line": "1 tsp sugar",
+      "group": "Spread",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "chives",
+      "line": "Chives, finely chopped",
+      "group": "To serve",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    }
+  ],
+  "steps": [
+    "Slowly cook the sliced onions in oil over medium-low heat, stirring often, for 30 to 40 minutes until deep golden and jammy.",
+    "Whisk the mayonnaise, ketchup, relish, white vinegar and sugar into a spread, and refrigerate until needed.",
+    "Shred the potatoes into thin strands, squeeze out as much moisture as you can, and toss with the salt.",
+    "Heat the butter or oil in a large nonstick skillet over medium heat and pack in the potatoes in an even layer, pressing flat.",
+    "Cook for 12 to 15 minutes until the bottom is deep golden and crisp, then flip and cook another 10 minutes.",
+    "Rest the rosti on a rack so the crust stays crisp.",
+    "Spread the sauce over the rosti, pile on the caramelized onions and scatter with chives.",
+    "Serve right away with a fork and knife."
+  ],
+  "equipment": [
+    "nonstick skillet"
+  ],
+  "tips": [
+    "Squeeze the shredded potato dry for the crispiest crust.",
+    "Rest the rosti on a wire rack, not a plate, so steam doesn't soften it."
+  ],
+  "completeness": "thin",
+  "missing": "No amounts, times or temperatures were given in the video or caption; the spread ingredients were named but not measured.",
+  "source_notes": "Dish and spread ingredients from the voiceover and frames; amounts, times and method reconstructed as a typical rosti.",
+  "needs_details": true,
+  "photo": true,
+  "source": {
+    "url": "https://www.tiktok.com/t/ZPL7N74fr/",
+    "canonical_url": "https://tiktok.com/@nicoborbolla/video/7607821511331826975",
+    "platform": "tiktok",
+    "author": "@nicoborbolla",
+    "title": ""
+  },
+  "added_by": "Jordan",
+  "added_at": "2026-11-12T22:03:03Z",
+  "updated_at": "2026-11-12T22:03:03Z",
+  "issues": [
+    24
+  ]
+}

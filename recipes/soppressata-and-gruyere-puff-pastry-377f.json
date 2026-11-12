@@ -1,0 +1,105 @@
+{
+  "id": "soppressata-and-gruyere-puff-pastry-377f",
+  "title": "Soppressata and Gruyère Puff Pastry",
+  "summary": "Flaky puff pastry layered with Dijon, spicy soppressata and melty Gruyère; an easy party appetizer.",
+  "servings": 12,
+  "total_minutes": 55,
+  "active_minutes": 20,
+  "difficulty": "Easy",
+  "difficulty_reason": "Just layer store-bought pastry with fillings, then bake and slice.",
+  "meal": [
+    "snack",
+    "side"
+  ],
+  "cuisine": "American",
+  "protein": "pork",
+  "cravings": [
+    "cheesy",
+    "crispy",
+    "hearty"
+  ],
+  "ingredients": [
+    {
+      "item": "puff pastry",
+      "line": "2 sheets frozen puff pastry, thawed",
+      "group": "",
+      "aisle": "frozen",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "dijon mustard",
+      "line": "1/4 cup Dijon mustard",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "soppressata",
+      "line": "1/4 lb thinly sliced soppressata",
+      "group": "",
+      "aisle": "meat & seafood",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "gruyere",
+      "line": "8 oz Gruyère, grated (about 2 cups)",
+      "group": "",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "egg",
+      "line": "1 egg beaten with 1 tbsp water, for egg wash",
+      "group": "",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "flour",
+      "line": "Flour, for dusting",
+      "group": "",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": true
+    }
+  ],
+  "steps": [
+    "Heat the oven to 400°F and line a sheet pan with parchment.",
+    "Lightly flour the counter, unfold one sheet of puff pastry, and set it on the lined pan.",
+    "Spread the Dijon mustard over the pastry, leaving a small border around the edge.",
+    "Overlap the soppressata slices in a single layer over the mustard.",
+    "Scatter the grated Gruyère evenly over the soppressata.",
+    "Lay the second pastry sheet on top, press the edges to seal, and brush the top with egg wash.",
+    "Cut a few slits in the top so steam can escape.",
+    "Bake 30 to 40 minutes, until deep golden and puffed.",
+    "Let it rest 10 minutes, then cut into squares and serve warm."
+  ],
+  "equipment": [],
+  "tips": [
+    "All-butter puff pastry gives the richest flavor, but regular store-bought still bakes up crisp.",
+    "Ham works well in place of the soppressata."
+  ],
+  "completeness": "partial",
+  "missing": "The caption didn't list amounts, oven temperature or bake time; the full recipe is in Ina Garten's How Easy Is That, page 70, so paste it in to confirm.",
+  "source_notes": "Ingredients from the caption and video frames; amounts, temperature and timing filled in from a typical version.",
+  "needs_details": false,
+  "photo": true,
+  "source": {
+    "url": "https://www.tiktok.com/t/ZPL7NmFNL/",
+    "canonical_url": "https://tiktok.com/@storeboughtisfina/video/7683944994947861790",
+    "platform": "tiktok",
+    "author": "@storeboughtisfina",
+    "title": ""
+  },
+  "added_by": "Jordan",
+  "added_at": "2026-11-12T22:02:53Z",
+  "updated_at": "2026-11-12T22:02:53Z",
+  "issues": [
+    11
+  ]
+}

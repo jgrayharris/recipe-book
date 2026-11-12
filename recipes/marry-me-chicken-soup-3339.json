@@ -1,0 +1,176 @@
+{
+  "id": "marry-me-chicken-soup-3339",
+  "title": "Marry Me Chicken Soup",
+  "summary": "Creamy, sun-dried tomato chicken soup with parmesan and small pasta, in the spirit of marry-me chicken.",
+  "servings": 6,
+  "total_minutes": 45,
+  "active_minutes": 25,
+  "difficulty": "Easy",
+  "difficulty_reason": "One pot, simple sauteing and simmering.",
+  "meal": [
+    "dinner"
+  ],
+  "cuisine": "Italian",
+  "protein": "chicken",
+  "cravings": [
+    "comfort",
+    "saucy",
+    "hearty"
+  ],
+  "ingredients": [
+    {
+      "item": "olive oil",
+      "line": "1 tbsp olive oil",
+      "group": "",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "onion",
+      "line": "1 yellow onion, diced",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "garlic",
+      "line": "4 cloves garlic, minced",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "sun-dried tomatoes",
+      "line": "1/2 cup chopped sun-dried tomatoes",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "tomato paste",
+      "line": "2 tbsp tomato paste",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "italian seasoning",
+      "line": "1 tsp Italian seasoning",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "red pepper flakes",
+      "line": "1/2 tsp red pepper flakes",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "chicken broth",
+      "line": "6 cups chicken broth",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "chicken breasts",
+      "line": "1 1/2 lb boneless, skinless chicken breasts",
+      "group": "",
+      "aisle": "meat & seafood",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "ditalini",
+      "line": "1 cup ditalini or other small pasta",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "heavy cream",
+      "line": "1 cup heavy cream",
+      "group": "",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "parmesan",
+      "line": "1/2 cup grated parmesan, plus more to serve",
+      "group": "",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "basil",
+      "line": "2 tbsp chopped fresh basil",
+      "group": "To serve",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "salt",
+      "line": "Salt, to taste",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "black pepper",
+      "line": "Black pepper, to taste",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": true
+    }
+  ],
+  "steps": [
+    "Heat the olive oil in a large pot over medium heat and cook the onion for 5 minutes until soft.",
+    "Stir in the garlic, tomato paste, sun-dried tomatoes, Italian seasoning and red pepper flakes and cook 1 to 2 minutes.",
+    "Add the broth and chicken, bring to a simmer, and cook 15 to 20 minutes until the chicken is cooked through.",
+    "Move the chicken to a plate and shred it with two forks.",
+    "Add the pasta to the pot and simmer 8 to 10 minutes until tender.",
+    "Return the chicken to the pot, then stir in the cream and parmesan and warm through for 2 minutes.",
+    "Season with salt and pepper, then serve topped with basil, extra parmesan and a pinch of red pepper flakes."
+  ],
+  "equipment": [
+    "Dutch oven"
+  ],
+  "tips": [
+    "Keep the heat low once the cream goes in so it doesn't curdle.",
+    "The pasta keeps absorbing broth, so thin leftovers with a splash of broth when reheating."
+  ],
+  "completeness": "thin",
+  "missing": "The page's own recipe couldn't be read (only site boilerplate came through), so this is a typical version; paste the recipe text from the page into the card.",
+  "source_notes": "Written as a typical version from the title; the cover photo shows a small pasta soup topped with parmesan, herbs and red pepper flakes.",
+  "needs_details": true,
+  "photo": true,
+  "source": {
+    "url": "https://timschaoskitchen.com/f/marry-me-chicken-soup",
+    "canonical_url": "https://timschaoskitchen.com/f/marry-me-chicken-soup",
+    "platform": "web",
+    "author": "",
+    "title": "Marry Me Chicken Soup"
+  },
+  "added_by": "Jordan",
+  "added_at": "2026-11-12T22:02:53Z",
+  "updated_at": "2026-11-12T22:02:53Z",
+  "issues": [
+    8
+  ]
+}

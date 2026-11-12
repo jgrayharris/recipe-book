@@ -1,0 +1,188 @@
+{
+  "id": "frijoles-puercos-c887",
+  "title": "Frijoles Puercos",
+  "summary": "Slow-cooker charro beans with bacon and chorizo, blended with cheese into a dip for chips.",
+  "servings": 12,
+  "total_minutes": 900,
+  "active_minutes": 50,
+  "difficulty": "Easy",
+  "difficulty_reason": "Slow cooker beans, then blend and stir in cheese the next day.",
+  "meal": [
+    "side",
+    "snack"
+  ],
+  "cuisine": "Mexican",
+  "protein": "pork",
+  "cravings": [
+    "hearty",
+    "cheesy",
+    "comfort",
+    "spicy"
+  ],
+  "ingredients": [
+    {
+      "item": "pinto beans",
+      "line": "4 cups dried pinto beans",
+      "group": "Charro beans (day 1)",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "water",
+      "line": "12 cups water",
+      "group": "Charro beans (day 1)",
+      "aisle": "other",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "charro bean seasoning",
+      "line": "4 tbsp charro bean seasoning (the creator uses his own Arnie's Asada blend)",
+      "group": "Charro beans (day 1)",
+      "aisle": "spices",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "salt pork",
+      "line": "8 oz salt pork, cut into small cubes",
+      "group": "Charro beans (day 1)",
+      "aisle": "meat & seafood",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "bacon",
+      "line": "8 oz bacon, chopped",
+      "group": "Charro beans (day 1)",
+      "aisle": "meat & seafood",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "hot dogs",
+      "line": "4 hot dogs, chopped small",
+      "group": "Charro beans (day 1)",
+      "aisle": "meat & seafood",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "chorizo",
+      "line": "8 oz fresh chorizo, casing removed",
+      "group": "Charro beans (day 1)",
+      "aisle": "meat & seafood",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "white onion",
+      "line": "1 small white onion, chopped",
+      "group": "Charro beans (day 1)",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "roma tomatoes",
+      "line": "2 roma tomatoes, chopped",
+      "group": "Charro beans (day 1)",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "jalapenos",
+      "line": "2 jalapenos, chopped",
+      "group": "Charro beans (day 1)",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "chorizo",
+      "line": "6 oz fresh chorizo, casing removed",
+      "group": "Frijoles puercos (day 2)",
+      "aisle": "meat & seafood",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "pickled jalapenos",
+      "line": "3 oz jalapenos",
+      "group": "Frijoles puercos (day 2)",
+      "aisle": "international",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "chipotle peppers",
+      "line": "3 chipotle peppers in adobo",
+      "group": "Frijoles puercos (day 2)",
+      "aisle": "international",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "oaxaca cheese",
+      "line": "8 oz Oaxaca cheese, shredded",
+      "group": "Frijoles puercos (day 2)",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "chihuahua cheese",
+      "line": "8 oz Chihuahua cheese, shredded",
+      "group": "Frijoles puercos (day 2)",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "tortilla chips",
+      "line": "Tortilla chips, for serving",
+      "group": "To serve",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    }
+  ],
+  "steps": [
+    "Add the beans, 12 cups of water and the charro bean seasoning to a slow cooker and cook.",
+    "At about the 45-minute mark, add the cubed salt pork, chopped bacon, chopped hot dogs and crumbled chorizo.",
+    "After about 2 1/2 hours total, add the onion, tomatoes and jalapenos, cover, and cook about 45 minutes more until the beans are tender.",
+    "Serve as charro beans, or cool overnight for the next step.",
+    "The next day, reheat the beans in a wide pot and add 6 ounces more chorizo.",
+    "Add the jalapenos and chipotle peppers and blend with an immersion blender until mostly smooth.",
+    "Stir in the Oaxaca and Chihuahua cheese a handful at a time until melted.",
+    "Let cool about 10 minutes, then serve with chips."
+  ],
+  "equipment": [
+    "slow cooker",
+    "immersion blender"
+  ],
+  "tips": [
+    "Make a big batch of charro beans and chill overnight; this is the restaurant trick for frijoles puercos.",
+    "Stir constantly while adding the cheese so it melts into the beans."
+  ],
+  "completeness": "partial",
+  "missing": "Meat and cheese amounts (except the extra 6 oz chorizo), cooking temperature setting and the exact seasoning blend weren't given; the caption on TikTok may list them.",
+  "source_notes": "Bean, water, seasoning, veggie and chorizo amounts and timing from the voiceover; meat and cheese amounts estimated.",
+  "needs_details": false,
+  "photo": true,
+  "source": {
+    "url": "https://www.tiktok.com/t/ZPL7NoNEy/",
+    "canonical_url": "https://tiktok.com/@arnietex/video/7625294226992925983",
+    "platform": "tiktok",
+    "author": "@arnietex",
+    "title": ""
+  },
+  "added_by": "Jordan",
+  "added_at": "2026-11-12T22:03:03Z",
+  "updated_at": "2026-11-12T22:03:03Z",
+  "issues": [
+    21
+  ]
+}

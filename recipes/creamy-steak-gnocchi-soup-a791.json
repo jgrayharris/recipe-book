@@ -1,0 +1,188 @@
+{
+  "id": "creamy-steak-gnocchi-soup-a791",
+  "title": "Creamy Steak Gnocchi Soup",
+  "summary": "Rich, parmesan-laced gnocchi stew with kale and juicy seared sirloin on top.",
+  "servings": 4,
+  "total_minutes": 55,
+  "active_minutes": 40,
+  "difficulty": "Moderate",
+  "difficulty_reason": "Cooking steaks while building a reduced, cream-finished broth takes some timing.",
+  "meal": [
+    "dinner"
+  ],
+  "cuisine": "Italian",
+  "protein": "beef",
+  "cravings": [
+    "comfort",
+    "hearty",
+    "cheesy",
+    "saucy"
+  ],
+  "ingredients": [
+    {
+      "item": "top sirloin",
+      "line": "24 oz top sirloin or thin-cut NY strip steaks",
+      "group": "",
+      "aisle": "meat & seafood",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "olive oil",
+      "line": "2 tbsp olive oil",
+      "group": "",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "onion",
+      "line": "1 onion, diced",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "garlic",
+      "line": "3 to 4 cloves garlic, minced",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "sun-dried tomatoes",
+      "line": "1 tbsp sun-dried tomatoes",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "white wine",
+      "line": "1 cup white wine",
+      "group": "",
+      "aisle": "drinks",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "beef stock",
+      "line": "4 cups beef stock",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "thyme",
+      "line": "4 to 5 sprigs thyme",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "kale",
+      "line": "3 cups chopped kale",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "potato gnocchi",
+      "line": "1 package (16 to 18 oz) potato gnocchi",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "cornstarch",
+      "line": "2 tbsp cornstarch",
+      "group": "Slurry",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "water",
+      "line": "2 tbsp cold water",
+      "group": "Slurry",
+      "aisle": "other",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "heavy cream",
+      "line": "1 cup heavy cream",
+      "group": "",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "parmesan",
+      "line": "1/2 to 1 cup grated parmesan, plus more to serve",
+      "group": "",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "salt",
+      "line": "Salt, to taste",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "black pepper",
+      "line": "Freshly cracked black pepper, to taste",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    }
+  ],
+  "steps": [
+    "Heat the olive oil in a Dutch oven over medium heat. Saute the onion 4 to 5 minutes until soft and translucent.",
+    "Add the garlic and sun-dried tomatoes and cook 1 to 2 minutes until fragrant.",
+    "Pour in the wine, scrape up the browned bits, and simmer 3 to 5 minutes until reduced by about half.",
+    "Add the beef stock and thyme and simmer uncovered until reduced by about half.",
+    "Meanwhile, season the steaks and cook them in a separate skillet or on a grill to your desired doneness. Rest 5 to 10 minutes, then slice into bite-size pieces and set half aside for topping.",
+    "Stir the kale and any steak resting juices into the broth and cook 2 to 3 minutes until wilted.",
+    "Add the gnocchi and cook 3 to 4 minutes, or per package directions, until tender.",
+    "Stir in the cornstarch slurry and simmer 1 to 2 minutes until the broth thickens slightly.",
+    "Remove the thyme sprigs, lower the heat, and stir in the cream and parmesan. Season with salt and pepper and keep at a gentle heat, never a hard boil.",
+    "Stir in half the steak, ladle into bowls, and top with the rest of the steak, more parmesan and black pepper."
+  ],
+  "equipment": [
+    "Dutch oven"
+  ],
+  "tips": [
+    "Keep the soup below a hard boil after adding the cream so it stays smooth.",
+    "Rest the steaks before slicing so they stay juicy."
+  ],
+  "completeness": "complete",
+  "missing": "",
+  "source_notes": "Ingredients and method from the caption, matching the voiceover.",
+  "needs_details": false,
+  "photo": true,
+  "source": {
+    "url": "https://www.tiktok.com/t/ZPL7NkM5P/",
+    "canonical_url": "https://tiktok.com/@thebkydpalate/video/7693185191396838670",
+    "platform": "tiktok",
+    "author": "@thebkydpalate",
+    "title": ""
+  },
+  "added_by": "Jordan",
+  "added_at": "2026-11-12T22:02:56Z",
+  "updated_at": "2026-11-12T22:02:56Z",
+  "issues": [
+    10
+  ]
+}
