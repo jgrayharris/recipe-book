@@ -1,0 +1,21 @@
+{
+  "url": "https://preppykitchen.com/potato-soup/",
+  "issue": 6,
+  "added_by": "Jordan",
+  "recook_id": "",
+  "source": {
+    "url": "https://preppykitchen.com/potato-soup/",
+    "canonical_url": "https://preppykitchen.com/potato-soup",
+    "platform": "web",
+    "author": "",
+    "title": ""
+  },
+  "notes": [
+    "page fetch failed: 403 Client Error: Forbidden for url: https://preppykitchen.com/potato-soup/"
+  ],
+  "unreadable": true,
+  "qid": "20261112-1d694f",
+  "queued_at": "2026-11-12T21:41:58Z",
+  "brief": "Platform: web\n\nLink: https://preppykitchen.com/potato-soup/\n\nImages attached, in order: none\n\nNote: nothing but images could be read from this post.",
+  "images": []
+}
