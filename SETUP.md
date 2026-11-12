@@ -67,4 +67,4 @@ You can also paste a list of links on the app's **Add** page.
 - **The app's Add page** shows what's in the kitchen. A link marked "Needs a retry" has a **Retry** button. Failed links are also retried automatically once a day.
 - **GitHub → Issues** has one issue per shared link. The Kitchen comments on each one with what it did.
 - **GitHub → Actions → Kitchen** has the full log of each run.
-- **Instagram** sometimes blocks the download. The recipe still arrives, marked "needs details". Open it and paste the caption.
+- **Reddit and Instagram** sometimes block the download. The link still lands in the book, marked "needs details" or "waiting for the recipe". Open it, tap the button that opens the post, copy the recipe, and paste it in. Or paste the recipe under the link on the **Add** page from the start.

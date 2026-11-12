@@ -107,6 +107,25 @@ def canonical_url(url: str) -> str:
     return urlunparse(("https", host, path, "", urlencode(query, doseq=True), ""))
 
 
+def link_words(url: str) -> str:
+    """The dish a link names in its own words, or "".
+
+    "/r/recipes/comments/1abc/creamy_tuscan_chicken/" gives "Creamy Tuscan Chicken". Share links
+    ("/r/soup/s/ecqW..."), video links, user names and subreddit names name no dish, so they give "".
+    """
+    parts = [p for p in urlparse(url).path.split("/") if p]
+    best: list[str] = []
+    for i, seg in enumerate(parts):
+        if seg.startswith("@") or (i and parts[i - 1].lower() in ("r", "u", "user")):
+            continue
+        if not re.search(r"[-_]", seg):
+            continue
+        words = [w for w in re.split(r"[-_]+", re.sub(r"\.[a-z]+$", "", seg, flags=re.I)) if w.isalpha()]
+        if len(words) >= 2 and len(words) > len(best):
+            best = words
+    return " ".join(w.capitalize() for w in best)
+
+
 # ---------- the recipe schema (a small checker for the subset we use) ----------
 
 def check_schema(value, schema=None, where="recipe") -> list[str]:

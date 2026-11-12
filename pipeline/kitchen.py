@@ -24,11 +24,12 @@ import sys
 import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import urlparse
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from common import (DATA, IMAGES, QUEUE, RECIPES, ROOT, canonical_url, check_schema, find_urls,
-                    load_json, save_json, short_hash, slugify)
+                    link_words, load_json, save_json, short_hash, slugify)
 
 LABELS = {
     "cooking": ("f2c14e", "The kitchen is working on it"),
@@ -88,12 +89,44 @@ def pick_photo(label: str, files: dict[str, Path]) -> Path | None:
     return None
 
 
+PLATFORM_NAMES = {"tiktok": "TikTok", "instagram": "Instagram", "reddit": "Reddit", "youtube": "YouTube",
+                  "facebook": "Facebook", "pinterest": "Pinterest"}
+
+
+def nothing_read(src: dict, labelled: list, extra: str = "") -> bool:
+    """True when the site shared nothing at all (no words, pictures or video) and nothing was pasted."""
+    return not (extra or labelled or src.get("video")
+                or any(src.get(k) for k in ("title", "text", "comments", "transcript", "structured")))
+
+
+def placeholder_card(meta: dict) -> dict:
+    """A card for a post nobody could read, so the link isn't lost. It's marked needs details,
+    and the book asks for the recipe text to be pasted in. The household saved it as a recipe."""
+    url, src = meta["url"], meta.get("source") or {}
+    site = PLATFORM_NAMES.get(src.get("platform"), "") or urlparse(url).netloc.removeprefix("www.") or "The site"
+    sub = re.search(r"/r/([A-Za-z0-9_]+)", urlparse(url).path)
+    title = link_words(url) or (f"Saved from r/{sub.group(1)}" if sub else f"Saved {site} post")
+    return {
+        "is_recipe": True, "title": title, "summary": "",
+        "servings": 0, "total_minutes": 0, "active_minutes": 0,
+        "difficulty": "Easy", "difficulty_reason": "",
+        "meal": [], "cuisine": "", "protein": "none", "cravings": [],
+        "ingredients": [], "steps": [], "equipment": [], "tips": [],
+        "photo": "none", "completeness": "thin",
+        "missing": f"{site} wouldn't share this post, so there's no recipe yet.",
+        "source_notes": f"{site} wouldn't share the post, so only the link was saved.",
+    }
+
+
 def finalize(fields: dict, meta: dict, photo: Path | None) -> dict | None:
     """Turn the chef's card into a recipe file. Returns None when it wasn't a recipe."""
     from media import save_photo
 
     if not fields.get("is_recipe"):
-        return None
+        if not meta.get("unreadable"):
+            return None
+        # The chef had only the link to judge by: keep it as a card waiting for the recipe text.
+        fields, photo = placeholder_card(meta), None
     existing = load_json(RECIPES / f"{meta['recook_id']}.json") if meta.get("recook_id") else None
     rid = existing["id"] if existing else unique_id(fields["title"], meta["source"]["canonical_url"])
     has_photo = bool(existing and existing.get("photo"))
@@ -143,8 +176,12 @@ def cook_one(url: str, *, added_by: str = "", issue: int | None = None, recook_i
             return "duplicate", dup
         labelled = prepare_media(src, work)
         brief = build_brief(src, [label for label, _ in labelled], extra)
+        unreadable = nothing_read(src, labelled, extra)
         meta = {"url": url, "issue": issue, "added_by": added_by, "recook_id": recook_id,
-                "source": source_meta(src), "notes": src["notes"]}
+                "source": source_meta(src), "notes": src["notes"], "unreadable": unreadable}
+        if unreadable and not recook_id and not link_words(url):
+            # Nothing for the chef to work from: file the waiting card now instead of after its next run.
+            return "added", finalize(placeholder_card(meta), meta, None)
         full = {**dict(labelled), **originals(work)}
         if not use_api:
             return "queued", enqueue(meta, brief, labelled, full)
@@ -288,6 +325,9 @@ def describe(outcome: str, detail, url: str) -> str:
     if outcome in ("added", "updated", "duplicate"):
         r = detail
         what = {"added": "🍳 Added", "updated": "✏️ Updated", "duplicate": "📎 Already in the book:"}[outcome]
+        if not r.get("steps"):   # a card waiting for the recipe text
+            return (f"{what} **[{r['title']}]({book_link(r['id'])})**, but {r.get('missing', '')} "
+                    "Open it in the book and paste the recipe in.")
         extra = " It needs details: open it in the book to paste them in." if r.get("needs_details") else ""
         return (f"{what} **[{r['title']}]({book_link(r['id'])})** "
                 f"({r['difficulty']} · {r['total_minutes']} min).{extra}")
@@ -443,6 +483,27 @@ def selftest() -> None:
     assert pick_photo("frame-2", files).name == "2.jpg"
     assert pick_photo("none", files).name == "c.jpg"
     assert pick_photo("none", {"frame-2": Path("2"), "frame-9": Path("9")}).name == "9"
+    # Links that can't be read: named from their own words when they have any, else kept as a waiting card.
+    assert link_words("https://www.reddit.com/r/soup/s/ecqWzcoq7R") == ""
+    assert link_words("https://www.reddit.com/r/slow_cooking/s/abc123") == ""
+    assert link_words("https://www.tiktok.com/@chef_jane/video/123") == ""
+    assert link_words("https://www.instagram.com/reel/Cabc_123/") == ""
+    assert link_words("https://old.reddit.com/r/recipes/comments/1abcd/creamy_tuscan_chicken_pasta/") == \
+        "Creamy Tuscan Chicken Pasta"
+    assert link_words("https://blog.example.com/2024/05/best-beef-chili-2024.html") == "Best Beef Chili"
+    blank = {"title": "", "text": "", "comments": [], "transcript": "", "structured": None, "video": None}
+    assert nothing_read(blank, []) and not nothing_read(blank, [], "pasted recipe")
+    assert not nothing_read({**blank, "text": "caption"}, []) and not nothing_read(blank, [("cover", Path("c"))])
+    meta = {"url": "https://www.reddit.com/r/soup/s/ecqWzcoq7R", "source": {"platform": "reddit"}}
+    card = placeholder_card(meta)
+    assert check_schema(card) == [], check_schema(card)
+    assert card["title"] == "Saved from r/soup" and card["completeness"] == "thin" and card["is_recipe"]
+    assert "Reddit wouldn't share" in card["missing"]
+    assert placeholder_card({"url": "https://www.instagram.com/reel/Cabc/", "source": {"platform": "instagram"}})[
+        "title"] == "Saved Instagram post"
+    stub = {**card, "id": "saved-from-r-soup-ab12", "needs_details": True}
+    assert "(Easy · 0 min)" not in describe("added", stub, meta["url"])
+    assert "paste the recipe in" in describe("added", stub, meta["url"])
     print("All kitchen self-checks passed")
 
 

@@ -73,6 +73,8 @@ function itemsMatch(have, need) {
 
 const emojiFor = r => PROTEIN_EMOJI[r.protein] || MEAL_EMOJI[(r.meal || []).find(m => MEAL_EMOJI[m])] || '🍽️';
 const mainIngredients = r => (r.ingredients || []).filter(i => !i.staple);
+/** A card for a post the kitchen couldn't read: just the link, waiting for the recipe to be pasted in. */
+const isStub = r => !(r.ingredients || []).length && !(r.steps || []).length;
 const entry = (hh, id) => hh.recipes[id] || { fav: [], log: [] };
 const favBy = (hh, id) => entry(hh, id).fav || [];
 const logFor = (hh, id) => entry(hh, id).log || [];
@@ -97,6 +99,7 @@ function matches(r, f, hh, now) {
     if (!norm(f.q).split(' ').every(w => hay.includes(singular(w)))) return false;
   }
   if (f.maxTime && !(r.total_minutes > 0 && r.total_minutes <= f.maxTime)) return false;
+  if (isStub(r) && (f.difficulty.length || f.protein.length)) return false;   // its tags are blanks
   if (f.difficulty.length && !f.difficulty.includes(r.difficulty)) return false;
   if (f.meal.length && !f.meal.some(m => (r.meal || []).includes(m))) return false;
   if (f.protein.length && !f.protein.includes(r.protein)) return false;
@@ -311,14 +314,16 @@ function greeting() {
 function cardHtml(r, now, seen) {
   const loved = favBy(state.household, r.id).length > 0;
   const fresh = isRecent(r, now) && !seen.includes(r.id);
+  const stub = isStub(r);
   return `<a class="card" href="#/r/${encodeURIComponent(r.id)}">
     <div class="photo">${photoHtml(r, 'sm')}
-      <span class="pill time">⏱ ${shortTime(r.total_minutes)}</span>
+      ${stub ? '' : `<span class="pill time">⏱ ${shortTime(r.total_minutes)}</span>`}
       ${loved ? '<span class="pill heart" aria-label="Favorite">❤️</span>' : ''}
       ${fresh ? '<span class="pill new">NEW</span>' : ''}
     </div>
     <div class="meta"><h3>${esc(r.title)}</h3>
-      <div class="sub">${diffHtml(r)}<span>${esc(r.cuisine || '')}</span>${r.needs_details ? '<span class="needs">✍️ needs details</span>' : ''}</div>
+      <div class="sub">${stub ? '<span class="needs">✍️ waiting for the recipe</span>'
+        : `${diffHtml(r)}<span>${esc(r.cuisine || '')}</span>${r.needs_details ? '<span class="needs">✍️ needs details</span>' : ''}`}</div>
     </div></a>`;
 }
 
@@ -439,7 +444,13 @@ function renderRecipe(id) {
     g.items.push([ing, i]);
   });
   const form = state.madeForm && state.madeForm.id === id ? state.madeForm : null;
-  const needsBox = r.needs_details
+  const stub = isStub(r);
+  const openPost = r.source?.url ? `<a class="btn" href="${esc(r.source.url)}" target="_blank" rel="noopener">↗ ${esc(platform)}</a>` : '';
+  const needsBox = stub
+    ? `<div class="banner"><h3>✍️ Waiting for the recipe</h3><p>${esc(r.missing || 'The chef had nothing to go on.')} Open the post, copy the recipe or the caption, and paste it here. The card is ready ${readyWhen()}.</p>
+        <textarea id="details" placeholder="Paste the recipe text here"></textarea>
+        <div class="row" style="margin-top:10px">${openPost}<button class="btn primary" data-act="send-details" data-v="${esc(id)}">Send to the chef</button></div></div>`
+    : r.needs_details
     ? `<div class="banner"><h3>✍️ This one needs details</h3><p>${esc(r.missing || 'The post didn’t say much, so the chef reconstructed it.')} Paste the caption, a comment or the recipe text and the chef will redo the card.</p>
         <textarea id="details" placeholder="Paste the recipe text here"></textarea>
         <div class="row" style="margin-top:10px"><button class="btn primary" data-act="send-details" data-v="${esc(id)}">Send to the chef</button></div></div>`
@@ -456,7 +467,7 @@ function renderRecipe(id) {
       <button class="float fav" data-act="fav" data-v="${esc(id)}" aria-label="${loved.includes(me()) ? 'Unfavorite' : 'Favorite'}">${loved.length ? '❤️' : '🤍'}</button>
     </div>
     <div class="title-block"><h1>${esc(r.title)}</h1>${r.summary ? `<p class="summary">${esc(r.summary)}</p>` : ''}</div>
-    <div class="stats">
+    ${stub ? needsBox : `<div class="stats">
       <div class="stat"><b>${fmtMinutes(r.total_minutes)}</b><span>${r.active_minutes && r.active_minutes !== r.total_minutes ? `${fmtMinutes(r.active_minutes)} hands-on` : 'total'}</span></div>
       <div class="stat"><b>${diffHtml(r)}</b><span>effort</span></div>
       <div class="stat"><b>${r.servings || '?'}</b><span>servings</span></div>
@@ -468,7 +479,7 @@ function renderRecipe(id) {
     <div class="row">
       <a class="btn primary" href="#/cook/${encodeURIComponent(id)}">▶ Cook mode</a>
       <button class="btn" data-act="list" data-v="${esc(id)}">${inList ? '✓ On the list' : '🛒 Add to list'}</button>
-      ${r.source?.url ? `<a class="btn" href="${esc(r.source.url)}" target="_blank" rel="noopener">↗ ${esc(platform)}</a>` : ''}
+      ${openPost}
     </div>
 
     <section class="section"><h2>Ingredients <small>${mainIngredients(r).length} to buy · staples in grey</small></h2>
@@ -489,7 +500,7 @@ function renderRecipe(id) {
           <textarea id="madeNote" placeholder="Notes for next time (double the garlic…)">${esc(form.note)}</textarea>
           <div class="row" style="margin-top:10px"><button class="btn" data-act="made-cancel">Cancel</button><button class="btn primary" data-act="made-save" data-v="${esc(id)}">Save</button></div></div>`
         : `<button class="btn block" data-act="made-open" data-v="${esc(id)}">🎉 We made it</button>`}
-    </section>
+    </section>`}
 
     <p class="foot">Added by ${esc(r.added_by || 'someone')} on ${fmtDate(r.added_at)} · from ${esc(platform)}${r.source?.author ? ` (${esc(r.source.author)})` : ''}.
       ${r.source_notes ? `<br>${esc(r.source_notes)}` : ''}</p>
@@ -679,8 +690,8 @@ function toast(msg) {
 const closeSheet = () => { document.getElementById('sheet').hidden = true; };
 
 function surprise() {
-  const pool = filterRecipes(state.recipes, state.filters, state.household);
-  const from = pool.length ? pool : state.recipes;
+  const pool = filterRecipes(state.recipes, state.filters, state.household).filter(r => !isStub(r));
+  const from = pool.length ? pool : state.recipes.filter(r => !isStub(r));
   if (!from.length) { toast('Add a few recipes first.'); return; }
   const pick = from[Math.floor(Math.random() * from.length)];
   const dice = document.createElement('div');
@@ -945,6 +956,12 @@ function selfTest() {
   t('links found in pasted text', findLinks('a https://x.com/1, and https://y.com/2.').join() === 'https://x.com/1,https://y.com/2');
   t('base64 round trip with emoji', b64decode(b64encode('crème brûlée 🍮')) === 'crème brûlée 🍮');
   t('minutes format', fmtMinutes(95) === '1 h 35 min' && fmtMinutes(40) === '40 min');
+  const s = { id: 's', title: 'Saved from r/soup', total_minutes: 0, difficulty: 'Easy', protein: 'none', meal: [], cravings: [],
+    ingredients: [], steps: [], needs_details: true, added_at: new Date().toISOString() };
+  t('a waiting card is a stub; a recipe is not', isStub(s) && !isStub(a));
+  t('waiting cards stay in the book', filterRecipes([a, s], f(), hh).length === 2);
+  t('waiting cards skip the Easy filter', filterRecipes([a, s], { ...f(), difficulty: ['Easy'] }, hh).map(r => r.id).join() === 'a');
+  t('waiting cards skip the fridge', fridgeRank([a, s], ['eggs']).every(x => x.r.id !== 's'));
   const passed = results.filter(r => r[1]).length;
   $view.innerHTML = `<div class="narrow"><div class="page-head"><h1>Self-test</h1><p>${passed} of ${results.length} passed</p></div>
     ${results.map(([n, ok]) => `<div class="queue-row"><span>${esc(n)}</span><span class="state ${ok ? '' : 'failed'}">${ok ? 'pass' : 'FAIL'}</span></div>`).join('')}</div>`;
