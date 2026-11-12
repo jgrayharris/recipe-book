@@ -27,7 +27,7 @@ The chef runs one of two ways, and both follow `pipeline/chef_instructions.md`:
 
 | Path | What's there |
 |---|---|
-| `app/` | The website/app: `index.html`, `styles.css`, `app.js`, offline support (`sw.js`), icons. No build step. |
+| `app/` | The website/app: `index.html`, `styles.css`, `app.js`, the setup guide for a new phone (`setup.html`), offline support (`sw.js`), icons. No build step. |
 | `recipes/` | One JSON file per recipe: the source of truth. Edit one by hand and the website updates. |
 | `images/` | `<id>.jpg` for the recipe page and `<id>-sm.jpg` for the browsing grid. |
 | `data/household.json` | Favorites and "we made it" notes, saved by the app. |

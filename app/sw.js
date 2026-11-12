@@ -3,7 +3,7 @@
 // fall back to the saved copy after 4 seconds or when offline.
 // Photos: use the saved copy if there is one; they never change.
 const CACHE = 'recipe-book-v1';
-const SHELL = ['./', './index.html', './styles.css', './app.js', './manifest.webmanifest', './icon-180.png'];
+const SHELL = ['./', './index.html', './styles.css', './app.js', './manifest.webmanifest', './icon-180.png', './setup.html'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE)

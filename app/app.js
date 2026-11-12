@@ -10,7 +10,7 @@
     7. Self-test        (open the app with ?test)
 */
 
-const APP_VERSION = '1.0';
+const APP_VERSION = '1.1';
 const DEFAULT_REPO = 'jgrayharris/recipe-book';
 const HOUSEHOLD = ['Jordan', 'Lauren'];
 // When the scheduled chef writes the cards. Set to '' if the repo gets an Anthropic API key
@@ -631,7 +631,8 @@ function renderAdd() {
   };
   $view.innerHTML = `<div class="narrow">
     <div class="page-head"><h1>Add recipes</h1><p>TikTok, Instagram, Reddit, YouTube or any recipe site. Each one is ready ${readyWhen()}.</p></div>
-    ${ready ? '' : `<div class="banner"><h3>Set up this phone first</h3><p>Adding recipes needs the setup code once.</p><a class="btn primary" href="#/settings">Open settings</a></div>`}
+    ${ready ? '' : `<div class="banner"><h3>Set up this phone first</h3><p>Adding recipes needs the setup code once.</p>
+      <div class="row"><a class="btn primary" href="#/settings">Open settings</a><a class="btn" href="setup.html#connect">Show me how</a></div></div>`}
     <button class="btn primary block paste" data-act="paste-links"${ready ? '' : ' disabled'}>📋 Paste link and add</button>
     <p class="muted small center">In TikTok, Instagram or Reddit, tap <b>Share → Copy link</b>, then come back and tap this.</p>
     <div class="or"><span>or paste a list</span></div>
@@ -666,14 +667,15 @@ function renderSettings() {
     <div class="card-box"><h2>Who's using this phone?</h2><p class="muted small">Shows up on recipes you add, favorites and notes.</p>
       <div class="who-pick">${HOUSEHOLD.map(n => `<button class="chip${me() === n ? ' on' : ''}" data-act="me" data-v="${n}">${n}</button>`).join('')}</div></div>
     <div class="card-box"><h2>Setup code</h2>
-      <p class="muted small">The GitHub key from the setup guide. It lets this phone add recipes and save favorites. ${t ? `<b>Saved</b> (ends in …${esc(t.slice(-4))}).` : 'Not set yet.'}</p>
+      <p class="muted small">A long code that starts with github_pat_. It lets this phone add recipes and save favorites. ${t ? `<b>Saved</b> (ends in …${esc(t.slice(-4))}).` : 'Not set yet.'}</p>
       <input id="token" class="field" type="password" placeholder="github_pat_…" autocomplete="off" autocapitalize="off" spellcheck="false">
       <div class="row" style="margin-top:10px"><button class="btn primary" data-act="save-token">Save</button><button class="btn" data-act="test-token"${t ? '' : ' disabled'}>Test it</button>
       ${t ? '<button class="btn" data-act="forget-token">Forget</button>' : ''}</div></div>
     <div class="card-box"><h2>The book</h2>
       <p class="muted small">${state.recipes.length} recipes${state.generatedAt ? ` · updated ${fmtDate(state.generatedAt)} ${new Date(state.generatedAt).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}` : ''} · repo <code>${esc(repoName())}</code> · app ${APP_VERSION}</p>
       <button class="btn" data-act="reload">Refresh recipes</button></div>
-    <div class="card-box"><h2>Put it on the home screen</h2><p class="muted small">In Safari, tap Share, then <b>Add to Home Screen</b>. Open it from there, then come back here to set it up: the home-screen app keeps its own settings.</p></div>
+    <div class="card-box"><h2>Setting up a phone</h2><p class="muted small">In Safari, tap Share, then <b>Add to Home Screen</b>. Open it from there, then come back here to set it up: the home-screen app keeps its own settings.</p>
+      <a class="btn" href="setup.html">📖 Step-by-step setup guide</a></div>
   </div>`;
 }
 

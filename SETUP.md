@@ -50,6 +50,8 @@ Links still get prepped right away and wait in `queue/`. A Claude Code routine r
 3. Open it **from the home screen** (it keeps its own settings, separate from Safari), then tap ⚙️.
 4. Tap your name, paste the setup code, and tap **Save**. It tests itself and says "All set".
 
+For someone who isn't technical, text them **https://jgrayharris.github.io/recipe-book/setup.html**. It walks through these steps with pictures of the buttons, a QR code for the book, and a first recipe to check it works. Settings links to it too. If a button label or the chef's schedule (`CHEF_SCHEDULE`) changes, change the guide to match.
+
 ## 5. The Shortcut
 
 Follow `integrations/ios-shortcut.md`. Build it on one phone, then AirDrop it to the other.

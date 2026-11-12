@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fbf6ee" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1a1512" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" href="icon-180.png">
+<title>Setup Guide · Harris House Recipes</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&family=Fraunces:opsz,wght@9..144,500..800&display=swap">
+<!--
+  The setup guide: getting the book onto a new iPhone, connecting it, and saving a first recipe.
+  Written for Lauren. A plain page on its own (app.js doesn't run here); Settings and the Add page
+  link to it, and it can be texted as jgrayharris.github.io/recipe-book/setup.html.
+  Button labels copy the app's real ones: if a label changes in app.js, change it here too.
+  The QR code is the book's address (https://jgrayharris.github.io/recipe-book/).
+-->
+<style>
+/* One phone-width column. Three parts of numbered steps, with the app's real buttons copied inline
+   so they match what's on screen. Colors and type are the app's own. */
+:root {
+  --bg: #fbf6ee; --surface: #ffffff; --surface-2: #f3ebdf; --line: #e7dccd;
+  --ink: #2a211b; --muted: #776a5f;
+  --accent: #d9482f; --accent-ink: #ffffff; --accent-soft: #fbe2da;
+  --ok: #3e7c59;
+  --bubble: #2a211b; --bubble-ink: #ffffff;
+  --qr-bg: #ffffff; --qr-ink: #1a1512;
+  --shadow: 0 1px 2px rgba(60, 40, 20, .06), 0 6px 18px rgba(60, 40, 20, .08);
+  --display: "Fraunces", Georgia, "Times New Roman", serif;
+  --body: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1a1512; --surface: #241d19; --surface-2: #2f2722; --line: #3b312b;
+    --ink: #f3eadf; --muted: #b0a296;
+    --accent: #f0694f; --accent-ink: #1a1512; --accent-soft: #3d231c;
+    --ok: #7cc39a;
+    --bubble: #f3eadf; --bubble-ink: #1a1512;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 6px 18px rgba(0, 0, 0, .25);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1a1512; --surface: #241d19; --surface-2: #2f2722; --line: #3b312b;
+  --ink: #f3eadf; --muted: #b0a296;
+  --accent: #f0694f; --accent-ink: #1a1512; --accent-soft: #3d231c;
+  --ok: #7cc39a;
+  --bubble: #f3eadf; --bubble-ink: #1a1512;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 6px 18px rgba(0, 0, 0, .25);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 18px/1.55 var(--body);
+  overflow-x: hidden;
+}
+img { display: block; max-width: 100%; }
+.page {
+  max-width: 640px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-top: max(12px, env(safe-area-inset-top, 0px));
+  padding-bottom: calc(40px + env(safe-area-inset-bottom, 0px));
+  display: flex; flex-direction: column; gap: 28px;
+}
+h1, h2, h3 { font-family: var(--display); font-weight: 700; letter-spacing: -.01em; margin: 0; text-wrap: balance; }
+p { margin: 0; }
+a { color: var(--accent); }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 8px; }
+b { font-weight: 700; }
+.ico { width: 1.15em; height: 1.15em; vertical-align: -0.18em; }
+
+/* ---------- top ---------- */
+.back {
+  align-self: flex-start; display: inline-flex; align-items: center; gap: 6px;
+  min-height: 44px; padding: 0 16px; border-radius: 22px;
+  background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow);
+  color: var(--ink); text-decoration: none; font-size: 16px; font-weight: 700;
+}
+.hero { display: flex; flex-direction: column; gap: 14px; }
+.brand { display: flex; align-items: center; gap: 12px; }
+.brand img { width: 52px; height: 52px; border-radius: 13px; box-shadow: var(--shadow); }
+.brand span { font-size: 13px; font-weight: 700; letter-spacing: .12em; color: var(--muted); }
+.hero h1 { font-size: clamp(34px, 9vw, 46px); line-height: 1.05; }
+.hero h1 em { font-style: italic; color: var(--accent); font-weight: 600; }
+.hero p { color: var(--muted); font-size: 19px; }
+
+.card {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 20px; box-shadow: var(--shadow);
+  padding: 18px; display: flex; flex-direction: column; gap: 12px;
+}
+.card h2 { font-size: 22px; }
+.need { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.need li { display: grid; grid-template-columns: 32px 1fr; gap: 8px; align-items: baseline; }
+.need li > span:first-child { font-size: 22px; line-height: 1; }
+
+.parts { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.parts a {
+  display: grid; grid-template-columns: 34px 1fr auto; gap: 10px; align-items: center;
+  min-height: 52px; padding: 8px 14px; border-radius: 16px;
+  background: var(--surface-2); color: var(--ink); text-decoration: none;
+}
+.parts .n { width: 30px; height: 30px; border-radius: 50%; background: var(--accent); color: var(--accent-ink); display: grid; place-items: center; font: 700 16px var(--display); }
+.parts .t { font-weight: 700; }
+.parts .t small { display: block; font-weight: 500; color: var(--muted); font-size: 15px; }
+.parts .arrow { color: var(--muted); }
+
+/* ---------- parts ---------- */
+.chapter { display: flex; flex-direction: column; gap: 16px; scroll-margin-top: calc(16px + env(safe-area-inset-top, 0px)); }
+.chapter-head { display: flex; flex-direction: column; gap: 4px; }
+.chapter-head .when { font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); }
+.chapter-head h2 { font-size: 30px; line-height: 1.12; }
+.chapter-head p { color: var(--muted); }
+
+.steps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.steps > li {
+  position: relative;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 18px;
+  padding: 16px 16px 16px 64px; min-width: 0;
+  display: flex; flex-direction: column; gap: 10px;
+}
+.steps > li::before {
+  content: attr(data-n); position: absolute; left: 14px; top: 14px;
+  width: 36px; height: 36px; border-radius: 50%;
+  background: var(--accent); color: var(--accent-ink);
+  font: 700 19px/36px var(--display); text-align: center;
+}
+.steps h3 { font-size: 21px; line-height: 1.25; }
+.note { color: var(--muted); font-size: 16px; }
+.or { display: flex; flex-direction: column; gap: 8px; padding-top: 4px; border-top: 1px solid var(--line); }
+.or p { font-size: 16px; }
+
+.where { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.where li { display: grid; grid-template-columns: 96px 1fr; gap: 10px; align-items: baseline; }
+.where li > span:first-child { font-weight: 700; }
+
+.callout { background: var(--accent-soft); border-radius: 18px; padding: 16px; display: flex; flex-direction: column; gap: 8px; }
+.callout h3 { font-size: 20px; }
+.callout.calm { background: var(--surface-2); }
+.done { display: flex; gap: 10px; align-items: flex-start; font-weight: 600; padding: 4px 4px 0; }
+.done::before { content: "✓"; display: inline-grid; place-items: center; flex: none; width: 28px; height: 28px; border-radius: 50%; background: var(--ok); color: var(--surface); font-weight: 700; }
+
+/* ---------- copies of what's on screen ---------- */
+.ui {
+  display: inline-flex; align-items: center; gap: 6px; vertical-align: baseline;
+  padding: 2px 12px; border-radius: 12px; line-height: 1.5;
+  background: var(--surface); border: 1px solid var(--line); color: var(--ink);
+  font-weight: 600; font-size: .92em; white-space: nowrap;
+}
+.ui.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.ui.chip { border-radius: 18px; }
+.ui.chip.on { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+.ui.icon { padding: 2px 8px; }
+.bubble {
+  display: inline-block; padding: 2px 12px; border-radius: 9px; vertical-align: baseline;
+  background: var(--bubble); color: var(--bubble-ink); font-weight: 600; font-size: .9em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+.big-btn {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  min-height: 56px; padding: 0 18px; border-radius: 18px; font-size: 19px; font-weight: 700;
+  background: var(--accent); color: var(--accent-ink); text-decoration: none;
+}
+.code { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: .85em; background: var(--surface-2); padding: 1px 6px; border-radius: 6px; overflow-wrap: anywhere; }
+.homeicon { display: flex; flex-direction: column; align-items: center; gap: 6px; width: 92px; padding: 14px 0 10px; border-radius: 16px; background: var(--surface-2); }
+.homeicon img { width: 60px; height: 60px; border-radius: 14px; box-shadow: var(--shadow); }
+.homeicon span { font: 500 13px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+.qr { display: grid; grid-template-columns: 116px 1fr; gap: 14px; align-items: center; }
+.qr svg { width: 116px; height: 116px; padding: 6px; border-radius: 12px; background: var(--qr-bg); color: var(--qr-ink); }
+
+.tabbar {
+  display: grid; grid-template-columns: repeat(4, 1fr); width: 100%; max-width: 380px;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 8px 4px;
+}
+.tabbar span { display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: 12px; font-weight: 600; color: var(--muted); }
+.tabbar span i { font-style: normal; font-size: 20px; line-height: 1; filter: grayscale(1); opacity: .6; }
+.tabbar span.on { color: var(--accent); }
+.tabbar span.on i { filter: none; opacity: 1; }
+
+.fixes { display: flex; flex-direction: column; gap: 10px; }
+.fix { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 16px; display: flex; flex-direction: column; gap: 6px; }
+.fix .see { font-weight: 700; }
+
+.foot { display: flex; flex-direction: column; align-items: center; gap: 14px; color: var(--muted); font-size: 16px; text-align: center; }
+.foot .back { align-self: center; }
+
+@media (max-width: 420px) {
+  body { font-size: 17px; }
+  .steps > li { padding-left: 58px; }
+  .steps > li::before { left: 12px; }
+  .where li { grid-template-columns: 1fr; gap: 0; }
+  .qr { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="./">← Back to the book</a>
+
+  <header class="hero">
+    <div class="brand"><img src="icon-180.png" alt="The Recipes app icon: a red square with a white soup bowl"><span>HARRIS HOUSE RECIPES</span></div>
+    <h1>Get the recipe book on your <em>iPhone</em></h1>
+    <p>About 5 minutes, one time. There's nothing to download from the App Store. The book lives on the web, and you put an icon for it on your Home Screen. After that it works just like an app.</p>
+  </header>
+
+  <section class="card" aria-labelledby="need-h">
+    <h2 id="need-h">Before you start</h2>
+    <ul class="need">
+      <li><span>📱</span><span>Your iPhone, on Wi-Fi or with signal.</span></li>
+      <li><span>🧭</span><span><b>Safari</b>, the blue compass app. Other browsers won't do step 3.</span></li>
+      <li><span>🙋</span><span><b>Jordan</b>, nearby. He has the setup code for Part 2.</span></li>
+    </ul>
+  </section>
+
+  <nav aria-label="The three parts">
+    <ol class="parts">
+      <li><a href="#home"><span class="n">1</span><span class="t">Put it on your Home Screen<small>Steps 1 to 4</small></span><span class="arrow">↓</span></a></li>
+      <li><a href="#connect"><span class="n">2</span><span class="t">Connect it, with Jordan<small>Steps 5 and 6</small></span><span class="arrow">↓</span></a></li>
+      <li><a href="#try"><span class="n">3</span><span class="t">Save your first recipe<small>Steps 7 to 9, to check it works</small></span><span class="arrow">↓</span></a></li>
+      <li><a href="#help"><span class="n">?</span><span class="t">If something goes wrong</span><span class="arrow">↓</span></a></li>
+    </ol>
+  </nav>
+
+  <!-- ---------- Part 1 ---------- -->
+  <section class="chapter" id="home">
+    <div class="chapter-head">
+      <span class="when">Part 1</span>
+      <h2>Put it on your Home Screen</h2>
+      <p>Tip: read steps 2 to 4 before you start. If you're reading this on your iPhone, Safari's back arrow ‹ brings you back here.</p>
+    </div>
+    <ol class="steps">
+      <li data-n="1">
+        <h3>Open the book in Safari</h3>
+        <a class="big-btn" href="./">Open the book</a>
+        <div class="or">
+          <p><b>Or</b> tap the link Jordan texts or AirDrops you. It opens in Safari.</p>
+          <div class="qr">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33" role="img" aria-label="QR code for the recipe book's address"><path stroke="currentColor" d="M2 2.5h7m1 0h1m3 0h1m1 0h1m1 0h2m4 0h7m-29 1h1m5 0h1m1 0h1m2 0h3m2 0h1m2 0h1m2 0h1m5 0h1m-29 1h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h4m2 0h2m2 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m2 0h1m1 0h1m1 0h1m2 0h2m1 0h2m1 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h3m3 0h1m1 0h1m1 0h2m2 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m3 0h1m2 0h1m2 0h3m1 0h1m1 0h1m5 0h1m-29 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-20 1h3m1 0h2m3 0h1m-19 1h1m2 0h8m1 0h1m1 0h2m1 0h1m1 0h1m1 0h1m2 0h1m1 0h3m-27 1h1m5 0h2m1 0h5m3 0h1m1 0h1m1 0h2m1 0h2m-28 1h2m4 0h1m3 0h1m2 0h1m1 0h3m2 0h3m1 0h1m1 0h1m-19 1h1m1 0h1m1 0h1m1 0h1m1 0h2m1 0h7m2 0h1m-29 1h1m2 0h1m1 0h2m1 0h1m1 0h1m1 0h1m3 0h1m3 0h1m1 0h2m4 0h1m-29 1h1m1 0h4m1 0h1m1 0h1m1 0h1m2 0h3m1 0h1m1 0h1m1 0h7m-26 1h4m1 0h2m4 0h2m1 0h5m4 0h1m1 0h1m-29 1h3m4 0h1m1 0h1m1 0h2m2 0h2m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m-23 1h1m2 0h3m1 0h1m1 0h1m2 0h1m6 0h1m-26 1h1m1 0h4m5 0h3m1 0h1m2 0h3m3 0h1m1 0h2m-28 1h2m2 0h1m1 0h3m1 0h1m3 0h2m3 0h1m1 0h2m2 0h1m2 0h1m-29 1h3m1 0h1m2 0h2m1 0h1m1 0h2m2 0h1m1 0h4m1 0h4m-27 1h4m2 0h3m1 0h1m4 0h3m2 0h8m-20 1h1m2 0h1m1 0h3m1 0h2m1 0h1m3 0h2m-26 1h7m1 0h1m4 0h1m1 0h1m1 0h4m1 0h1m1 0h2m-26 1h1m5 0h1m1 0h3m3 0h4m1 0h2m3 0h1m-25 1h1m1 0h3m1 0h1m1 0h1m3 0h4m3 0h7m1 0h1m-28 1h1m1 0h3m1 0h1m1 0h3m2 0h7m1 0h1m6 0h1m-29 1h1m1 0h3m1 0h1m3 0h4m1 0h1m1 0h1m1 0h1m3 0h2m1 0h3m-29 1h1m5 0h1m5 0h2m1 0h1m3 0h1m2 0h1m2 0h2m1 0h1m-29 1h7m1 0h5m5 0h6"/></svg>
+            <p><b>Or</b>, if you're reading this on a computer or on paper: open your iPhone's <b>Camera</b>, point it at this square, and tap the link that pops up.</p>
+          </div>
+          <p class="note">No link? In Safari, type <span class="code">jgrayharris.github.io/recipe-book</span></p>
+        </div>
+        <p class="note">You're in the right place when you see <b>HARRIS HOUSE RECIPES</b> at the top and pictures of food.</p>
+      </li>
+      <li data-n="2">
+        <h3>Tap the Share button</h3>
+        <p>It's a square with an arrow pointing up <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Share"><path d="M8 10H6.5a1.5 1.5 0 0 0-1.5 1.5v8A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5v-8a1.5 1.5 0 0 0-1.5-1.5H16"/><path d="M12 3v12"/><path d="M8.5 6.5 12 3l3.5 3.5"/></svg>, at the bottom of the screen.</p>
+        <p class="note">Don't see it? Tap <b>•••</b> at the bottom first, then <b>Share</b>.</p>
+      </li>
+      <li data-n="3">
+        <h3>Tap “Add to Home Screen”</h3>
+        <p>A list slides up. Scroll down it and tap <b>Add to Home Screen</b>. It has a square with a plus <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" role="img" aria-label="Add to Home Screen"><rect x="4" y="4" width="16" height="16" rx="3.5"/><path d="M12 8.5v7M8.5 12h7"/></svg> next to it.</p>
+      </li>
+      <li data-n="4">
+        <h3>Tap Add</h3>
+        <p>Leave the name as <b>Recipes</b>. If there's an <b>Open as Web App</b> switch, leave it on. Tap <b>Add</b> at the top right.</p>
+        <p>Then go to your Home Screen. The new icon is there, often on the last page:</p>
+        <div class="homeicon"><img src="icon-180.png" alt="The Recipes icon"><span>Recipes</span></div>
+      </li>
+    </ol>
+    <p class="done">The book is on your phone. From now on, open it from this icon, not from Safari. The icon remembers your settings and Safari doesn't.</p>
+  </section>
+
+  <!-- ---------- Part 2 ---------- -->
+  <section class="chapter" id="connect">
+    <div class="chapter-head">
+      <span class="when">Part 2 · with Jordan</span>
+      <h2>Connect it</h2>
+      <p>This lets your phone add recipes to the shared book, and lets Jordan see your favorites. Easiest of all: hand your phone to Jordan for this part.</p>
+    </div>
+    <ol class="steps">
+      <li data-n="5">
+        <h3>Tap your name</h3>
+        <p>Open <b>Recipes</b> from the new icon. Tap <span class="ui icon">⚙️</span> at the top right. Under <b>Who's using this phone?</b> tap <span class="ui chip on">Lauren</span>.</p>
+        <p class="note">It says “Hi, Lauren!”. Your name now goes on the recipes you add.</p>
+      </li>
+      <li data-n="6">
+        <h3>Paste the setup code</h3>
+        <p>Jordan sends you a long code that starts with <span class="code">github_pat_</span>. Press and hold it, then tap <b>Copy</b>.</p>
+        <p>Open <b>Recipes</b> again from the icon. On the same ⚙️ page, tap the box under <b>Setup code</b>, tap it again, tap <span class="bubble">Paste</span>, then tap <span class="ui primary">Save</span>.</p>
+        <p class="note">The code is like a password for the book. Once it's saved, you can delete it from your messages. The app remembers it.</p>
+      </li>
+    </ol>
+    <p class="done">You'll see “All set: this phone can add recipes.”, and the page says the code is <b>Saved</b>.</p>
+  </section>
+
+  <!-- ---------- Part 3 ---------- -->
+  <section class="chapter" id="try">
+    <div class="chapter-head">
+      <span class="when">Part 3 · to check it works</span>
+      <h2>Save your first recipe</h2>
+      <p>This is also how you'll save every recipe from now on.</p>
+    </div>
+    <ol class="steps">
+      <li data-n="7">
+        <h3>Copy a recipe's link</h3>
+        <ul class="where">
+          <li><span>TikTok</span><span>Tap the <b>Share</b> arrow on the right of the video, then <b>Copy link</b>.</span></li>
+          <li><span>Instagram</span><span>Tap the paper airplane, then <b>Copy link</b>.</span></li>
+          <li><span>Reddit</span><span>Tap <b>Share</b>, then <b>Copy link</b>.</span></li>
+        </ul>
+      </li>
+      <li data-n="8">
+        <h3>Open Recipes and tap Add</h3>
+        <p>Tap <b>＋ Add</b> at the bottom, then the big red button.</p>
+        <div class="tabbar" aria-hidden="true">
+          <span><i>📖</i>Book</span><span><i>🧺</i>What we have</span><span><i>🛒</i>List</span><span class="on"><i>＋</i>Add</span>
+        </div>
+        <div class="big-btn" aria-hidden="true">📋 Paste link and add</div>
+      </li>
+      <li data-n="9">
+        <h3>Tap Paste</h3>
+        <p>A small <span class="bubble">Paste</span> bubble pops up. Tap it.</p>
+        <p class="note">That's your iPhone checking it's OK for the app to use what you copied.</p>
+      </li>
+    </ol>
+    <p class="done">You'll see “Added your TikTok link 🍳”. You're all set up.</p>
+    <div class="callout calm">
+      <h3>Where's my recipe?</h3>
+      <p>New recipes show up in the book on the next <b>Monday or Thursday afternoon</b>. That's when the chef (the helper that turns videos into recipe cards) writes them up. Until then, yours waits at the bottom of the Add page, under <b>In the kitchen</b>.</p>
+    </div>
+  </section>
+
+  <!-- ---------- Help ---------- -->
+  <section class="chapter" id="help">
+    <div class="chapter-head">
+      <span class="when">Don't worry, you can't break it</span>
+      <h2>If something goes wrong</h2>
+    </div>
+    <div class="fixes">
+      <div class="fix"><p class="see">“Add to Home Screen” isn't in the list</p><p>Check you're in Safari, the blue compass app, and not inside TikTok, Instagram or another app. Then scroll to the very bottom of the list, tap <b>Edit Actions</b>, and add it.</p></div>
+      <div class="fix"><p class="see">I can't find the icon</p><p>Swipe left to the last page of your Home Screen. Or swipe down in the middle of the Home Screen and type <b>Recipes</b>.</p></div>
+      <div class="fix"><p class="see">It says “Couldn't load the book”</p><p>Check you're on Wi-Fi or have signal, then tap <b>Try again</b>.</p></div>
+      <div class="fix"><p class="see">The ⚙️ page still says “Not set yet”</p><p>The code didn't get saved. Copy it again, paste it in the box, and tap <b>Save</b>. Make sure you opened Recipes from the icon, not from Safari.</p></div>
+      <div class="fix"><p class="see">“That didn't work: the setup code is wrong or expired”</p><p>Part of the code may be missing. Ask Jordan to send it again. If it still doesn't work, he'll make a new one.</p></div>
+      <div class="fix"><p class="see">“Set up this phone first”, or the red button is grey</p><p>Part 2 isn't finished. Go back to <a href="#connect">step 6</a>.</p></div>
+      <div class="fix"><p class="see">“No link on the clipboard”</p><p>The link didn't get copied. Go back to <a href="#try">step 7</a> and tap <b>Copy link</b> again.</p></div>
+      <div class="fix"><p class="see">“Couldn't read the clipboard”</p><p>Tap the big box under <b>or paste a list</b>, tap <span class="bubble">Paste</span>, then tap <span class="ui">Add these to the book</span>.</p></div>
+      <div class="fix"><p class="see">I did Part 2 in Safari by mistake</p><p>No harm done. Open Recipes from the icon and do Part 2 again there.</p></div>
+    </div>
+    <div class="callout">
+      <h3>Stuck?</h3>
+      <p>Text Jordan. And if a recipe link is all you have, sending it to him works too.</p>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <a class="back" href="./">← Back to the book</a>
+    <p>Harris House Recipes</p>
+  </footer>
+</div>
+</body>
+</html>
