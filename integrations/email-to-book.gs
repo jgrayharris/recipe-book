@@ -8,40 +8,53 @@
  *
  * Setup (about 5 minutes; also in SETUP.md):
  *   1. Signed in as harrishouse, open script.google.com, click New project, name it "Recipe Book email".
- *   2. Replace the code with this file. Edit CONFIG below: ADDRESS and SENDERS.
- *   3. Project Settings (gear) > Script Properties > Add: GITHUB_TOKEN = the setup code.
+ *   2. Replace the code with this file.
+ *   3. Project Settings (gear) > Script Properties > add three properties:
+ *        GITHUB_TOKEN  the setup code
+ *        ADDRESS       the house address with +recipes, e.g. house@gmail.com -> house+recipes@gmail.com
+ *                      (Gmail delivers "name+anything@gmail.com" to "name@gmail.com")
+ *        SENDERS       who may send links, as email=Name pairs separated by commas,
+ *                      e.g. me@gmail.com=Jordan, them@gmail.com=Lauren, house@gmail.com=Us
+ *                      The name is what the book shows as "Added by".
+ *      These live in the Google account, not in this file, so the addresses stay out of the public repo.
  *   4. Back in the editor, choose the function "install" and click Run. Allow the access it asks for.
  * To stop it: Triggers (clock icon) > delete the trigger.
  */
 
 const CONFIG = {
   REPO: 'jgrayharris/recipe-book',
-  // Emails sent here are filed. Gmail delivers "name+anything@gmail.com" to "name@gmail.com".
-  ADDRESS: 'harrishouse+recipes@gmail.com',
-  // Only emails from these addresses are filed, so a stranger can't add to the book.
-  // The name is what the book shows as "Added by".
-  SENDERS: {
-    'harrishouse@gmail.com': 'Us',
-    // 'jordan@example.com': 'Jordan',
-    // 'lauren@example.com': 'Lauren',
-  },
   LABEL: 'Recipe Book',
 };
+
+/** The settings from Script Properties: the setup code, the recipes address and the allowed senders. */
+function settings() {
+  const p = PropertiesService.getScriptProperties();
+  const token = p.getProperty('GITHUB_TOKEN');
+  const address = (p.getProperty('ADDRESS') || '').trim();
+  const senders = {};
+  (p.getProperty('SENDERS') || '').split(/[,;\n]/).forEach(pair => {
+    const [email, name] = pair.split('=').map(s => (s || '').trim());
+    if (email) senders[email.toLowerCase()] = name || 'Us';
+  });
+  if (!token || !address || !Object.keys(senders).length) {
+    throw new Error('Add GITHUB_TOKEN, ADDRESS and SENDERS under Project Settings > Script Properties.');
+  }
+  return { token, address, senders };
+}
 
 // Links that are never recipes: unsubscribe footers, Google redirects, images.
 const SKIP = /unsubscribe|mailto:|google\.com\/(maps|calendar)|accounts\.google|support\.google|apple\.com\/|\.(png|jpe?g|gif|webp)(\?|$)/i;
 
 function fileRecipeEmails() {
-  const token = PropertiesService.getScriptProperties().getProperty('GITHUB_TOKEN');
-  if (!token) throw new Error('Add GITHUB_TOKEN under Project Settings > Script Properties.');
+  const { token, address, senders } = settings();
   const label = GmailApp.getUserLabelByName(CONFIG.LABEL) || GmailApp.createLabel(CONFIG.LABEL);
-  const threads = GmailApp.search(`to:${CONFIG.ADDRESS} is:unread`, 0, 20);
+  const threads = GmailApp.search(`to:${address} is:unread`, 0, 20);
   for (const thread of threads) {
     for (const msg of thread.getMessages()) {
       if (!msg.isUnread()) continue;
       const from = msg.getFrom();
       const email = ((from.match(/<([^>]+)>/) || [null, from])[1] || '').trim().toLowerCase();
-      const who = CONFIG.SENDERS[email];
+      const who = senders[email];
       if (who) {
         const links = findLinks(msg.getSubject() + '\n' + msg.getPlainBody());
         links.forEach(url => {
@@ -50,7 +63,7 @@ function fileRecipeEmails() {
         });
         console.log(`Filed ${links.length} link(s) from ${email}`);
       } else {
-        console.log(`Ignored an email from ${email}: not in SENDERS`);
+        console.log(`Ignored an email from ${email}: not in the SENDERS property`);
       }
       msg.markRead();
     }

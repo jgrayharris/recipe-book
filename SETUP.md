@@ -56,7 +56,7 @@ Follow `integrations/ios-shortcut.md`. Build it on one phone, then AirDrop it to
 
 ## 6. Optional: email links to the house Gmail
 
-For the "list of links we've been saving" case: email the links (one or a hundred) to **harrishouse+recipes@gmail.com** and each one becomes a recipe. Gmail delivers `+recipes` mail to the normal harrishouse inbox. Setup steps are at the top of `integrations/email-to-book.gs`. Put your own email addresses in its `SENDERS` list, so only your emails get filed.
+For the "list of links we've been saving" case: email the links (one or a hundred) to the harrishouse address with **+recipes** added before the @, and each one becomes a recipe. Gmail delivers `+recipes` mail to the normal harrishouse inbox. Setup steps are at the top of `integrations/email-to-book.gs`. The addresses go in the script's Script Properties in the Google account, not in the repo, so they never become public. Only emails from the addresses in `SENDERS` get filed.
 
 You can also paste a list of links on the app's **Add** page.
 
