@@ -1,0 +1,36 @@
+{
+  "id": "saved-tiktok-post-6132",
+  "title": "Saved TikTok post",
+  "summary": "",
+  "servings": 0,
+  "total_minutes": 0,
+  "active_minutes": 0,
+  "difficulty": "Easy",
+  "difficulty_reason": "",
+  "meal": [],
+  "cuisine": "",
+  "protein": "none",
+  "cravings": [],
+  "ingredients": [],
+  "steps": [],
+  "equipment": [],
+  "tips": [],
+  "completeness": "thin",
+  "missing": "TikTok wouldn't share this post, so there's no recipe yet.",
+  "source_notes": "TikTok wouldn't share the post, so only the link was saved.",
+  "needs_details": true,
+  "photo": false,
+  "source": {
+    "url": "https://vm.tiktok.com/ZTdVGVSL1/",
+    "canonical_url": "https://tiktok.com/ZTdVGVSL1",
+    "platform": "tiktok",
+    "author": "",
+    "title": ""
+  },
+  "added_by": "Jordan",
+  "added_at": "2026-11-15T22:01:14Z",
+  "updated_at": "2026-11-15T22:01:14Z",
+  "issues": [
+    37
+  ]
+}
