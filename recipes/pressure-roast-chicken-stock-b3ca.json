@@ -1,0 +1,103 @@
+{
+  "id": "pressure-roast-chicken-stock-b3ca",
+  "title": "Pressure Roast Chicken Stock",
+  "summary": "Rich, gelatinous stock in about an hour from a rotisserie chicken and a pressure cooker.",
+  "servings": 8,
+  "total_minutes": 70,
+  "active_minutes": 20,
+  "difficulty": "Easy",
+  "difficulty_reason": "Brown some vegetables, add everything to the pressure cooker and strain.",
+  "meal": [
+    "sauce"
+  ],
+  "cuisine": "American",
+  "protein": "chicken",
+  "cravings": [
+    "comfort",
+    "light"
+  ],
+  "ingredients": [
+    {
+      "item": "neutral oil",
+      "line": "Neutral oil or chicken fat, as needed",
+      "group": "",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "carrot",
+      "line": "75 g carrot (about 1/2 carrot), thinly sliced",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "yellow onion",
+      "line": "150 g yellow onion (about 1/2 onion), thinly sliced",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "garlic",
+      "line": "2 cloves garlic, crushed",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "rotisserie chicken",
+      "line": "1 store-bought rotisserie chicken",
+      "group": "",
+      "aisle": "meat & seafood",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "water",
+      "line": "2 liters water (about 8 1/2 cups)",
+      "group": "",
+      "aisle": "other",
+      "staple": true,
+      "estimated": false
+    }
+  ],
+  "steps": [
+    "Heat enough chicken fat or neutral oil to coat the bottom of a pressure cooker over medium-high heat.",
+    "Add the carrot, onion and garlic and let them sear without stirring until browned at the edges.",
+    "Pull all the meat off the chicken and separate it from the bones.",
+    "Shred the meat finely or puree it in a food processor.",
+    "Add the bones, shredded meat and water to the pot.",
+    "Pressure cook on high for 30 to 90 minutes, then let it cool without venting, or vent very slowly.",
+    "Strain the stock through a fine sieve."
+  ],
+  "equipment": [
+    "pressure cooker"
+  ],
+  "tips": [
+    "30 minutes equals about 2 to 3 hours of stovetop simmering; 90 minutes equals 7 to 8 hours.",
+    "Cooling without venting keeps the stock clear."
+  ],
+  "completeness": "complete",
+  "missing": "",
+  "source_notes": "Ingredients and steps from the recipe page; yield about 2 liters.",
+  "needs_details": false,
+  "photo": false,
+  "source": {
+    "url": "https://chrisyoungcooks.com/pressure-roast-chicken-stock/",
+    "canonical_url": "https://chrisyoungcooks.com/pressure-roast-chicken-stock",
+    "platform": "web",
+    "author": "",
+    "title": ""
+  },
+  "added_by": "Jordan",
+  "added_at": "2026-11-16T20:07:36Z",
+  "updated_at": "2026-11-16T20:07:36Z",
+  "issues": [
+    34
+  ]
+}

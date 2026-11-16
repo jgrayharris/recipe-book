@@ -1,0 +1,150 @@
+{
+  "id": "yam-and-peanut-stew-with-kale-10e5",
+  "title": "Yam and Peanut Stew with Kale",
+  "summary": "Hearty West African-style stew of sweet potatoes, peanut butter and kale; filling and vegetarian.",
+  "servings": 6,
+  "total_minutes": 50,
+  "active_minutes": 25,
+  "difficulty": "Easy",
+  "difficulty_reason": "One pot of chopping, simmering and stirring.",
+  "meal": [
+    "dinner"
+  ],
+  "cuisine": "African",
+  "protein": "vegetarian",
+  "cravings": [
+    "comfort",
+    "hearty",
+    "spicy",
+    "saucy"
+  ],
+  "ingredients": [
+    {
+      "item": "vegetable oil",
+      "line": "2 tbsp vegetable oil",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "onion",
+      "line": "1 large onion, diced",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "garlic",
+      "line": "3 cloves garlic, minced",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "ginger",
+      "line": "1 tbsp grated fresh ginger",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "sweet potatoes",
+      "line": "2 lb sweet potatoes, peeled and cubed",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "diced tomatoes",
+      "line": "1 can (14 oz) diced tomatoes",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "vegetable broth",
+      "line": "4 cups vegetable broth",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "peanut butter",
+      "line": "1/2 cup natural peanut butter",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "cayenne pepper",
+      "line": "1/2 tsp cayenne pepper",
+      "group": "",
+      "aisle": "spices",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "kale",
+      "line": "1 bunch kale, stemmed and chopped",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "salt",
+      "line": "Salt",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "roasted peanuts",
+      "line": "1/4 cup chopped roasted peanuts",
+      "group": "To serve",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    }
+  ],
+  "steps": [
+    "Heat the oil in a large pot over medium heat and cook the onion for 5 minutes.",
+    "Add the garlic and ginger and cook for 1 minute.",
+    "Stir in the sweet potatoes, tomatoes, broth and cayenne and bring to a boil.",
+    "Reduce the heat and simmer, covered, for 15 to 20 minutes, until the potatoes are tender.",
+    "Whisk the peanut butter with a ladle of hot broth, then stir it back into the pot.",
+    "Add the kale and simmer for 5 to 10 minutes, until tender.",
+    "Season with salt, top with chopped peanuts and serve."
+  ],
+  "equipment": [],
+  "tips": [
+    "Thin the peanut butter in a little hot broth first so it doesn't clump."
+  ],
+  "completeness": "thin",
+  "missing": "The page couldn't be read, so this is a typical version of the dish. Paste the recipe text into the card for the real amounts.",
+  "source_notes": "Written from the link name only; the Food52 page returned a 429.",
+  "needs_details": true,
+  "photo": false,
+  "source": {
+    "url": "https://food52.com/recipes/19854-yam-and-peanut-stew-with-kale",
+    "canonical_url": "https://food52.com/recipes/19854-yam-and-peanut-stew-with-kale",
+    "platform": "web",
+    "author": "",
+    "title": ""
+  },
+  "added_by": "Jordan",
+  "added_at": "2026-11-16T20:07:36Z",
+  "updated_at": "2026-11-16T20:07:36Z",
+  "issues": [
+    35
+  ]
+}

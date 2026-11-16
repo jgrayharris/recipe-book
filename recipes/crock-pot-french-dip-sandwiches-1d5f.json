@@ -1,0 +1,237 @@
+{
+  "id": "crock-pot-french-dip-sandwiches-1d5f",
+  "title": "Crock Pot French Dip Sandwiches",
+  "summary": "Fall-apart chuck roast on garlic bread with horseradish sauce, melted cheese and broth for dipping.",
+  "servings": 6,
+  "total_minutes": 600,
+  "active_minutes": 45,
+  "difficulty": "Easy",
+  "difficulty_reason": "Sear, load the slow cooker and wait; the sandwich build is simple.",
+  "meal": [
+    "dinner",
+    "lunch"
+  ],
+  "cuisine": "American",
+  "protein": "beef",
+  "cravings": [
+    "comfort",
+    "hearty",
+    "cheesy",
+    "saucy"
+  ],
+  "ingredients": [
+    {
+      "item": "olive oil",
+      "line": "2 tbsp olive oil",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "chuck roast",
+      "line": "3 to 4 lb chuck roast",
+      "group": "",
+      "aisle": "meat & seafood",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "salt",
+      "line": "Salt",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "black pepper",
+      "line": "Black pepper",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "onions",
+      "line": "2 large onions, sliced",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "red wine",
+      "line": "1/2 cup red wine",
+      "group": "",
+      "aisle": "drinks",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "rosemary",
+      "line": "2 sprigs fresh rosemary",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "garlic paste",
+      "line": "1 tbsp garlic paste",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "anchovies",
+      "line": "2 anchovy fillets",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "beef stock",
+      "line": "4 cups beef stock",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "bay leaves",
+      "line": "2 bay leaves",
+      "group": "",
+      "aisle": "spices",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "worcestershire sauce",
+      "line": "A splash of Worcestershire sauce",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "butter",
+      "line": "6 tbsp butter, softened",
+      "group": "Garlic bread",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "garlic",
+      "line": "3 cloves garlic, minced",
+      "group": "Garlic bread",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "parsley",
+      "line": "2 tbsp chopped parsley",
+      "group": "Garlic bread",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "hoagie rolls",
+      "line": "6 hoagie rolls or sub rolls, split",
+      "group": "Garlic bread",
+      "aisle": "bakery",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "prepared horseradish",
+      "line": "3 tbsp prepared horseradish",
+      "group": "Horseradish sauce",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "garlic",
+      "line": "1 clove garlic, grated",
+      "group": "Horseradish sauce",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "mayonnaise",
+      "line": "1/2 cup mayonnaise (Kewpie)",
+      "group": "Horseradish sauce",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "sour cream",
+      "line": "1/4 cup sour cream or crema",
+      "group": "Horseradish sauce",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "black pepper",
+      "line": "Black pepper",
+      "group": "Horseradish sauce",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "provolone",
+      "line": "12 slices provolone or Swiss cheese",
+      "group": "To serve",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    }
+  ],
+  "steps": [
+    "Heat the olive oil in a heavy pan over medium-high heat. Season the chuck roast generously with salt and pepper and sear on all sides until deeply browned.",
+    "Move the roast to the slow cooker and top with the sliced onions.",
+    "Add the red wine, rosemary, garlic paste, anchovies, beef stock, a good pinch of salt, plenty of black pepper, the bay leaves and a splash of Worcestershire.",
+    "Cook on low for 8 hours, until the beef shreds easily. Remove the herbs and bay leaves and shred the meat in the juices.",
+    "Mix the butter, garlic and parsley and spread it generously over the cut sides of the rolls. Toast under the broiler or in a hot oven until golden.",
+    "Stir together the horseradish, grated garlic, mayonnaise, sour cream and pepper for the sauce.",
+    "Spread horseradish sauce on the toasted rolls and pile on the shredded beef.",
+    "Top with cheese and bake at 400°F for about 5 minutes, until melted.",
+    "Ladle some of the cooking liquid into small bowls for dipping and serve right away."
+  ],
+  "equipment": [
+    "slow cooker"
+  ],
+  "tips": [
+    "Get a hard sear on the roast before it goes in; it builds the flavor of the broth.",
+    "Check the beef near the end; it can need longer than expected to shred.",
+    "Toast the garlic bread well so it stays crisp when dipped."
+  ],
+  "completeness": "partial",
+  "missing": "The video gave no amounts and the caption has no recipe; quantities are estimates. The caption may list more.",
+  "source_notes": "Ingredients and method from the voiceover and video frames; all amounts estimated.",
+  "needs_details": false,
+  "photo": true,
+  "source": {
+    "url": "https://www.tiktok.com/t/ZPL7wWYf7/",
+    "canonical_url": "https://tiktok.com/@landncooks/video/7701787706807864607",
+    "platform": "tiktok",
+    "author": "@landncooks",
+    "title": ""
+  },
+  "added_by": "Jordan",
+  "added_at": "2026-11-16T20:07:36Z",
+  "updated_at": "2026-11-16T20:07:36Z",
+  "issues": [
+    28
+  ]
+}

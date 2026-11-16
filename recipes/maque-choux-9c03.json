@@ -1,0 +1,150 @@
+{
+  "id": "maque-choux-9c03",
+  "title": "Maque Choux",
+  "summary": "Creamy Louisiana skillet corn with peppers and bacon; a quick, comforting summer side.",
+  "servings": 6,
+  "total_minutes": 30,
+  "active_minutes": 25,
+  "difficulty": "Easy",
+  "difficulty_reason": "One skillet and simple sautéing.",
+  "meal": [
+    "side"
+  ],
+  "cuisine": "American",
+  "protein": "pork",
+  "cravings": [
+    "comfort",
+    "hearty",
+    "saucy"
+  ],
+  "ingredients": [
+    {
+      "item": "bacon",
+      "line": "4 slices bacon, chopped",
+      "group": "",
+      "aisle": "meat & seafood",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "corn",
+      "line": "6 ears fresh corn, kernels cut off (about 4 cups)",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "onion",
+      "line": "1 yellow onion, diced",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "bell pepper",
+      "line": "1 green bell pepper, diced",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "celery",
+      "line": "1 rib celery, diced",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "garlic",
+      "line": "2 cloves garlic, minced",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "tomatoes",
+      "line": "1 cup diced tomatoes",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "heavy cream",
+      "line": "1/2 cup heavy cream",
+      "group": "",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "cayenne pepper",
+      "line": "1/4 tsp cayenne pepper",
+      "group": "",
+      "aisle": "spices",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "salt",
+      "line": "Salt",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "black pepper",
+      "line": "Black pepper",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "green onions",
+      "line": "2 green onions, sliced",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    }
+  ],
+  "steps": [
+    "Cook the bacon in a large skillet over medium heat until crisp, then remove it and leave the drippings.",
+    "Cook the onion, bell pepper and celery in the drippings for 5 minutes, until soft.",
+    "Add the garlic and cook for 30 seconds.",
+    "Stir in the corn and tomatoes and cook for 8 to 10 minutes.",
+    "Add the cream, cayenne, salt and pepper and simmer for 5 minutes, until thickened.",
+    "Top with the bacon and green onions and serve warm."
+  ],
+  "equipment": [
+    "large skillet"
+  ],
+  "tips": [
+    "Scrape the cob with the back of a knife to release the milky juices into the pan."
+  ],
+  "completeness": "thin",
+  "missing": "The page couldn't be read, so this is a typical version of the dish. Paste the recipe text into the card for the real amounts.",
+  "source_notes": "Written from the link name only; the Southern Living page returned a 403.",
+  "needs_details": true,
+  "photo": false,
+  "source": {
+    "url": "https://www.southernliving.com/recipes/maque-choux",
+    "canonical_url": "https://southernliving.com/recipes/maque-choux",
+    "platform": "web",
+    "author": "",
+    "title": ""
+  },
+  "added_by": "Jordan",
+  "added_at": "2026-11-16T20:07:36Z",
+  "updated_at": "2026-11-16T20:07:36Z",
+  "issues": [
+    33
+  ]
+}
