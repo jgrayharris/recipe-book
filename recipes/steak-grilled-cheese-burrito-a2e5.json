@@ -1,0 +1,272 @@
+{
+  "id": "steak-grilled-cheese-burrito-a2e5",
+  "equipment": [],
+  "tips": [
+    "Cut the steak against the grain for tenderness.",
+    "Adjust the rice water to your cooker's instructions."
+  ],
+  "missing": "Cheese and sour cream amounts and the number of burritos weren't given; the video's photos mostly show the creator eating.",
+  "title": "Steak Grilled Cheese Burrito",
+  "summary": "Copycat Taco Bell burrito with saucy steak, seasoned rice and a crispy melted-cheese shell.",
+  "servings": 4,
+  "total_minutes": 75,
+  "active_minutes": 50,
+  "difficulty": "Moderate",
+  "difficulty_reason": "Three components plus rolling and a two-stage skillet toast.",
+  "meal": [
+    "dinner"
+  ],
+  "cuisine": "Mexican",
+  "protein": "beef",
+  "cravings": [
+    "cheesy",
+    "crispy",
+    "comfort",
+    "saucy"
+  ],
+  "ingredients": [
+    {
+      "item": "top sirloin",
+      "line": "1 lb top sirloin, thinly sliced against the grain",
+      "group": "Steak",
+      "aisle": "meat & seafood",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "salt",
+      "line": "1/2 tsp salt",
+      "group": "Steak",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "brown sugar",
+      "line": "1 tsp brown sugar, plus 1 tsp for the sauce",
+      "group": "Steak",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "beef bouillon",
+      "line": "1/2 tsp beef bouillon, plus 1 tsp for the sauce",
+      "group": "Steak",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "cocoa powder",
+      "line": "1/8 tsp cocoa powder, plus 1/8 tsp for the sauce",
+      "group": "Steak",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "onion powder",
+      "line": "1/2 tsp onion powder, plus 1/2 tsp for the sauce",
+      "group": "Steak",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "garlic powder",
+      "line": "1/2 tsp garlic powder, plus 1/2 tsp for the sauce",
+      "group": "Steak",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "paprika",
+      "line": "1/4 tsp paprika",
+      "group": "Steak",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "cornstarch",
+      "line": "1/2 tsp cornstarch, plus 1/2 tsp for the sauce",
+      "group": "Steak",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "vegetable oil",
+      "line": "Oil, for searing",
+      "group": "Steak",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "water",
+      "line": "1/2 cup water",
+      "group": "Steak sauce",
+      "aisle": "other",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "white rice",
+      "line": "2 cups long grain white rice",
+      "group": "Rice",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "tomato chicken bouillon",
+      "line": "2 tbsp Knorr tomato chicken bouillon",
+      "group": "Rice",
+      "aisle": "international",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "vegetable oil",
+      "line": "2 tbsp oil",
+      "group": "Rice",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "garlic powder",
+      "line": "3/4 tsp garlic powder",
+      "group": "Rice",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "onion powder",
+      "line": "1/2 tsp onion powder",
+      "group": "Rice",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "paprika",
+      "line": "1/2 tsp paprika",
+      "group": "Rice",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "mayonnaise",
+      "line": "1 cup mayonnaise",
+      "group": "Chipotle sauce",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "chipotle peppers in adobo",
+      "line": "1 to 2 chipotle peppers in adobo, plus 1 tsp adobo sauce",
+      "group": "Chipotle sauce",
+      "aisle": "international",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "chili powder",
+      "line": "1/2 tsp chili powder",
+      "group": "Chipotle sauce",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "sugar",
+      "line": "1/2 tsp sugar",
+      "group": "Chipotle sauce",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "salt",
+      "line": "1/2 tsp salt, plus 1/4 tsp each garlic powder, onion powder and paprika",
+      "group": "Chipotle sauce",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "flour tortillas",
+      "line": "4 large flour tortillas",
+      "group": "Assembly",
+      "aisle": "bakery",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "nacho cheese",
+      "line": "Warm nacho cheese (jalapeño cheddar)",
+      "group": "Assembly",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "tortilla strips",
+      "line": "Tortilla strips",
+      "group": "Assembly",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "sour cream",
+      "line": "Sour cream",
+      "group": "Assembly",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "mexican cheese blend",
+      "line": "Shredded Mexican-blend cheese",
+      "group": "Assembly",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    }
+  ],
+  "steps": [
+    "Blend the chipotle sauce ingredients until creamy and refrigerate.",
+    "Rinse the rice until the water runs mostly clear, then add it to a rice cooker with the water, bouillon, oil and spices and cook on the white rice setting. Fluff before serving.",
+    "Slice the steak against the grain, toss with the dry seasonings, and sear in a little oil over medium-high heat.",
+    "Whisk the steak sauce ingredients, pour over the steak, and simmer gently until cooked through and lightly thickened. Add water if needed.",
+    "Warm a tortilla until flexible, then layer rice, steak, nacho cheese, chipotle sauce, tortilla strips and sour cream.",
+    "Fold in the sides and roll tightly, then toast seam-side down in a skillet to seal.",
+    "Line a nonstick skillet with parchment, sprinkle on shredded cheese, and set the burrito on top, untoasted side down. Cook over medium-low until the cheese is melted and golden.",
+    "Lift out with the parchment, wrap, and let it cool a minute so the cheese sets on the outside."
+  ],
+  "completeness": "partial",
+  "source_notes": "Full ingredient lists and method from the caption, with the voiceover filling in the assembly.",
+  "needs_details": false,
+  "photo": true,
+  "source": {
+    "url": "https://www.tiktok.com/t/ZPN1cBnQm/",
+    "canonical_url": "https://tiktok.com/@dollartreedinners/video/7704426508319788301",
+    "platform": "tiktok",
+    "author": "@dollartreedinners",
+    "title": ""
+  },
+  "added_by": "Jordan",
+  "added_at": "2026-11-19T20:08:09Z",
+  "updated_at": "2026-11-19T20:08:09Z",
+  "issues": [
+    44
+  ]
+}

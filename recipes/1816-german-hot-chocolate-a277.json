@@ -1,0 +1,124 @@
+{
+  "id": "1816-german-hot-chocolate-a277",
+  "equipment": [],
+  "tips": [
+    "Add the hot chocolate to the yolks gradually so they do not scramble."
+  ],
+  "missing": "The post named no ingredients or amounts, so this is a reconstruction from the video; paste the creator's recipe or the 1816 cookbook text to fix it.",
+  "title": "1816 German Hot Chocolate",
+  "summary": "Rich, custardy hot chocolate thickened with egg yolks, topped with whipped cream and shaved chocolate.",
+  "servings": 2,
+  "total_minutes": 20,
+  "active_minutes": 20,
+  "difficulty": "Moderate",
+  "difficulty_reason": "Tempering egg yolks into hot chocolate without scrambling takes care.",
+  "meal": [
+    "drink",
+    "dessert"
+  ],
+  "cuisine": "German",
+  "protein": "eggs",
+  "cravings": [
+    "sweet",
+    "comfort"
+  ],
+  "ingredients": [
+    {
+      "item": "dark chocolate",
+      "line": "3 oz dark chocolate, chopped",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "milk",
+      "line": "1 1/2 cups whole milk",
+      "group": "",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "heavy cream",
+      "line": "1/2 cup heavy cream",
+      "group": "",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "sugar",
+      "line": "2 tbsp sugar",
+      "group": "",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "cinnamon",
+      "line": "1/2 tsp cinnamon",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "egg yolks",
+      "line": "2 egg yolks",
+      "group": "",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "vanilla extract",
+      "line": "1/2 tsp vanilla extract",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "whipped cream",
+      "line": "Whipped cream, to top",
+      "group": "To serve",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "dark chocolate",
+      "line": "Shaved chocolate, to top",
+      "group": "To serve",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    }
+  ],
+  "steps": [
+    "Chop the chocolate finely and melt it in a saucepan over low heat.",
+    "Whisk in the milk, cream, sugar and cinnamon and heat until steaming; do not boil.",
+    "Whisk the egg yolks in a bowl, then slowly whisk in a ladle of the hot chocolate to temper them.",
+    "Pour the yolk mixture back into the pot and cook gently, whisking, until slightly thickened.",
+    "Stir in the vanilla and pour into cups.",
+    "Top with whipped cream and shaved chocolate."
+  ],
+  "completeness": "thin",
+  "source_notes": "Method pieced together from video stills (chopped chocolate, simmered liquid, whisked yolks, whipped topping); all amounts are estimates.",
+  "needs_details": true,
+  "photo": true,
+  "source": {
+    "url": "https://www.tiktok.com/t/ZPN86oPKh/",
+    "canonical_url": "https://tiktok.com/@eatshistory/video/7709251232795233567",
+    "platform": "tiktok",
+    "author": "@eatshistory",
+    "title": ""
+  },
+  "added_by": "Jordan",
+  "added_at": "2026-11-19T20:08:10Z",
+  "updated_at": "2026-11-19T20:08:10Z",
+  "issues": [
+    47
+  ]
+}

@@ -1,24 +1,232 @@
 {
   "id": "saved-from-r-baking-2fb4",
-  "title": "Saved from r/Baking",
-  "summary": "",
-  "servings": 0,
-  "total_minutes": 0,
-  "active_minutes": 0,
-  "difficulty": "Easy",
-  "difficulty_reason": "",
-  "meal": [],
-  "cuisine": "",
+  "equipment": [
+    "stand mixer"
+  ],
+  "tips": [
+    "Do not over-reduce the cider or it turns to gelatin.",
+    "Chill the dough overnight for deeper butter flavor.",
+    "Taste the buttercream as you add caramel."
+  ],
+  "missing": "",
+  "title": "Apple Cider Brown Butter Cookie Sandwiches",
+  "summary": "Thick brown butter cookies with apple cider reduction, sandwiched with salted caramel buttercream.",
+  "servings": 12,
+  "total_minutes": 1500,
+  "active_minutes": 90,
+  "difficulty": "Moderate",
+  "difficulty_reason": "Browning butter, an overnight dough rest, and a cider reduction plus frosting to make.",
+  "meal": [
+    "dessert",
+    "snack"
+  ],
+  "cuisine": "American",
   "protein": "none",
-  "cravings": [],
-  "ingredients": [],
-  "steps": [],
-  "equipment": [],
-  "tips": [],
-  "completeness": "thin",
-  "missing": "Reddit wouldn't share this post, so there's no recipe yet.",
-  "source_notes": "Reddit wouldn't share the post, so only the link was saved.",
-  "needs_details": true,
+  "cravings": [
+    "sweet",
+    "comfort"
+  ],
+  "ingredients": [
+    {
+      "item": "apple cider",
+      "line": "6 cups apple cider, reduced to about 1/2 cup",
+      "group": "Cider reduction",
+      "aisle": "drinks",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "salted caramel sauce",
+      "line": "Salted caramel sauce, homemade or store-bought",
+      "group": "Caramel",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "bread flour",
+      "line": "290 g bread flour",
+      "group": "Cookies",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "instant clearjel",
+      "line": "1 tbsp Instant ClearJel (or 1 1/2 tsp cornstarch)",
+      "group": "Cookies",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "cinnamon",
+      "line": "1 1/2 tsp cinnamon",
+      "group": "Cookies",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "nutmeg",
+      "line": "Pinch of nutmeg",
+      "group": "Cookies",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "baking soda",
+      "line": "1 tsp baking soda",
+      "group": "Cookies",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "salt",
+      "line": "1/2 tsp salt",
+      "group": "Cookies",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "butter",
+      "line": "200 g butter, browned",
+      "group": "Cookies",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "buttermilk powder",
+      "line": "15 g sweet cream buttermilk powder",
+      "group": "Cookies",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "egg",
+      "line": "1 egg, room temperature",
+      "group": "Cookies",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "egg yolks",
+      "line": "1 egg yolk, room temperature",
+      "group": "Cookies",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "granulated sugar",
+      "line": "100 g sugar",
+      "group": "Cookies",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "light brown sugar",
+      "line": "75 g light brown sugar",
+      "group": "Cookies",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "dark brown sugar",
+      "line": "75 g dark brown sugar",
+      "group": "Cookies",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "buttermilk",
+      "line": "2 tbsp buttermilk",
+      "group": "Cookies",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "vanilla extract",
+      "line": "1 tbsp Mexican vanilla",
+      "group": "Cookies",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "butter",
+      "line": "1 stick (113 g) unsalted butter",
+      "group": "Buttercream",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "shortening",
+      "line": "113 g Hi-Ratio shortening (or Crisco or more butter)",
+      "group": "Buttercream",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "powdered sugar",
+      "line": "About 500 g sifted powdered sugar",
+      "group": "Buttercream",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "heavy cream",
+      "line": "3 tbsp heavy cream",
+      "group": "Buttercream",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "vanilla extract",
+      "line": "2 tsp butter vanilla emulsion or vanilla",
+      "group": "Buttercream",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "cinnamon sugar",
+      "line": "Cinnamon sugar and melted butter, for rolling",
+      "group": "Finish",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    }
+  ],
+  "steps": [
+    "Simmer the cider in a large pot until reduced to about 1/2 cup, thick like jelly; do not reduce further.",
+    "Melt the cubed butter in a light pan over low heat, stirring, 3 minutes until the fats start to brown. Whisk in the buttermilk powder and cook 3 to 4 more minutes until golden brown. Chill until solid.",
+    "Let the browned butter come to room temperature, about an hour.",
+    "Whisk the flour, ClearJel, cinnamon, nutmeg, baking soda and salt together.",
+    "Cream the browned butter and sugars in a stand mixer, 30 to 45 seconds. Mix in the buttermilk, then 5 tbsp cider reduction, egg, yolk and vanilla just until combined.",
+    "Add the flour mixture on low until just mixed, then cover and chill overnight.",
+    "Bake 60 g dough balls on parchment at 350°F for 12 to 15 minutes.",
+    "While the cookies are hot, swirl a round cutter around each to push them thicker, then brush with melted butter and roll in cinnamon sugar.",
+    "For the buttercream, whip the butter and shortening until fluffy, add the powdered sugar, then the cream, vanilla and caramel sauce to taste.",
+    "Sandwich the cooled cookies with buttercream."
+  ],
+  "completeness": "complete",
+  "source_notes": "Full recipe pasted in by the household, original from the poster's Reddit comment.",
+  "needs_details": false,
   "photo": false,
   "source": {
     "url": "https://www.reddit.com/r/Baking/s/SFzjKwLNtK",
@@ -29,8 +237,9 @@
   },
   "added_by": "Jordan",
   "added_at": "2026-11-16T08:40:40Z",
-  "updated_at": "2026-11-16T08:40:40Z",
+  "updated_at": "2026-11-19T20:08:08Z",
   "issues": [
-    38
+    38,
+    39
   ]
 }

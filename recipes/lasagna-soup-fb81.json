@@ -1,0 +1,214 @@
+{
+  "id": "lasagna-soup-fb81",
+  "equipment": [],
+  "tips": [
+    "Break noodles into pieces so they fit on a spoon."
+  ],
+  "missing": "The caption lists 1/2 cup mozzarella twice and mixed up where the ricotta mix goes; the full recipe is in the creator's bio.",
+  "title": "Lasagna Soup",
+  "summary": "One-pot lasagna in soup form, with a creamy tomato broth and a scoop of herby ricotta.",
+  "servings": 6,
+  "total_minutes": 50,
+  "active_minutes": 30,
+  "difficulty": "Easy",
+  "difficulty_reason": "One pot, simple browning and simmering, with no layering.",
+  "meal": [
+    "dinner"
+  ],
+  "cuisine": "Italian",
+  "protein": "beef",
+  "cravings": [
+    "comfort",
+    "cheesy",
+    "hearty",
+    "saucy"
+  ],
+  "ingredients": [
+    {
+      "item": "olive oil",
+      "line": "1 tbsp olive oil",
+      "group": "",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "ground beef",
+      "line": "1/2 lb ground beef",
+      "group": "",
+      "aisle": "meat & seafood",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "italian sausage",
+      "line": "1/2 lb ground Italian sausage or pork",
+      "group": "",
+      "aisle": "meat & seafood",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "yellow onion",
+      "line": "1 yellow onion, diced",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "garlic",
+      "line": "4 cloves garlic, minced",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "italian seasoning",
+      "line": "1 tbsp Italian seasoning",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "red pepper flakes",
+      "line": "1 tsp crushed red pepper flakes",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "kosher salt",
+      "line": "1 tsp kosher salt",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "black pepper",
+      "line": "1/2 tsp black pepper",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "tomato paste",
+      "line": "2 tbsp tomato paste",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "marinara",
+      "line": "24 oz jar marinara or crushed tomatoes",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "chicken stock",
+      "line": "4 cups chicken stock",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "basil",
+      "line": "2 sprigs fresh basil",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "lasagna noodles",
+      "line": "8 sheets uncooked lasagna noodles, broken into pieces",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "heavy cream",
+      "line": "1/2 cup heavy cream",
+      "group": "",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "mozzarella",
+      "line": "1/2 cup mozzarella, stirred in",
+      "group": "",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "parmesan",
+      "line": "1/4 cup grated parmesan",
+      "group": "",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "ricotta",
+      "line": "1 cup ricotta cheese",
+      "group": "To serve",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "mozzarella",
+      "line": "1/2 cup shredded mozzarella",
+      "group": "To serve",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "parsley",
+      "line": "2 tbsp chopped parsley or basil",
+      "group": "To serve",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    }
+  ],
+  "steps": [
+    "Heat the oil in a large pot and brown the beef and sausage, breaking it into small pieces.",
+    "Push the meat aside, add the onion and let it soften and caramelize for a few minutes, then stir it together.",
+    "Add the garlic, Italian seasoning, red pepper flakes, salt and pepper, then the tomato paste, and cook until the paste turns deep red.",
+    "Pour in the marinara, stock and basil, scraping up any browned bits from the bottom of the pot.",
+    "Break the lasagna noodles into quarters and add them, then simmer about 20 minutes until tender.",
+    "Turn off the heat and stir in the cream, mozzarella and parmesan.",
+    "Mix the ricotta with the shredded mozzarella and herbs, and top each bowl with a scoop."
+  ],
+  "completeness": "partial",
+  "source_notes": "Ingredients from the caption, method from the voiceover; the simmer time of 20 minutes is from the voiceover.",
+  "needs_details": false,
+  "photo": true,
+  "source": {
+    "url": "https://www.tiktok.com/t/ZPN1cUeNQ/",
+    "canonical_url": "https://tiktok.com/@foodiligence/video/7708430506827730190",
+    "platform": "tiktok",
+    "author": "@foodiligence",
+    "title": ""
+  },
+  "added_by": "Jordan",
+  "added_at": "2026-11-19T20:08:09Z",
+  "updated_at": "2026-11-19T20:08:09Z",
+  "issues": [
+    45
+  ]
+}

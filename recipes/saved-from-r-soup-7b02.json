@@ -1,24 +1,191 @@
 {
   "id": "saved-from-r-soup-7b02",
-  "title": "Saved from r/soup",
-  "summary": "",
-  "servings": 0,
-  "total_minutes": 0,
-  "active_minutes": 0,
-  "difficulty": "Easy",
-  "difficulty_reason": "",
-  "meal": [],
-  "cuisine": "",
-  "protein": "none",
-  "cravings": [],
-  "ingredients": [],
-  "steps": [],
   "equipment": [],
   "tips": [],
-  "completeness": "thin",
-  "missing": "Reddit wouldn't share this post, so there's no recipe yet.",
-  "source_notes": "Reddit wouldn't share the post, so only the link was saved.",
-  "needs_details": true,
+  "missing": "Seasoning amounts, beer and water amounts, and simmer times weren't given.",
+  "title": "Smoked Ham Lentil and Pinto Stew",
+  "summary": "Hearty lentil and bean stew with smoked ham, mushrooms, miso and beer; great with flatbread.",
+  "servings": 9,
+  "total_minutes": 240,
+  "active_minutes": 60,
+  "difficulty": "Easy",
+  "difficulty_reason": "Long and slow but basic browning and simmering in one pot.",
+  "meal": [
+    "dinner"
+  ],
+  "cuisine": "Central European",
+  "protein": "pork",
+  "cravings": [
+    "hearty",
+    "comfort",
+    "saucy"
+  ],
+  "ingredients": [
+    {
+      "item": "dried pinto beans",
+      "line": "200 g dried pinto beans, soaked overnight",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "button mushrooms",
+      "line": "250 g button mushrooms",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "sunflower oil",
+      "line": "Sunflower oil",
+      "group": "",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "onions",
+      "line": "4 onions, chopped",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "tomato paste",
+      "line": "1/2 tube tomato paste",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "brown lentils",
+      "line": "250 g dried brown lentils",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "miso",
+      "line": "2 to 3 tbsp light miso",
+      "group": "",
+      "aisle": "international",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "pilsner",
+      "line": "1 bottle pilsner beer",
+      "group": "",
+      "aisle": "drinks",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "water",
+      "line": "Water, to top up",
+      "group": "",
+      "aisle": "other",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "garlic",
+      "line": "2 whole bulbs garlic, cloves peeled",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "smoked ham",
+      "line": "250 g cooked cold-smoked ham, diced, rind reserved",
+      "group": "",
+      "aisle": "meat & seafood",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "mixed vegetables",
+      "line": "450 g mixed vegetables (carrots, celeriac, parsley root, leek, spring onions)",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "rock salt",
+      "line": "Rock salt",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "black pepper",
+      "line": "Black pepper",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "marjoram",
+      "line": "Dried marjoram",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "savory",
+      "line": "Dried savory",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "cumin",
+      "line": "Cumin",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "parsley",
+      "line": "Fresh parsley, to finish",
+      "group": "To serve",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "flatbread",
+      "line": "Fresh flatbread, to serve",
+      "group": "To serve",
+      "aisle": "bakery",
+      "staple": false,
+      "estimated": false
+    }
+  ],
+  "steps": [
+    "Soak the beans about 12 hours, drain, and cook separately in fresh water until tender.",
+    "Brown the mushrooms in oil in a large pot and set aside.",
+    "Brown the onions in the same pot, fry the tomato paste, then briefly cook the lentils and miso.",
+    "Deglaze with the beer, top up with water and add the seasonings, three-quarters of the garlic and the ham rind.",
+    "Simmer until the lentils start to soften, then add the diced ham, mushrooms and chopped vegetables.",
+    "Add the remaining garlic for the last half hour, and the beans toward the end.",
+    "Adjust the seasoning and finish with parsley. Serve with flatbread."
+  ],
+  "completeness": "partial",
+  "source_notes": "Ingredients and method pasted in by the household from the Reddit post; the amounts left out are estimated.",
+  "needs_details": false,
   "photo": false,
   "source": {
     "url": "https://www.reddit.com/r/soup/s/tSvS39hLAi",
@@ -29,8 +196,9 @@
   },
   "added_by": "Jordan",
   "added_at": "2026-11-15T16:23:43Z",
-  "updated_at": "2026-11-15T16:23:43Z",
+  "updated_at": "2026-11-19T20:08:09Z",
   "issues": [
-    29
+    29,
+    40
   ]
 }

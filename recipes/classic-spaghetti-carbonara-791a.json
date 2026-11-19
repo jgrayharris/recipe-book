@@ -1,0 +1,111 @@
+{
+  "id": "classic-spaghetti-carbonara-791a",
+  "equipment": [],
+  "tips": [
+    "Keep the egg bowl warm, not cold, and never over direct heat.",
+    "Always save pasta water; it makes the sauce creamy instead of dry."
+  ],
+  "missing": "Pasta amount, pepper amount and water-per-bowl weren't given; amounts here are scaled from the 50 g and 2 yolks per person stated.",
+  "title": "Classic Spaghetti Carbonara",
+  "summary": "Roman carbonara with crisp guanciale, egg yolks and sharp cheese; creamy without any cream.",
+  "servings": 2,
+  "total_minutes": 30,
+  "active_minutes": 25,
+  "difficulty": "Moderate",
+  "difficulty_reason": "Timing the eggs and pasta water so the sauce turns creamy, not scrambled.",
+  "meal": [
+    "dinner"
+  ],
+  "cuisine": "Italian",
+  "protein": "pork",
+  "cravings": [
+    "comfort",
+    "cheesy",
+    "saucy"
+  ],
+  "ingredients": [
+    {
+      "item": "guanciale",
+      "line": "3 1/2 oz guanciale (about 100 g), cut into thin strips",
+      "group": "",
+      "aisle": "meat & seafood",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "parmesan",
+      "line": "1 oz finely grated Parmigiano Reggiano",
+      "group": "Sauce",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "pecorino romano",
+      "line": "1 oz finely grated Pecorino Romano, plus more to finish",
+      "group": "Sauce",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "egg yolks",
+      "line": "4 egg yolks (2 per person)",
+      "group": "Sauce",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "black pepper",
+      "line": "Plenty of freshly ground black pepper",
+      "group": "Sauce",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "spaghetti",
+      "line": "8 oz spaghetti",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "salt",
+      "line": "Salt, for the pasta water",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": true
+    }
+  ],
+  "steps": [
+    "Cut the guanciale into thin strips, about 50 g per person.",
+    "Grate the cheeses and whisk them with the egg yolks and a lot of black pepper into a thick paste in a bowl.",
+    "Cook the guanciale in a cold-to-medium-hot dry pan, with no oil, until crisp like french fries.",
+    "Move the guanciale to a plate, leaving a little of the rendered fat in the pan.",
+    "Boil the spaghetti in lightly salted water, since the guanciale is salty, and warm the egg bowl over the pot while it cooks. Save the pasta water.",
+    "Toss the drained pasta in the pan with the guanciale fat and a splash of pasta water.",
+    "Add the pasta to the egg and cheese bowl and mix well. Do not pour the eggs over the pasta, or they will scramble.",
+    "Loosen with a little pasta water until creamy, then top with the crisp guanciale, more pecorino and black pepper."
+  ],
+  "completeness": "partial",
+  "source_notes": "From the voiceover transcript; the pasta amount and pepper are estimates.",
+  "needs_details": false,
+  "photo": true,
+  "source": {
+    "url": "https://www.tiktok.com/t/ZPN1cNEcn/",
+    "canonical_url": "https://tiktok.com/@bortipastabar/video/7704054374275779870",
+    "platform": "tiktok",
+    "author": "@bortipastabar",
+    "title": ""
+  },
+  "added_by": "Jordan",
+  "added_at": "2026-11-19T20:08:09Z",
+  "updated_at": "2026-11-19T20:08:09Z",
+  "issues": [
+    43
+  ]
+}
