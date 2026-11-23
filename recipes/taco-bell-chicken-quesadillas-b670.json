@@ -1,0 +1,271 @@
+{
+  "id": "taco-bell-chicken-quesadillas-b670",
+  "title": "Taco Bell Chicken Quesadillas",
+  "summary": "Crisp, cheesy copycat quesadillas with seasoned grilled chicken and tangy creamy jalapeño sauce.",
+  "servings": 4,
+  "total_minutes": 75,
+  "active_minutes": 40,
+  "difficulty": "Easy",
+  "difficulty_reason": "Blend a sauce, marinate and pan-sear chicken, then griddle; all basic techniques.",
+  "meal": [
+    "dinner",
+    "lunch"
+  ],
+  "cuisine": "Mexican",
+  "protein": "chicken",
+  "cravings": [
+    "cheesy",
+    "crispy",
+    "zesty",
+    "saucy"
+  ],
+  "ingredients": [
+    {
+      "item": "pickled jalapeños",
+      "line": "1 jar (12 oz) pickled jalapeño slices, with liquid (only 7 tbsp puree needed)",
+      "group": "Creamy jalapeño sauce",
+      "aisle": "international",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "mayonnaise",
+      "line": "1/2 cup mayonnaise",
+      "group": "Creamy jalapeño sauce",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "sour cream",
+      "line": "1/2 cup sour cream",
+      "group": "Creamy jalapeño sauce",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "paprika",
+      "line": "1 tsp paprika",
+      "group": "Creamy jalapeño sauce",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "ground cumin",
+      "line": "1/4 tsp ground cumin",
+      "group": "Creamy jalapeño sauce",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "garlic powder",
+      "line": "1/2 tsp garlic powder",
+      "group": "Creamy jalapeño sauce",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "onion powder",
+      "line": "1/2 tsp onion powder",
+      "group": "Creamy jalapeño sauce",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "chili powder",
+      "line": "1 tsp chili powder",
+      "group": "Creamy jalapeño sauce",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "cayenne pepper",
+      "line": "1/2 tsp cayenne pepper",
+      "group": "Creamy jalapeño sauce",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "salt",
+      "line": "1/2 tsp salt",
+      "group": "Creamy jalapeño sauce",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "chicken breasts",
+      "line": "2 large chicken breasts (about 1 lb total)",
+      "group": "Grilled chicken",
+      "aisle": "meat & seafood",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "water",
+      "line": "1/2 cup water",
+      "group": "Grilled chicken",
+      "aisle": "other",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "kosher salt",
+      "line": "2 tsp kosher salt",
+      "group": "Grilled chicken",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "MSG",
+      "line": "1/2 tsp MSG",
+      "group": "Grilled chicken",
+      "aisle": "spices",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "cornstarch",
+      "line": "2 tsp cornstarch",
+      "group": "Grilled chicken",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "chili powder",
+      "line": "1 tsp chili powder",
+      "group": "Grilled chicken",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "paprika",
+      "line": "1 tsp paprika",
+      "group": "Grilled chicken",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "ground cumin",
+      "line": "1/2 tsp ground cumin",
+      "group": "Grilled chicken",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "garlic powder",
+      "line": "1/2 tsp garlic powder",
+      "group": "Grilled chicken",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "onion powder",
+      "line": "1 tsp onion powder",
+      "group": "Grilled chicken",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "black pepper",
+      "line": "1/4 tsp ground black pepper",
+      "group": "Grilled chicken",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "sugar",
+      "line": "1/2 tsp granulated sugar",
+      "group": "Grilled chicken",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "neutral oil",
+      "line": "1 tbsp neutral-flavored oil",
+      "group": "Grilled chicken",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "flour tortillas",
+      "line": "4 burrito-size flour tortillas",
+      "group": "To assemble",
+      "aisle": "bakery",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "mozzarella",
+      "line": "About 1 1/2 cups shredded mozzarella, cheddar and Monterey Jack blend",
+      "group": "To assemble",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "butter",
+      "line": "Butter for the pan (optional)",
+      "group": "To assemble",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    }
+  ],
+  "steps": [
+    "Blend the whole jar of pickled jalapeños with their liquid until a thin, smooth, pale green puree.",
+    "Whisk the mayonnaise, sour cream and all the sauce spices together, then stir in 7 tablespoons of the puree. Taste and add a little more puree if you like. Chill at least 1 hour.",
+    "Slice each chicken breast horizontally into two thin fillets.",
+    "Whisk the water, kosher salt, MSG, cornstarch and all the chicken spices and sugar until the cornstarch dissolves.",
+    "Toss the chicken in the marinade, cover, and refrigerate for 30 to 45 minutes.",
+    "Heat the oil in a skillet over medium-high heat and cook the chicken in batches, 3 to 4 minutes per side, until browned and 165°F inside.",
+    "Rest the chicken 5 to 10 minutes, then chop it roughly into bite-size pieces.",
+    "On one half of each tortilla layer cheese, chicken, a generous drizzle of creamy jalapeño sauce, then more cheese. Fold over.",
+    "Cook in a griddle pan or skillet over medium heat (with a little butter if you like), pressing down with a weight, 90 seconds to 2 minutes per side until crisp and golden.",
+    "Slice and serve with extra jalapeño sauce for dipping."
+  ],
+  "equipment": [
+    "blender",
+    "griddle pan"
+  ],
+  "tips": [
+    "Add the jalapeño puree gradually; too much makes the sauce vinegary and very spicy.",
+    "Press the quesadilla with a weight for even browning and a crisper tortilla.",
+    "The sauce makes extra and keeps up to 14 days in the fridge; cooked chicken keeps 3 days."
+  ],
+  "completeness": "partial",
+  "missing": "The creator didn't give tortilla or cheese amounts, or how many quesadillas this makes.",
+  "source_notes": "Sauce and chicken amounts from the caption; assembly from the voiceover. Tortilla, cheese and onion powder (sauce) amounts estimated.",
+  "needs_details": false,
+  "photo": true,
+  "source": {
+    "url": "https://www.tiktok.com/t/ZPN28ga9m/",
+    "canonical_url": "https://tiktok.com/@dishwithdrew/video/7710387885089869069",
+    "platform": "tiktok",
+    "author": "@dishwithdrew",
+    "title": ""
+  },
+  "added_by": "Jordan",
+  "added_at": "2026-11-23T20:10:56Z",
+  "updated_at": "2026-11-23T20:10:56Z",
+  "issues": [
+    48
+  ]
+}

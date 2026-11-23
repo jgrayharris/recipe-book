@@ -1,0 +1,207 @@
+{
+  "id": "thanksgiving-baked-mac-and-cheese-9742",
+  "title": "Thanksgiving Baked Mac and Cheese",
+  "summary": "Ultra-creamy five-cheese mac with a spiced béchamel and a broiled, golden cheesy top.",
+  "servings": 12,
+  "total_minutes": 60,
+  "active_minutes": 40,
+  "difficulty": "Moderate",
+  "difficulty_reason": "A béchamel and a heat-sensitive cheese sauce need attention so it stays smooth, not grainy.",
+  "meal": [
+    "side",
+    "dinner"
+  ],
+  "cuisine": "American",
+  "protein": "vegetarian",
+  "cravings": [
+    "cheesy",
+    "comfort",
+    "hearty",
+    "saucy"
+  ],
+  "ingredients": [
+    {
+      "item": "butter",
+      "line": "1/3 cup butter (about 5 1/2 tbsp)",
+      "group": "Sauce",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "garlic powder",
+      "line": "1 tbsp garlic powder",
+      "group": "Sauce",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "smoked paprika",
+      "line": "2 tbsp smoked paprika",
+      "group": "Sauce",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "cayenne pepper",
+      "line": "1/2 tbsp cayenne pepper",
+      "group": "Sauce",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "ground ginger",
+      "line": "1/2 tsp ground ginger",
+      "group": "Sauce",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "flour",
+      "line": "1/3 cup all-purpose flour",
+      "group": "Sauce",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "whole milk",
+      "line": "3 to 4 cups whole milk, as needed",
+      "group": "Sauce",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "heavy cream",
+      "line": "1/2 cup heavy cream",
+      "group": "Sauce",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "dijon mustard",
+      "line": "2 tbsp Dijon mustard",
+      "group": "Sauce",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "salt",
+      "line": "Salt, to taste",
+      "group": "Sauce",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "black pepper",
+      "line": "Black pepper, to taste",
+      "group": "Sauce",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "american cheese",
+      "line": "2 slices American cheese",
+      "group": "Cheese",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "cheddar",
+      "line": "2 cups shredded mild-medium cheddar",
+      "group": "Cheese",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "gruyere",
+      "line": "1 cup shredded Gruyère",
+      "group": "Cheese",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "gouda",
+      "line": "1 cup shredded Gouda",
+      "group": "Cheese",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "mozzarella",
+      "line": "2 cups shredded mozzarella",
+      "group": "Cheese",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "pasta",
+      "line": "2 lb pasta of choice (such as cavatappi or macaroni)",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "chives",
+      "line": "Chives, chopped, to garnish",
+      "group": "To serve",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    }
+  ],
+  "steps": [
+    "Shred all the cheeses and mix them into one blend; save a handful for the top. Heat the broiler later; for now, start boiling salted water for the pasta.",
+    "Melt the butter in a large Dutch oven over medium heat, then stir in the garlic powder, smoked paprika, cayenne and ginger for about a minute to bloom them.",
+    "Whisk in the flour and cook for a couple of minutes.",
+    "Slowly pour in the milk, whisking constantly, until you have a smooth béchamel. Keep it a little thinner than you think you need, since the cheese will thicken it.",
+    "Stir in the Dijon and heavy cream. Cook the pasta in the meantime, 1 to 2 minutes short of the package time.",
+    "Turn off the heat so the sauce can't split. Melt in the American cheese, then add the cheese blend in small handfuls, stirring until smooth.",
+    "Taste and season generously with salt and pepper.",
+    "Fold the drained pasta into the sauce and pour it into an oven-safe baking dish.",
+    "Top with the reserved cheese and broil for a couple of minutes until bubbling and golden.",
+    "Garnish with chives and serve hot."
+  ],
+  "equipment": [
+    "Dutch oven",
+    "oven-safe baking dish"
+  ],
+  "tips": [
+    "Turn the heat off before adding cheese; a too-hot sauce splits and turns grainy.",
+    "Make the béchamel a little thin, because the cheese thickens it a lot.",
+    "The American cheese is for its emulsifiers and keeps the sauce silky without adding flavor."
+  ],
+  "completeness": "partial",
+  "missing": "The creator didn't give pasta type, baking dish size or broil time; servings is a guess.",
+  "source_notes": "Ingredients and amounts from the caption, method from the voiceover. Pasta shape and servings estimated.",
+  "needs_details": false,
+  "photo": true,
+  "source": {
+    "url": "https://www.tiktok.com/t/ZPNraHkS3/",
+    "canonical_url": "https://tiktok.com/@chefzealand/video/7711165554341580063",
+    "platform": "tiktok",
+    "author": "@chefzealand",
+    "title": ""
+  },
+  "added_by": "Jordan",
+  "added_at": "2026-11-23T20:10:57Z",
+  "updated_at": "2026-11-23T20:10:57Z",
+  "issues": [
+    49
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "id": "short-rib-ragu-pappardelle-f726",
+  "title": "Short Rib Ragu Pappardelle",
+  "summary": "Slow-braised short rib ragu tossed through wide ribbons of pasta; rich winter comfort.",
+  "servings": 4,
+  "total_minutes": 330,
+  "active_minutes": 50,
+  "difficulty": "Moderate",
+  "difficulty_reason": "Simple steps, but it needs a good sear, a long braise and finishing the pasta in the sauce.",
+  "meal": [
+    "dinner"
+  ],
+  "cuisine": "Italian",
+  "protein": "beef",
+  "cravings": [
+    "comfort",
+    "hearty",
+    "saucy"
+  ],
+  "ingredients": [
+    {
+      "item": "beef short ribs",
+      "line": "2.5 to 3 lb bone-in beef short ribs (1.2 to 1.5 kg)",
+      "group": "",
+      "aisle": "meat & seafood",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "salt",
+      "line": "Salt, for seasoning",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "black pepper",
+      "line": "Black pepper, for seasoning",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "olive oil",
+      "line": "Extra-virgin olive oil, for searing",
+      "group": "",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "onion",
+      "line": "1 white onion, diced",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "carrot",
+      "line": "1 large carrot, diced",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "celery",
+      "line": "2 stalks celery, diced",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "garlic",
+      "line": "4 cloves garlic, diced",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "tomato paste",
+      "line": "1 tbsp tomato paste",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "red wine",
+      "line": "1 1/4 cups (300 ml) red wine, such as cabernet sauvignon",
+      "group": "",
+      "aisle": "drinks",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "chopped tomatoes",
+      "line": "1 can (14 oz) chopped tomatoes",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "beef stock",
+      "line": "2 cups (500 ml) beef stock",
+      "group": "",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "thyme",
+      "line": "A few sprigs fresh thyme",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "rosemary",
+      "line": "1 sprig fresh rosemary",
+      "group": "",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "bay leaves",
+      "line": "2 bay leaves",
+      "group": "",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "parmesan",
+      "line": "1 parmesan rind, plus finely grated parmesan to finish",
+      "group": "",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "pappardelle",
+      "line": "10 to 14 oz (300 to 400 g) pappardelle",
+      "group": "To serve",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "parsley",
+      "line": "Fresh parsley, to garnish",
+      "group": "To serve",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    }
+  ],
+  "steps": [
+    "Heat the oven to 285°F. Season the short ribs with salt and pepper, then sear in olive oil in a Dutch oven over medium-high heat until deeply browned on all sides. Set aside, leaving the fat in the pot.",
+    "Lower the heat to medium and soften the onion, carrot, celery and garlic for 3 to 4 minutes.",
+    "Stir in the tomato paste and cook for 2 minutes.",
+    "Pour in the red wine and simmer 5 to 6 minutes to cook off the alcohol, then add the chopped tomatoes.",
+    "Return the short ribs to the pot, cover with the beef stock, and tuck in the thyme, rosemary, bay leaves and parmesan rind.",
+    "Cover and braise in the oven for 4 hours, until the meat falls off the bone.",
+    "Lift the ribs out, discard the bones, and shred the meat on a tray. Fish the herbs and parmesan rind out of the sauce.",
+    "Return the shredded beef to the pot and simmer for 10 minutes to bring it together.",
+    "Meanwhile, boil the pappardelle for 2 minutes less than the package says.",
+    "Add the pasta to a pan over medium-low heat with a few ladles of ragu, and toss with splashes of pasta water and parmesan until silky.",
+    "Plate the pasta, spoon over more ragu, and finish with parmesan and parsley."
+  ],
+  "equipment": [
+    "Dutch oven"
+  ],
+  "tips": [
+    "Get a deep brown sear on the ribs; it builds most of the flavor.",
+    "Finish the pasta in the sauce with pasta water and parmesan for a silky coating.",
+    "The ragu keeps well and is even better the next day."
+  ],
+  "completeness": "partial",
+  "missing": "Herb amounts weren't given and the caption has no seasoning amounts.",
+  "source_notes": "Ingredients and method from the caption, confirmed by the voiceover and video. Oven converted from 140°C; herb amounts estimated.",
+  "needs_details": false,
+  "photo": true,
+  "source": {
+    "url": "https://www.tiktok.com/t/ZPNrmrWHv/",
+    "canonical_url": "https://tiktok.com/@hotplate_harry/video/7710256217465179414",
+    "platform": "tiktok",
+    "author": "@hotplate_harry",
+    "title": ""
+  },
+  "added_by": "Jordan",
+  "added_at": "2026-11-23T20:10:57Z",
+  "updated_at": "2026-11-23T20:10:57Z",
+  "issues": [
+    50
+  ]
+}
