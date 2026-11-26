@@ -1,0 +1,154 @@
+{
+  "id": "one-batch-taqueria-salsas-9085",
+  "title": "One-Batch Taqueria Salsas",
+  "summary": "One fresh tomato salsa turned into three more: finer, cooked taquera-style, and a creamy avocado version.",
+  "servings": 8,
+  "total_minutes": 40,
+  "active_minutes": 25,
+  "difficulty": "Easy",
+  "difficulty_reason": "Blend, simmer, chop; the variations are simple add-ins.",
+  "meal": [
+    "sauce",
+    "snack"
+  ],
+  "cuisine": "Mexican",
+  "protein": "none",
+  "cravings": [
+    "spicy",
+    "fresh",
+    "saucy"
+  ],
+  "ingredients": [
+    {
+      "item": "tomatoes",
+      "line": "2 lb tomatoes, quartered",
+      "group": "Salsa 1: fresh salsa",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "jalapeños",
+      "line": "2 jalapeños, chopped (more or fewer to taste)",
+      "group": "Salsa 1: fresh salsa",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "red jalapeños",
+      "line": "1 red jalapeño, chopped",
+      "group": "Salsa 1: fresh salsa",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "garlic",
+      "line": "3 cloves garlic",
+      "group": "Salsa 1: fresh salsa",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "white onion",
+      "line": "1/2 white onion, chopped",
+      "group": "Salsa 1: fresh salsa",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "cilantro",
+      "line": "1/2 bunch cilantro, tops only",
+      "group": "Salsa 1: fresh salsa",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": false
+    },
+    {
+      "item": "salt pepper garlic seasoning",
+      "line": "2 tsp salt, pepper and garlic seasoning",
+      "group": "Salsa 1: fresh salsa",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "olive oil",
+      "line": "2 tbsp olive oil",
+      "group": "Salsa 2: taquera",
+      "aisle": "pantry",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "white onion",
+      "line": "1/4 white onion, finely diced",
+      "group": "Salsa 3: dressed up",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "cilantro",
+      "line": "A handful of cilantro, finely chopped",
+      "group": "Salsa 3: dressed up",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "avocado",
+      "line": "1 avocado, cubed",
+      "group": "Salsa 3: dressed up",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "tortilla chips",
+      "line": "Tortilla chips, for dipping",
+      "group": "To serve",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    }
+  ],
+  "steps": [
+    "Quarter the tomatoes and chop the jalapeños, onion and cilantro. Add them to a blender with the garlic and seasoning.",
+    "Blend to a chunky texture for salsa #1, the fresh salsa. Taste and adjust the seasoning and heat.",
+    "Return part of the salsa to the blender and blend until fine, for a smoother base.",
+    "Heat 2 tablespoons olive oil in a stainless steel pan over medium heat, until hot but not smoking.",
+    "Pour in the fine salsa and whisk it into the oil, then simmer about 10 minutes, until deeper in color and thick, for salsa #2, the taquera.",
+    "Dress up salsa #2: stir in diced onion, chopped cilantro and cubed avocado to make salsa #3.",
+    "For salsa #4, the creamy taqueria-style salsa, blend the hot taquera salsa with extra oil until it turns creamy and rich.",
+    "Serve with tortilla chips."
+  ],
+  "equipment": [
+    "blender"
+  ],
+  "tips": [
+    "Quantities are flexible; use more tomatoes for a milder salsa, more peppers for heat.",
+    "Cooking the blended salsa in oil gives it the deep flavor of a taqueria salsa."
+  ],
+  "completeness": "thin",
+  "missing": "Amounts were mostly said loosely and the method for salsa #4 was only shown; paste the creator's caption or comments if there's more detail.",
+  "source_notes": "From the voiceover and on-screen captions; most amounts and the salsa #4 method are estimated.",
+  "needs_details": true,
+  "photo": true,
+  "source": {
+    "url": "https://www.tiktok.com/t/ZPNBenDG6/",
+    "canonical_url": "https://tiktok.com/@arnietex/video/7711415139160968478",
+    "platform": "tiktok",
+    "author": "@arnietex",
+    "title": ""
+  },
+  "added_by": "Jordan",
+  "added_at": "2026-11-26T20:07:11Z",
+  "updated_at": "2026-11-26T20:07:11Z",
+  "issues": [
+    51
+  ]
+}

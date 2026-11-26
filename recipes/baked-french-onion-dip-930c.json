@@ -1,0 +1,179 @@
+{
+  "id": "baked-french-onion-dip-930c",
+  "title": "Baked French Onion Dip",
+  "summary": "Caramelized onions, gruyère and crispy pancetta in a hot, bubbly dip; French onion soup you scoop.",
+  "servings": 10,
+  "total_minutes": 100,
+  "active_minutes": 60,
+  "difficulty": "Easy",
+  "difficulty_reason": "Mostly patient stirring, then mix and bake; nothing technical.",
+  "meal": [
+    "snack",
+    "side"
+  ],
+  "cuisine": "French",
+  "protein": "pork",
+  "cravings": [
+    "cheesy",
+    "comfort",
+    "hearty"
+  ],
+  "ingredients": [
+    {
+      "item": "pancetta",
+      "line": "4 oz pancetta, diced",
+      "group": "Caramelized onions",
+      "aisle": "meat & seafood",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "yellow onions",
+      "line": "3 large yellow onions, thinly sliced",
+      "group": "Caramelized onions",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "salt",
+      "line": "1 pinch salt",
+      "group": "Caramelized onions",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "water",
+      "line": "1 splash water",
+      "group": "Caramelized onions",
+      "aisle": "other",
+      "staple": true,
+      "estimated": false
+    },
+    {
+      "item": "garlic",
+      "line": "3 cloves garlic, grated",
+      "group": "Caramelized onions",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "fresh thyme",
+      "line": "1 tbsp fresh thyme leaves",
+      "group": "Caramelized onions",
+      "aisle": "produce",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "dry sherry",
+      "line": "1/4 cup dry sherry",
+      "group": "Caramelized onions",
+      "aisle": "drinks",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "cream cheese",
+      "line": "8 oz cream cheese, softened",
+      "group": "Dip base",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "mayonnaise",
+      "line": "1/2 cup mayonnaise",
+      "group": "Dip base",
+      "aisle": "pantry",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "sour cream",
+      "line": "1/2 cup sour cream",
+      "group": "Dip base",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "gruyère",
+      "line": "1 1/2 cups freshly grated gruyère, plus more for topping",
+      "group": "Dip base",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "mozzarella",
+      "line": "1 cup freshly grated mozzarella, plus more for topping",
+      "group": "Dip base",
+      "aisle": "dairy & eggs",
+      "staple": false,
+      "estimated": true
+    },
+    {
+      "item": "dried basil",
+      "line": "A small splash of basil (about 1/2 tsp dried)",
+      "group": "Dip base",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "black pepper",
+      "line": "Freshly ground black pepper",
+      "group": "Dip base",
+      "aisle": "spices",
+      "staple": true,
+      "estimated": true
+    },
+    {
+      "item": "bread",
+      "line": "Crostini, baguette slices or crackers, for dipping",
+      "group": "To serve",
+      "aisle": "bakery",
+      "staple": false,
+      "estimated": true
+    }
+  ],
+  "steps": [
+    "Heat the oven to 375°F. Cook the pancetta in a large pot over medium heat until it renders and turns golden and crispy.",
+    "Remove the pancetta with a slotted spoon and leave the fat in the pot.",
+    "Add the onions with a pinch of salt and a splash of water. Cover so they soften and get started.",
+    "Uncover and cook the onions slowly, stirring often, for 40 to 50 minutes, until deeply golden and jammy.",
+    "Stir in the garlic and thyme, then deglaze with the sherry and cook until it evaporates. Set the onions aside to cool a bit.",
+    "In a large bowl, mix the cream cheese, mayonnaise, sour cream, gruyère, mozzarella, black pepper and basil until smooth.",
+    "Fold in the caramelized onions and most of the pancetta.",
+    "Spread the mixture in a baking dish, then top with extra gruyère, mozzarella and the remaining pancetta.",
+    "Bake 20 to 25 minutes, until bubbly and golden on top. Serve hot with crostini or crackers."
+  ],
+  "equipment": [
+    "Dutch oven"
+  ],
+  "tips": [
+    "Grate the cheese yourself; pre-shredded cheese melts less smoothly.",
+    "Let the onions cook down slowly on medium-low. Rushing them gives you fried onions, not jam."
+  ],
+  "completeness": "partial",
+  "missing": "The video gave no amounts or bake time; the full recipe is linked in the creator's bio.",
+  "source_notes": "Method from the voiceover and on-screen text; amounts, oven temperature and bake time are estimates.",
+  "needs_details": false,
+  "photo": true,
+  "source": {
+    "url": "https://www.tiktok.com/t/ZPNBdLtUy/",
+    "canonical_url": "https://tiktok.com/@heresyourbite/video/7704833296890481934",
+    "platform": "tiktok",
+    "author": "@heresyourbite",
+    "title": ""
+  },
+  "added_by": "Jordan",
+  "added_at": "2026-11-26T20:07:11Z",
+  "updated_at": "2026-11-26T20:07:11Z",
+  "issues": [
+    52
+  ]
+}
